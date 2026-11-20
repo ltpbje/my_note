@@ -1,0 +1,226 @@
+{
+  "main": {
+    "id": "4f13ed8b3a80dc1d",
+    "type": "split",
+    "children": [
+      {
+        "id": "03a9968841237e97",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b615c6e97c6ce451",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "前端开发面试/前端开发面试.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "前端开发面试"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4676e364c8a5adb5",
+    "type": "split",
+    "children": [
+      {
+        "id": "59e951d442abbd3f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "925cdf1c1e4f84b2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "18e6e44c28687b90",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "9deac2b84d2cf6ad",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "14555142be671027",
+    "type": "split",
+    "children": [
+      {
+        "id": "5b21d0c08aaff1e3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c5302181fdf57df6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "面试回答/面试回答重难点.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "面试回答重难点 的反向链接列表"
+            }
+          },
+          {
+            "id": "1b728784e1789b8e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "面试回答/面试回答重难点.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "面试回答重难点 的出链列表"
+            }
+          },
+          {
+            "id": "10a1c35bafb5fdc1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "268f90a18277a1a8",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "fbf828adce345661",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "前端开发面试/前端开发面试.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "前端开发面试 的大纲"
+            }
+          },
+          {
+            "id": "32a9ff5d4c4d33e1",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 380.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "obsidian-importer:Open Importer": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "b615c6e97c6ce451",
+  "lastOpenFiles": [
+    "前端开发面试/前端开发面试/自我介绍.md",
+    "前端开发面试/前端开发面试/面试回答重难点.md",
+    "前端开发面试/前端开发面试.md",
+    "前端开发面试/前端开发面试/面试版项目介绍.md",
+    "面试回答/面试回答重难点.md",
+    "面试回答/前端开发面试.md",
+    "面试回答/自我介绍.md",
+    "js高频面试题笔记/assets/image_1768536684803_853.png",
+    "前端开发面试/前端开发面试",
+    "前端开发面试",
+    "未命名.base",
+    "Typora/前端框架/image/0bb48a61ce1483c2d463e02ee528e5bd.png",
+    "Typora/前端框架/image/0aba61e8fd4dc3a14b0a6514b47a9c6a.png",
+    "未命名.md",
+    "自我介绍 3254a009d261800998ace19894491299.md",
+    "MCP从入门到实战-资料/MCP从入门到实战.md",
+    "面试回答",
+    "Notion",
+    "notion.zip",
+    "MCP从入门到实战-资料/resume.png",
+    "JS数据结构与算法笔记/笔记-副本-本地图片路径.md",
+    "JS数据结构与算法笔记/笔记.md",
+    "html+css黑马程序员笔记整合/html+css黑马程序员笔记整合-副本-本地图片.md"
+  ]
+}
