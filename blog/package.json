@@ -1,0 +1,30 @@
+{
+  "name": "my-note-blog",
+  "version": "1.0.0",
+  "private": true,
+  "hexo": {
+    "version": "7.3.0"
+  },
+  "scripts": {
+    "gen:posts": "node tools/prepare.js",
+    "check": "node tools/check.js",
+    "build": "npm run gen:posts && npm run check && hexo generate",
+    "clean": "hexo clean",
+    "server": "npm run gen:posts && hexo server",
+    "postinstall": "node -e \"const fs=require('fs'),p=require('path');const s=p.join('node_modules','hexo-theme-butterfly'),d=p.join('themes','butterfly');if(fs.existsSync(s)){fs.mkdirSync('themes',{recursive:true});fs.cpSync(s,d,{recursive:true,force:true})}\""
+  },
+  "dependencies": {
+    "hexo": "^7.3.0",
+    "hexo-cli": "^4.3.2",
+    "hexo-butterfly-extjs": "^1.5.9",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-index": "^4.0.0",
+    "hexo-generator-searchdb": "^1.5.0",
+    "hexo-generator-tag": "^2.0.0",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-marked": "^7.0.1",
+    "hexo-server": "^3.0.0",
+    "hexo-theme-butterfly": "^5.7.2"
+  }
+}

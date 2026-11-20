@@ -1,0 +1,24 @@
+title: 前端学习笔记
+subtitle: 记录、整理与分享
+description: 前端学习笔记博客 —— HTML/CSS、JavaScript、Vue、React、Node.js 与面试笔记
+author: ltpbje
+language: zh-CN
+timezone: Asia/Shanghai
+url: https://my-note.pages.dev
+root: /
+permalink: /posts/:name/
+new_post_name: :title.md
+default_layout: post
+auto_excerpt:
+  enable: true
+  length: 150
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+prismjs:
+  enable: false
+theme: butterfly
+deploy:
+  type: ''

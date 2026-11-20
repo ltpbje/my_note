@@ -1,0 +1,9 @@
+node_modules/
+public/
+themes/butterfly/
+source/_posts/
+source/images/
+missing-images.txt
+db.json
+*.log
+.DS_Store

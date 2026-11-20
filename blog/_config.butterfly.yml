@@ -1,0 +1,52 @@
+nav:
+  display_title: true
+  fixed: true
+
+menu:
+  首页: / || fas fa-home
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  归档: /archives/ || fas fa-archive
+  关于: /about/ || fas fa-user
+
+social:
+  fab fa-github: https://github.com/ltpbje || GitHub || '#4F46E5'
+
+index_img: /assets/banner.svg
+avatar: /img/butterfly-icon.png
+subtitle:
+  enable: true
+  effect: true
+
+code_blocks:
+  theme: darker
+  macStyle: true
+  copy: true
+  language: true
+
+darkmode:
+  enable: true
+  button: true
+
+search:
+  use: local_search
+  placeholder: 搜索文章
+  local_search:
+    preload: true
+    top_n_per_article: 1
+
+lightbox: fancybox
+copy:
+  enable: true
+related_post:
+  enable: true
+  limit: 5
+aside:
+  enable: true
+
+# ponytail: 全部第三方库走本地文件（依赖 hexo-butterfly-extjs），
+# 避免 jsdelivr/unpkg 在国内访问不稳定；本地化由插件在 hexo generate 时完成。
+CDN:
+  internal_provider: local
+  third_party_provider: local
+  version: true
