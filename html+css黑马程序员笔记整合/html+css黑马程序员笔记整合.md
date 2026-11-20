@@ -17,11 +17,11 @@
 
 * 综合案例一 - 个人简介
 
-  ![1680242340931](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646913.png)
+  ![1680242340931](./assets/1680242340931.png)
 
 * 综合案例二 - Vue 简介
 
-  ![1680242362352](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646915.png)
+  ![1680242362352](./assets/1680242362352.png)
 
   
 
@@ -32,7 +32,7 @@ HTML 超文本标记语言——HyperText Markup Language。
 * 超文本：链接
 * 标记：标签，带尖括号的文本
 
-![1680242502155](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646916.png)
+![1680242502155](./assets/1680242502155.png)
 
 #### 标签结构
 
@@ -49,7 +49,7 @@ HTML 超文本标记语言——HyperText Markup Language。
 
 
 
-![1680242555328](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646917.png)
+![1680242555328](./assets/1680242555328.png)
 
 ### 03-HTML骨架
 
@@ -79,11 +79,11 @@ HTML 超文本标记语言——HyperText Markup Language。
 
 * 父子关系（嵌套关系）：子级标签换行且缩进（Tab键）
 
-  ![1680255766672](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646918.png)
+  ![1680255766672](./assets/1680255766672.png)
 
 * 兄弟关系（并列关系）：兄弟标签换行要对齐
 
-  ![1680255775150](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646919.png)
+  ![1680255775150](./assets/1680255775150.png)
 
   
 
@@ -150,7 +150,7 @@ HTML 超文本标记语言——HyperText Markup Language。
 
 作用：为文本添加特殊格式，以突出重点。常见的文本格式：加粗、倾斜、下划线、删除线等。 
 
-![1680314078647](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646920.png)
+![1680314078647](./assets/1680314078647.png)
 
 > 提示：strong、em、ins、del 标签自带强调含义（语义）。 
 
@@ -166,14 +166,14 @@ src用于指定图像的位置和名称，是 <img> 的必须属性。
 
 #### 图像属性
 
-![1680314152822](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646921.png)
+![1680314152822](./assets/1680314152822.png)
 
 #### 属性语法
 
 * 属性名="属性值"
 * 属性写在尖括号里面，标签名后面，标签名和属性之间用空格隔开，不区分先后顺序
 
-![1680314195951](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646922.png)
+![1680314195951](./assets/1680314195951.png)
 
 ### 11-路径
 
@@ -196,7 +196,7 @@ src用于指定图像的位置和名称，是 <img> 的必须属性。
 * **. ** 表示当前文件所在文件夹           → ./
 * **..** 表示当前文件的上一级文件夹 → ../   
 
-![1680314322997](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646923.png)
+![1680314322997](./assets/1680314322997.png)
 
 #### 绝对路径
 
@@ -211,7 +211,7 @@ src用于指定图像的位置和名称，是 <img> 的必须属性。
 > 1. Windows 默认是 \ ，其他系统是 /，建议统一写为 / 
 > 2. 特殊的绝对路径 → 文件的在线网址：<https://www.itheima.com/images/logo.png> "，应用场景：网页底部**友情链接**
 
-![1680314503056](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646924.png)
+![1680314503056](./assets/1680314503056.png)
 
 ### 12-超链接标签
 
@@ -246,7 +246,7 @@ src用于指定图像的位置和名称，是 <img> 的必须属性。
 
 常用属性
 
-![1680314629860](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646925.png)
+![1680314629860](./assets/1680314629860.png)
 
 > 拓展：书写 HTML5 属性时，如果属性名和属性值相同，可以简写为一个单词。 
 
@@ -263,7 +263,7 @@ src用于指定图像的位置和名称，是 <img> 的必须属性。
 
 常用属性
 
-![1680314703735](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646926.png)
+![1680314703735](./assets/1680314703735.png)
 
 ```html
 <!-- 在浏览器中，想要自动播放，必须有 muted 属性 -->
@@ -276,7 +276,7 @@ src用于指定图像的位置和名称，是 <img> 的必须属性。
 >
 > 分析内容 → 写代码 → 保存 → 刷新浏览器，看效果
 
-![1680314754557](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646927.png)
+![1680314754557](./assets/1680314754557.png)
 
 ```html
 <h1>尤雨溪</h1>
@@ -296,7 +296,7 @@ src用于指定图像的位置和名称，是 <img> 的必须属性。
 
 ### 16-综合案例二-Vue简介
 
-![1680314805528](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646928.png)
+![1680314805528](./assets/1680314805528.png)
 
 ```html
 <h1>Vue.js</h1>
@@ -373,7 +373,7 @@ src用于指定图像的位置和名称，是 <img> 的必须属性。
 </dl>
 ```
 
-![1680315652403](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646929.png)
+![1680315652403](./assets/1680315652403.png)
 
 > 注意事项：
 >
@@ -384,13 +384,13 @@ src用于指定图像的位置和名称，是 <img> 的必须属性。
 
 网页中的表格与 Excel 表格类似，用来展示数据。 
 
-![1680315690740](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646930.png)
+![1680315690740](./assets/1680315690740.png)
 
 #### 基本使用
 
 标签：table 嵌套 tr，tr 嵌套 td / th。 
 
-![1680315704565](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646931.png)
+![1680315704565](./assets/1680315704565.png)
 
 
 
@@ -429,7 +429,7 @@ src用于指定图像的位置和名称，是 <img> 的必须属性。
 
 作用：用表格结构标签把内容划分区域，让表格结构更清晰，语义更清晰。
 
-![1680315774950](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646932.png)
+![1680315774950](./assets/1680315774950.png)
 
 > 提示：表格结构标签可以省略。
 
@@ -437,7 +437,7 @@ src用于指定图像的位置和名称，是 <img> 的必须属性。
 
 作用：将多个单元格合并成一个单元格，以合并同类信息。 
 
-![1680315812998](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646933.png)
+![1680315812998](./assets/1680315821325.png)
 
 合并单元格的步骤：
 
@@ -502,7 +502,7 @@ input 标签 type 属性值不同，则功能不同。
 <input type="..." >
 ```
 
-![1680315984539](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646934.png)
+![1680315984539](./assets/1680315984539.png)
 
 
 
@@ -518,7 +518,7 @@ input 标签 type 属性值不同，则功能不同。
 
 常用属性
 
-![1680316056402](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646935.png)
+![1680316056402](./assets/1680316056402.png)
 
 
 
@@ -547,7 +547,7 @@ input 标签 type 属性值不同，则功能不同。
 
 #### 下拉菜单
 
-![1680316175031](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646936.png)
+![1680316175031](./assets/1680316175031.png)
 
 标签：select 嵌套 option，select 是下拉菜单整体，option是下拉菜单的每一项。
 
@@ -567,7 +567,7 @@ input 标签 type 属性值不同，则功能不同。
 
 作用：多行输入文本的表单控件。 
 
-![1680316238194](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646937.png)
+![1680316238194](./assets/1680316238194.png)
 
 ```html
 <textarea>默认提示文字</textarea>
@@ -582,11 +582,11 @@ input 标签 type 属性值不同，则功能不同。
 
 作用：网页中，某个标签的说明文本。 
 
-![1680316296894](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646938.png)
+![1680316296894](./assets/1680316296894.png)
 
 经验：用 label 标签绑定文字和表单控件的关系，增大表单控件的点击范围。 
 
-![1680316314721](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646939.png)
+![1680316314721](./assets/1680316314721.png)
 
 * 写法一
   * label 标签只包裹内容，不包裹表单控件
@@ -611,7 +611,7 @@ input 标签 type 属性值不同，则功能不同。
 <button type="">按钮</button>
 ```
 
-![1680316426088](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646940.png)
+![1680316426088](./assets/1680316426088.png)
 
 
 
@@ -649,15 +649,15 @@ input 标签 type 属性值不同，则功能不同。
 
 #### 有语义的布局标签
 
-![1680316535685](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646941.png)
+![1680316535685](./assets/1680316535685.png)
 
 ### 05-字符实体
 
-![1680316551064](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646942.png)
+![1680316551064](./assets/1680316551064.png)
 
 ### 06-综合案例一-体育新闻列表 
 
-![1680316581559](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646943.png)
+![1680316581559](./assets/1680316581559.png)
 
 ```html
 <ul>
@@ -666,11 +666,11 @@ input 标签 type 属性值不同，则功能不同。
     <h3>主帅安东尼奥回西班牙休假 国青抵达海口进行隔离</h3>
   </li>
   <li>
-    <img src="./images/2.jpg" alt="">
+    <img src="../Typora/前端框架/image/2.png">
     <h3>梅州主帅：申花有强有力的教练组 球员体能水平高</h3>
   </li>
   <li>
-    <img src="./images/3.jpg" alt="">
+    <img src="../Typora/前端框架/image/3.png">
     <h3>马德兴:00后球员将首登亚洲舞台 调整心态才务实</h3>
   </li>
 </ul>
@@ -678,7 +678,7 @@ input 标签 type 属性值不同，则功能不同。
 
 ### 07-综合案例二-注册信息
 
-![1680316627956](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646944.png)
+![1680316627956](./assets/1680316627956.png)
 
 ```html
 <h1>注册信息</h1>
@@ -888,11 +888,11 @@ input 标签 type 属性值不同，则功能不同。
 
 > 经验：通配符选择器可以用于**清除标签的默认样式**，例如：标签默认的外边距、内边距。
 
-![1680317584651](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646945.png)
+![1680317584651](./assets/1680317584651.png)
 
 ### 04-盒子尺寸和背景色
 
-![1680317605797](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646946.png)
+![1680317605797](./assets/1680317605797.png)
 
 ### 05-文字控制属性
 
@@ -939,7 +939,7 @@ line-height: 30px;
 line-height: 2;
 ```
 
-![1680317770048](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646947.png)
+![1680317770048](./assets/1680317770048.png)
 
 > 行高的测量方法：从一行文字的最顶端（最底端）量到下一行文字的最顶端（最底端）。 
 
@@ -973,7 +973,7 @@ font-family: 楷体;
 >
 > *  font-family 属性最后设置一个字体族名，网页开发建议使用无衬线字体
 
-![1680318278244](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646948.png)
+![1680318278244](./assets/1680318278244.png)
 
 ```css
 font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
@@ -983,7 +983,7 @@ font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\
 
 使用场景：设置网页文字公共样式 
 
-![1680318326214](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646949.png)
+![1680318326214](./assets/1680318326214.png)
 
 复合属性：属性的简写方式，**一个属性对应多个值的写法**，各个属性值之间用**空格**隔开。
 
@@ -1018,7 +1018,7 @@ p {
 
 属性名：**text-align**
 
-![1680318461130](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646950.png)
+![1680318461130](./assets/1680318461130.png)
 
 ```css
 text-align: center;
@@ -1042,13 +1042,13 @@ text-align: center;
 
 属性名： **text-decoration** 
 
-![1680318548558](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646951.png)
+![1680318548558](./assets/1680318548558.png)
 
 
 
 #### color 文字颜色
 
-![1680318569852](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646952.png)
+![1680318569852](./assets/1680318569852.png)
 
 > 提示：只要属性值为颜色，都可以使用上述四种颜色表示方式，例如：背景色。 
 
@@ -1063,7 +1063,7 @@ text-align: center;
 
 2. 使用调试工具
 
-![1680318624523](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646953.png)
+![1680318624523](./assets/1680318624523.png)
 
 ### 07-综合案例一-新闻详情
 
@@ -1072,7 +1072,7 @@ text-align: center;
 1. 从上到下，先整体再局部
 2. 先标签，再 CSS 美化
 
-![1680318667113](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646954.png)
+![1680318667113](./assets/1680318667113.png)
 
 #### HTML标签
 
@@ -1122,7 +1122,7 @@ text-align: center;
 
 ### 08-综合案例二-CSS简介
 
-![1680318751246](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646955.png)
+![1680318751246](./assets/1680318751246.png)
 
 #### HTML标签
 
@@ -1278,7 +1278,7 @@ text-align: center;
 
 ##### 超链接伪类
 
-![1680319272736](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646956.png)
+![1680319272736](./assets/1680319272736.png)
 
 > 提示：如果要给超链接设置以上四个状态，需要按 LVHA 的顺序书写。 
 >
@@ -1306,7 +1306,7 @@ CSS特性：化简代码 / 定位问题，并解决问题
 
 继承性：子级默认继承父级的**文字控制属性**。 
 
-![1680319376438](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646957.png)
+![1680319376438](./assets/1680319376438.png)
 
 > 注意：如果标签有默认文字样式会继承失败。 例如：a 标签的颜色、标题的字体大小。
 
@@ -1365,7 +1365,7 @@ CSS特性：化简代码 / 定位问题，并解决问题
 
 公式：（每一级之间不存在进位）
 
-![1680319646205](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646958.png)
+![1680319646205](./assets/1680319646205.png)
 
 规则：
 
@@ -1379,15 +1379,15 @@ Emmet写法：代码的**简写**方式，输入缩写 VS Code 会自动生成�
 
 * HTML标签
 
-![1680319897697](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646959.png)
+![1680319897697](./assets/1680319897697.png)
 
 * CSS：大多数简写方式为属性单词的**首字母** 
 
-![1680319926111](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646960.png)
+![1680319926111](./assets/1680319926111.png)
 
 ### 04-背景属性
 
-![1680319971861](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646961.png)
+![1680319971861](./assets/1680319971861.png)
 
 #### 背景图
 
@@ -1411,7 +1411,7 @@ div {
 
 属性名：**background-repeat**（bgr） 
 
-![1680320072292](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646962.png)
+![1680320072292](./assets/1680320072292.png)
 
 ```css
 div {
@@ -1432,7 +1432,7 @@ div {
 
 * 关键字
 
-![1680320211424](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646963.png)
+![1680320211424](./assets/1680320211424.png)
 
 * 坐标
   * 水平：正数向右；负数向左
@@ -1522,7 +1522,7 @@ div {
 
 显示模式：标签（元素）的显示方式。 
 
-![1680320464551](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646964.png)
+![1680320464551](./assets/1680320464551.png)
 
 作用：布局网页的时候，根据标签的显示模式选择合适的标签摆放内容。 
 
@@ -1534,7 +1534,7 @@ div {
 * 宽度默认是父级的100%
 * 添加宽高属性生效
 
-![1680320578369](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646965.png)
+![1680320578369](./assets/1680320578369.png)
 
 #### 行内元素
 
@@ -1544,7 +1544,7 @@ div {
 * 设置宽高属性不生效
 * 宽高尺寸由内容撑开
 
-![1680320583985](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646966.png)
+![1680320583985](./assets/1680320583985.png)
 
 #### 行内块元素 
 
@@ -1554,19 +1554,19 @@ div {
 * 设置宽高属性生效
 * 宽高尺寸也可以由内容撑开
 
-![1680320590005](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646967.png)
+![1680320590005](./assets/1680320590005.png)
 
 #### 转换显示模式
 
 属性：**display**
 
-![1680320613034](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646968.png)
+![1680320613034](./assets/1680320613034.png)
 
 
 
 ### 06-综合案例一-热词
 
-![1680320664821](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646969.png)
+![1680320664821](./assets/1680320664821.png)
 
 #### HTML标签
 
@@ -1604,7 +1604,7 @@ background-color: #608dd9;
 
 ### 07-综合案例二 – banner 效果 
 
-![1680320758496](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646970.png)
+![1680320758496](./assets/1680320758496.png)
 
 #### HTML标签
 
@@ -1677,7 +1677,7 @@ background-color: #608dd9;
 
 作用：根据元素的**结构关系**查找元素。 
 
-![1680321408957](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646971.png)
+![1680321408957](./assets/1680321408957.png)
 
 ```css
 li:first-child {
@@ -1687,7 +1687,7 @@ li:first-child {
 
 #### :nth-child(公式) 
 
-![1680321448162](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646972.png)
+![1680321448162](./assets/1680321448162.png)
 
 > 提示：公式中的n取值从 **0** 开始。 
 
@@ -1695,9 +1695,9 @@ li:first-child {
 
 作用：创建**虚拟元素**（伪元素），用来**摆放装饰性的内容**。 
 
-![1680321533901](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646973.png)
+![1680321533901](./assets/1680321533901.png)
 
-![1680321544646](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646974.png)
+![1680321544646](./assets/1680321544646.png)
 
 ```css
 div::before {
@@ -1723,7 +1723,7 @@ PxCook（像素大厨） 是一款切图设计工具软件。支持PSD文件的�
 
 使用方法：创建项目 → 输入 项目名称、项目类型 Web → 单击按钮【创建项目】 → 单击按钮【添加】，导入设计稿 
 
-![1680321681695](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646975.png)
+![1680321681695](./assets/1680321681695.png)
 
 ### 03-盒子模型
 
@@ -1747,9 +1747,9 @@ div {
 }
 ```
 
-![1680330928735](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646976.png)
+![1680330928735](./assets/1680330928735.png)
 
-![1680330935635](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646977.png)
+![1680330935635](./assets/1680330935635.png)
 
 
 
@@ -1761,7 +1761,7 @@ div {
 
 属性值：边框线粗细  线条样式  颜色（不区分顺序）
 
-![1680330976390](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646978.png)
+![1680330976390](./assets/1680330976390.png)
 
 ```css
 div {
@@ -1815,13 +1815,13 @@ div {
 
 * padding 多值写法
 
-![1680331118330](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646979.png)
+![1680331118330](./assets/1680331118330.png)
 
 > 技巧：从**上**开始**顺时针**赋值，当前方向没有数值则与**对面取值相同**。 
 
 #### 尺寸计算
 
-![1680331322935](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646980.png)
+![1680331322935](./assets/1680331322935.png)
 
 默认情况：盒子尺寸 = 内容尺寸 + border 尺寸 + 内边距尺寸
 
@@ -1842,7 +1842,7 @@ div {
 
 #### 版心居中
 
-![1680331503466](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646981.png)
+![1680331503466](./assets/1680331503466.png)
 
 左右 margin 值 为 auto（盒子要有宽度）
 
@@ -1857,11 +1857,11 @@ div {
 
 #### 清除默认样式 
 
-![1680331558304](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646983.png)
+![1680331558304](./assets/1680331558304.png)
 
 清除标签默认的样式，比如：默认的内外边距。 
 
-![1680331580746](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646984.png)
+![1680331580746](./assets/1680331580746.png)
 
 ```css
 /* 清除默认内外边距 */
@@ -1882,7 +1882,7 @@ li {
 
 属性名：**overflow**
 
-![1680331623305](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646985.png)
+![1680331623305](./assets/1680331623305.png)
 
 #### 外边距问题
 
@@ -1892,7 +1892,7 @@ li {
 
 现象：取两个 margin 中的**较大值生效**
 
-![1680331672628](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646986.png)
+![1680331672628](./assets/1680331672628.png)
 
 ```css
 .one {
@@ -1918,7 +1918,7 @@ li {
 }
 ```
 
-![1680333860271](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646987.png)
+![1680333860271](./assets/1680333860271.png)
 
 解决方法：
 
@@ -1952,13 +1952,13 @@ span {
 
 提示：属性值是圆角半径
 
-![1680334014390](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646988.png)
+![1680334014390](./assets/1680334014390.png)
 
 
 
 * 多值写法
 
-![1680334027657](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646989.png)
+![1680334027657](./assets/1680334027657.png)
 
 > 技巧：从左上角开始顺时针赋值，当前角没有数值则与对角取值相同。 
 
@@ -1974,7 +1974,7 @@ img {
 }
 ```
 
-![1680334083567](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646990.png)
+![1680334083567](./assets/1680334083567.png)
 
 * 胶囊形状：给长方形盒子设置圆角属性值为 盒子高度的一半 
 
@@ -1987,7 +1987,7 @@ div {
 }
 ```
 
-![1680334136242](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646991.png)
+![1680334136242](./assets/1680334136242.png)
 
 #### 盒子阴影（拓展）
 
@@ -2013,7 +2013,7 @@ div {
 
 ### 04-综合案例-产品卡片
 
-![1680334221212](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646992.png)
+![1680334221212](./assets/1680334221212.png)
 
 CSS 书写顺序：
 
@@ -2078,7 +2078,7 @@ CSS 书写顺序：
 
 
 
-![1680334329887](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646993.png)
+![1680334329887](./assets/1680334329887.png)
 
 
 
@@ -2193,7 +2193,7 @@ a {
 
 标准流也叫文档流，指的是标签在页面中**默认的排布规则**，例如：块元素独占一行，行内元素可以一行显示多个。 
 
-![1680334840709](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646994.png)
+![1680334840709](./assets/1680334840709.png)
 
 ### 02-浮动
 
@@ -2242,7 +2242,7 @@ a {
 
 #### 产品区域布局
 
-![1680335016853](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646995.png)
+![1680335016853](./assets/1680335016853.png)
 
 ##### HTML标签
 
@@ -2327,7 +2327,7 @@ a {
 
 ##### 场景搭建
 
-![1680335081694](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646996.png)
+![1680335081694](./assets/1680335081694.png)
 
 ```html
 <style>
@@ -2446,7 +2446,7 @@ Flex 布局也叫**弹性布局**，是浏览器**提倡的布局模型**，非�
 
 Flex 模型不会产生浮动布局中脱标现象，布局网页更简单、更灵活。
 
-![1680335815005](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646997.png)
+![1680335815005](./assets/1680335815005.png)
 
 #### Flex组成
 
@@ -2459,20 +2459,20 @@ Flex 模型不会产生浮动布局中脱标现象，布局网页更简单、更
 * 主轴：默认在**水平**方向
 * 侧轴 / 交叉轴：默认在**垂直**方向
 
-![1680335870554](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646998.png)
+![1680335870554](./assets/1680335870554.png)
 
 #### 主轴对齐方式
 
 属性名：**justify-content**
 
-![1680335902526](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646999.png)
+![1680335902526](./assets/1680335902526.png)
 
 #### 侧轴对齐方式
 
 * align-items：当前弹性容器内**所有**弹性盒子的侧轴对齐方式（给**弹性容器**设置）
 * align-self：单独控制**某个弹性盒子**的侧轴对齐方式（给**弹性盒子**设置）
 
-![1680335957166](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646000.png)
+![1680335957166](./assets/1680335957166.png)
 
 #### 修改主轴方向
 
@@ -2480,7 +2480,7 @@ Flex 模型不会产生浮动布局中脱标现象，布局网页更简单、更
 
 属性名：**flex-direction**
 
-![1680335988425](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646001.png)
+![1680335988425](./assets/1680335988425.png)
 
 #### 弹性伸缩比
 
@@ -2505,13 +2505,13 @@ Flex 模型不会产生浮动布局中脱标现象，布局网页更简单、更
 
 属性名：**align-content** 
 
-![1680336183457](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646002.png)
+![1680336183457](./assets/1680336183457.png)
 
 > 注意：该属性对**单行**弹性盒子模型**无效**。 
 
 ### 04-综合案例 – 抖音解决方案 
 
-![1680336238340](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646003.png)
+![1680336238340](./assets/1680336238340.png)
 
 #### 整体布局
 
@@ -2608,7 +2608,7 @@ li {
   </li>
   <li>
     <div class="pic">
-      <img src="./images/2.svg" alt="">
+      <img src="../Typora/前端框架/image/2.png">
     </div>
     <div class="text">
       <h4>管理视频内容</h4>
@@ -2617,7 +2617,7 @@ li {
   </li>
   <li>
     <div class="pic">
-      <img src="./images/3.svg" alt="">
+      <img src="../Typora/前端框架/image/3.png">
     </div>
     <div class="text">
       <h4>发布携带组件</h4>
@@ -2626,7 +2626,7 @@ li {
   </li>
   <li>
     <div class="pic">
-      <img src="./images/4.svg" alt="">
+      <img src="../Typora/前端框架/image/4.png">
     </div>
     <div class="text">
       <h4>数据评估分析</h4>
@@ -2644,7 +2644,7 @@ li {
 
 网站根目录是指存放网站的**第一层**文件夹，内部包含当前网站的**所有素材**，包含 HTML、CSS、图片、JavaScript等等。 
 
-![1680336645218](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646004.png)
+![1680336645218](./assets/1680336645218.png)
 
 * 首页引入CSS文件
 
@@ -2656,7 +2656,7 @@ li {
 
 ### 02-版心居中
 
-![1680336711608](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646005.png)
+![1680336711608](./assets/1680336711608.png)
 
 ```css
 .wrapper {
@@ -2679,7 +2679,7 @@ body {
 
 ### 04-header区域-整体布局
 
-![1680337054328](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646006.png)
+![1680337054328](./assets/1680337054328.png)
 
 #### HTML结构
 
@@ -2716,7 +2716,7 @@ body {
 
 ### 05-header区域-logo
 
-![1680337229070](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646007.png)
+![1680337229070](./assets/1680337229070.png)
 
 logo 功能：
 
@@ -2753,7 +2753,7 @@ logo 功能：
 * 标签结构：ul > **li * 3** > a
 * 优势：**避免堆砌 a 标签**，**网站搜索排名降级**
 
-![1680337390943](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646008.png)
+![1680337390943](./assets/1680337390943.png)
 
 #### HTML结构
 
@@ -2798,7 +2798,7 @@ logo 功能：
 
 ### 07-header区域-搜索布局
 
-![1680337525496](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646009.png)
+![1680337525496](./assets/1680337525496.png)
 
 #### HTML结构
 
@@ -2860,7 +2860,7 @@ logo 功能：
 
 ### 09-header区域-用户区域
 
-![1680337703358](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646010.png)
+![1680337703358](./assets/1680337703358.png)
 
 #### HTML结构
 
@@ -2896,7 +2896,7 @@ logo 功能：
 
 ### 10-banner区域-布局
 
-![1680337778559](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646011.png)
+![1680337778559](./assets/1680337778559.png)
 
 #### HTML结构
 
@@ -2975,7 +2975,7 @@ logo 功能：
 
 ### 12-banner区域-课程表布局
 
-![1680338145736](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646012.png)
+![1680338145736](./assets/1680338145736.png)
 
 #### HTML布局
 
@@ -3090,7 +3090,7 @@ logo 功能：
 
 ### 15-精品推荐-区域布局
 
-![1680338252106](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646013.png)
+![1680338252106](./assets/1680338252106.png)
 
 #### HTML结构
 
@@ -3171,7 +3171,7 @@ logo 功能：
 
 ### 17-推荐课程-标题区域
 
-![1680338517515](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646014.png)
+![1680338517515](./assets/1680338517515.png)
 
 #### HTML结构
 
@@ -3389,7 +3389,7 @@ logo 功能：
 
 ### 20-前端开发工程师区域
 
-![1680339112336](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646015.png)
+![1680339112336](./assets/1680339112336.png)
 
 #### HTML结构
 
@@ -3498,7 +3498,7 @@ logo 功能：
 
 ### 21-版权-布局
 
-![1680339154682](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646016.png)
+![1680339154682](./assets/1680339154682.png)
 
 #### HTML结构
 
@@ -3678,7 +3678,7 @@ div {
 
 #### 定位居中
 
-![1680340142857](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646017.png)
+![1680340142857](./assets/1680340142857.png)
 
 实现步骤：
 
@@ -3727,7 +3727,7 @@ div {
 
 #### 堆叠层级z-index
 
-![1680340281795](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646018.png)
+![1680340281795](./assets/1680340281795.png)
 
 默认效果：按照标签书写顺序，后来者居上
 
@@ -3759,11 +3759,11 @@ div {
 
 CSS 精灵，也叫 **CSS Sprites**，是一种网页**图片应用处理方式**。把网页中**一些背景图片**整合到**一张图片**文件中，再**background-position** 精确的定位出背景图片的位置。
 
-![1680340401800](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646019.png)
+![1680340401800](./assets/1680340401800.png)
 
 优点：减少服务器被请求次数，减轻服务器的压力，提高页面加载速度
 
-![1680340411600](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646020.png)
+![1680340411600](./assets/1680340411600.png)
 
 实现步骤：
 
@@ -3777,7 +3777,7 @@ CSS 精灵，也叫 **CSS Sprites**，是一种网页**图片应用处理方式*
 
 #### 案例-京东服务
 
-![1680340481861](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646021.png)
+![1680340481861](./assets/1680340481861.png)
 
 ##### HTML结构
 
@@ -3868,7 +3868,7 @@ CSS 精灵，也叫 **CSS Sprites**，是一种网页**图片应用处理方式*
 
 #### 字体图标
 
-![1680340562425](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646022.png)
+![1680340562425](./assets/1680340562425.png)
 
 字体图标：**展示的是图标，本质是字体**
 
@@ -3887,25 +3887,25 @@ iconfont 图标库：<https://www.iconfont.cn/>
 
 登录 → 素材库 → 官方图标库 → 进入图标库 → 选图标，加入购物车 → 购物车，添加至项目，确定 → 下载至本地 
 
-![1680340665988](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646023.png)
+![1680340665988](./assets/1680340665988.png)
 
 ##### 使用字体
 
 1. 引入字体样式表（iconfont.css） 
 
-![1680340697011](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646024.png)
+![1680340697011](./assets/1680340697011.png)
 
 2. 标签使用字体图标类名
    * iconfont：字体图标基本样式（字体名，字体大小等等）
    * icon-xxx：图标对应的类名
 
-![1680340718890](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646025.png)
+![1680340718890](./assets/1680340718890.png)
 
 ##### 上传矢量图
 
 作用：项目特有的图标上传到 iconfont 图标库，生成字体
 
-![1680340775611](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646026.png)
+![1680340775611](./assets/1680340775611.png)
 
 上传步骤：上传 → 上传图标 → 选择 svg 矢量图，打开 → 提交 → 系统审核
 
@@ -3913,11 +3913,11 @@ iconfont 图标库：<https://www.iconfont.cn/>
 
 #### 垂直对齐方式 
 
-![1680340838945](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646027.png)
+![1680340838945](./assets/1680340838945.png)
 
 属性名：vertical-align
 
-![1680340829633](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646028.png)
+![1680340829633](./assets/1680340829633.png)
 
 #### 过渡
 
@@ -3964,11 +3964,11 @@ img:hover {
 
 属性名：cursor
 
-![1680342344485](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646029.png)
+![1680342344485](./assets/1680342344485.png)
 
 ### 04-综合案例-轮播图
 
-![1680342362855](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646030.png)
+![1680342362855](./assets/1680342362855.png)
 
 #### 图片效果
 
@@ -4127,7 +4127,7 @@ li {
 
 ### 01-搭建项目目录
 
-![1680342815532](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646031.png)
+![1680342815532](./assets/1680342815532.png)
 
 * xtx-pc
   * images 文件夹：存放固定使用的图片素材，例如：logo、样式修饰图等等
@@ -4165,7 +4165,7 @@ SEO：搜索引擎优化，提升网站百度搜索排名
 * description：网页描述
 * keywords：网页关键词
 
-![1680342859110](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646032.png)
+![1680342859110](./assets/1680342859110.png)
 
 ```html
 <!-- meta:desc -->
@@ -4177,13 +4177,13 @@ SEO：搜索引擎优化，提升网站百度搜索排名
 
 ### 03-Favicon图标
 
-![1680342897355](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646033.png)
+![1680342897355](./assets/1680342897355.png)
 
 Favicon 图标：网页图标，出现在浏览器标题栏，增加网站辨识度。
 
 图标：**favicon.ico**，一般存放到网站的**根目录**里面
 
-![1680342907910](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646034.png)
+![1680342907910](./assets/1680342907910.png)
 
 ```html
 <!-- link:favicon -->
@@ -4204,7 +4204,7 @@ Favicon 图标：网页图标，出现在浏览器标题栏，增加网站辨识
 
 ### 05-快捷导航-布局
 
-![1680343012434](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646035.png)
+![1680343012434](./assets/1680343012434.png)
 
 #### HTML结构
 
@@ -4279,7 +4279,7 @@ Favicon 图标：网页图标，出现在浏览器标题栏，增加网站辨识
 
 ### 07-头部-布局
 
-![1680343169749](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646036.png)
+![1680343169749](./assets/1680343169749.png)
 
 #### HTML结构
 
@@ -4475,7 +4475,7 @@ Favicon 图标：网页图标，出现在浏览器标题栏，增加网站辨识
 
 ### 12-底部-布局
 
-![1680343743595](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646037.png)
+![1680343743595](./assets/1680343743595.png)
 
 #### HTML结构
 
@@ -4741,7 +4741,7 @@ Favicon 图标：网页图标，出现在浏览器标题栏，增加网站辨识
 
 ### 01-banner-轮播图
 
-![1680344354682](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646038.png)
+![1680344354682](./assets/1680344354682.png)
 
 > index.css
 
@@ -4939,7 +4939,7 @@ Favicon 图标：网页图标，出现在浏览器标题栏，增加网站辨识
 
 ### 04-新鲜好物-标题
 
-![1680344375183](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646039.png)
+![1680344375183](./assets/1680344375183.png)
 
 > 考虑公共样式
 
@@ -5090,7 +5090,7 @@ Favicon 图标：网页图标，出现在浏览器标题栏，增加网站辨识
 
 ### 06-人气推荐
 
-![1680345456528](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646040.png)
+![1680345456528](./assets/1680345456528.png)
 
 #### HTML结构
 
@@ -5164,7 +5164,7 @@ Favicon 图标：网页图标，出现在浏览器标题栏，增加网站辨识
 
 ### 07-热门品牌-布局
 
-![1680345437806](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646041.png)
+![1680345437806](./assets/1680345437806.png)
 
 #### HTML结构
 
@@ -5273,7 +5273,7 @@ Favicon 图标：网页图标，出现在浏览器标题栏，增加网站辨识
 
 ### 09-生鲜-标题
 
-![1680345419866](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646042.png)
+![1680345419866](./assets/1680345419866.png)
 
 #### HTML结构
 
@@ -5598,7 +5598,7 @@ Favicon 图标：网页图标，出现在浏览器标题栏，增加网站辨识
 
 ### 13-最新专题-布局
 
-![1680345389305](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202410061646043.png)
+![1680345389305](./assets/1680345389305.png)
 
 #### HTML结构
 
@@ -5834,6 +5834,7 @@ Favicon 图标：网页图标，出现在浏览器标题栏，增加网站辨识
   font-size: 18px;
 }
 ```
+
 
 
 

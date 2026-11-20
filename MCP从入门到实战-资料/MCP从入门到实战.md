@@ -225,14 +225,14 @@ npm install @modelcontextprotocol/sdk
   https://cursor.com/cn
 - ...
 
-![image-20250712221447931](https://resource.duyiedu.com/yuanjin/202507122214955.png)
+![image-20250712221447931](./MCP从入门到实战.assets/4e2ae86f3a.png)
 
 两个核心概念：
 
 - `MCP Host`: 往往指代AI应用本身，用于发现MCP Server以及其中的工具列表
 - `MCP Client`： 用于和MCP Server通信的客户端，往往在Host内部开启，通常情况下，每启动一个MCP Server，就会开启一个MCP Client
 
-![image-20250712222733393](https://resource.duyiedu.com/yuanjin/202507122227442.png)
+![image-20250712222733393](./MCP从入门到实战.assets/49a9b4fa63.png)
 
 例如：
 

@@ -2356,7 +2356,7 @@ class HMPromise {
 1. `then`中返回的`then`方法返回的`Promise`实例报错
 2. 注:下列代码中的`p2`
 
-![image-20230804205538209](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202407080934796.png)
+![image-20230804205538209](./assets/image_1768536684803_853.png)
 
 ```javascript
 const p = new HMPromise((resolve, reject) => {
@@ -3205,7 +3205,7 @@ HMPromise.reject('error').catch(res => {
 1. 接收Promise数组,数组中第一个Promise敲定时,获取`成功/失败`结果
 2. 传入的参数不是数组,直接报错
 
-![image-20230804211157895](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202407080934798.png)
+![image-20230804211157895](./assets/image_1768536685082_477.png)
 
 ```javascript
 const p1 = new HMPromise((resolve, reject) => {
@@ -3628,7 +3628,7 @@ Promise\A+是社区推出的规范,其实最早Promise也是社区推出并实�
 
 我们目前的写法中,没有考虑所有的边界情况,测试时会在2.3.3开始出错
 
-![image-20230806180825358](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202407080934799.png)
+![image-20230806180825358](./assets/image_1768536685245_718.png)
 
 只需要将`resolvePromise`函数替换为如下写法即可:
 
@@ -3715,7 +3715,7 @@ function resolvePromise(p2, x, resolve, reject) {
 
 替换完毕之后,再次执行`npm run test`,全部测试通过.
 
-![image-20230806180745983](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202407080934800.png)
+![image-20230806180745983](./assets/image_1768536685406_233.png)
 
 
 
@@ -4332,7 +4332,7 @@ window.addEventListener('load', () => {
 
 发布订阅模式可以实现的效果类似观察者模式,但是两者略有差异,一句话描述:一个有中间商(**发布订阅模式**)一个没中间商(**观察者模式**)
 
-![image-20230811104051236](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202407080934801.png)
+![image-20230811104051236](./assets/image_1768536685567_425.png)
 
 **应用场景:**
 
@@ -4558,7 +4558,7 @@ app.arr.push === Array.prototype.push //false
 
 这里我们来看一个非常经典的代理模式的应用: 缓存代理
 
-![image-20230811104311315](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202407080934802.png)
+![image-20230811104311315](./assets/image_1768536685736_63.png)
 
 **核心语法:** 
 
@@ -4769,7 +4769,7 @@ for (const iterator of obj) {
 1. 频繁执行逻辑代码,耗费浏览器性能
 2. 频繁发送请求去服务器,耗费服务器性能
 
-![image-20231103105837551](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202407080934803.png)
+![image-20231103105837551](./assets/image_1768536685857_491.png)
 
 
 
@@ -4795,7 +4795,7 @@ for (const iterator of obj) {
 
 防抖优化之后的效果可以通过一些具体的网站来进行确认,比如[12306](https://www.12306.cn/index/),他就是通过防抖进行的优化:
 
-![image-20231103110502057](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202407080934804.png)
+![image-20231103110502057](./assets/image_1768536686097_335.png)
 
 1. 在输入内容的时候没有发送请求
 2. 输入完毕之后,稍等一会才发送请求去服务器
@@ -4814,7 +4814,7 @@ for (const iterator of obj) {
 
 
 
-![image-20231103110559686](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202407080934805.png)
+![image-20231103110559686](./assets/image_1768536686293_71.png)
 
 
 
@@ -4937,7 +4937,7 @@ function debounce(func, wait = 0) {
 
 高频触发耗费性能的操作,会造成**性能浪费**
 
-![image-20231103112157435](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202407080934806.png)
+![image-20231103112157435](./assets/image_1768536686439_619.png)
 
 **适用场景****:**在触发频率高的事件中, 执行耗费性能操作 , 连续触发 , 单位时间内只有一次生效
 
@@ -4945,11 +4945,11 @@ function debounce(func, wait = 0) {
 
 **优化之前:** 每当触发事件就会执行业务逻辑
 
-![image-20231103112319492](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202407080934807.png)
+![image-20231103112319492](./assets/image_1768536686610_49.png)
 
 **优化之后:**触发事件之后延迟执行逻辑,在逻辑执行完毕之后无法再次触发
 
-![image-20231103112334032](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202407080934808.png)
+![image-20231103112334032](./assets/image_1768536687083_720.png)
 
 
 
@@ -4959,7 +4959,7 @@ function debounce(func, wait = 0) {
 
 使用节流将播放器记录时间的例子优化:
 
-![image-20231103112334032](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202407080934808.png)![image-20231103112334032](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202407080934808.png)
+![image-20231103112334032](./assets/image_1768536687083_720.png)![image-20231103112334032](./assets/image_1768536687083_720.png)
 
 **核心步骤**:
 

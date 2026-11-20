@@ -4,9 +4,7 @@
 
 React由Meta公司开发，是一个用于 构建Web和原生交互界面的库
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930196.png)
-
-
+![image-20260116121948086](./assets/image-20260116121948086.png)
 
 ### React的优势
 相较于传统基于DOM开发的优势
@@ -20,7 +18,7 @@ React由Meta公司开发，是一个用于 构建Web和原生交互界面的库
 2. 跨平台支持
 ### React的市场情况
 全球最流行，大厂必备
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930198.png)
+![image.png](./assets/image_1768537118974_681.png)
 
 ## 开发环境创建
 create-react-app是一个快速创建React开发环境的工具，底层由Webpack构件，封装了配置细节，开箱即用
@@ -59,7 +57,7 @@ function App(){
 ### JSX的本质
 > JSX并不是标准的JS语法，它是 JS的语法扩展，浏览器本身不能识别，需要通过解析工具做解析之后才能在浏览器中使用
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930199.png)
+![image.png](./assets/image_1768537119245_120.png)
 ### JSX高频场景-JS表达式
 > 在JSX中可以通过 `大括号语法{}` 识别JavaScript中的表达式，比如常见的变量、函数调用、方法调用等等
 
@@ -94,7 +92,7 @@ function App(){
 }
 ```
 ### JSX高频场景-列表渲染
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930200.png)
+![image.png](./assets/image_1768537119525_795.png)
 > 在JSX中可以使用原生js种的`map方法` 实现列表渲染
 
 ```jsx
@@ -113,7 +111,7 @@ function App(){
 }
 ```
 ### JSX高频场景-条件渲染
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930201.png)
+![image.png](./assets/image_1768537119754_263.png)
 > 在React中，可以通过逻辑与运算符&&、三元表达式(?:) 实现基础的条件渲染
 
 ```jsx
@@ -130,7 +128,7 @@ function App(){
 }
 ```
 ### JSX高频场景-复杂条件渲染
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930202.png)
+![image.png](./assets/image_1768537119919_297.png)
 > 需求：列表中需要根据文章的状态适配
 > 解决方案：自定义函数 + 判断语句
 
@@ -214,7 +212,7 @@ function App(){
 ## React组件基础使用
 ### 组件是什么
 概念：一个组件就是一个用户界面的一部分，它可以有自己的逻辑和外观，组件之间可以互相嵌套，也可以服用多次
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930203.png)
+![image.png](./assets/image_1768537120244_36.png)
 
 ### 组件基础使用
 > 在React中，一个组件就是**首字母大写的函数**，内部存放了组件的逻辑和视图UI, 渲染组件只需要把组件当成标签书写即可
@@ -242,7 +240,7 @@ function App(){
 > useState 是一个 React Hook（函数），它允许我们向组件添加一个`状态变量`, 从而控制影响组件的渲染结果
 > 和普通JS变量不同的是，状态变量一旦发生变化组件的视图UI也会跟着变化（数据驱动视图）
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930204.png)
+![image.png](./assets/image_1768537120431_446.png)
 ```jsx
 function App(){
   const [ count, setCount ] = React.useState(0)
@@ -256,11 +254,11 @@ function App(){
 ### 状态的修改规则
 > 在React中状态被认为是只读的，我们应该始终`替换它而不是修改它`, 直接修改状态不能引发视图更新
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930205.png)
+![image.png](./assets/image_1768537120596_826.png)
 ### 修改对象状态
 > 对于对象类型的状态变量，应该始终给set方法一个`全新的对象` 来进行修改
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930206.png)
+![image.png](./assets/image_1768537120874_469.png)
 ## 组件的基础样式处理
 > React组件基础的样式控制有俩种方式，行内样式和class类名控制
 
@@ -286,7 +284,7 @@ function App(){
 }
 ```
 ## B站评论案例
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930207.png)
+![image.png](./assets/image_1768537121136_842.png)
 
 1. 渲染评论列表
 2. 删除评论实现
@@ -954,7 +952,7 @@ export default App
 ### 受控绑定
 > 概念：使用React组件的状态（useState）控制表单的状态
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930208.png)
+![image.png](./assets/image_1768537121316_863.png)
 ```jsx
 function App(){
   const [value, setValue] = useState('')
@@ -988,20 +986,20 @@ function App(){
 }
 ```
 ## 案例-B站评论案例
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930209.png)
+![image.png](./assets/image_1768537121471_585.png)
 
 1. 手机输入框评论内容，并发布评论
 2. id处理和时间处理（uuid 和 day.js）
 ## React组件通信
 > 概念：组件通信就是`组件之间的数据传递`, 根据组件嵌套关系的不同，有不同的通信手段和方法
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930210.png)
+![image.png](./assets/image_1768537121658_777.png)
 
 1. A-B 父子通信
 2. B-C 兄弟通信
 3. A-E 跨层通信
 ## 父子通信-父传子
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930211.png)
+![image.png](./assets/image_1768537121883_239.png)
 ### 基础实现
 **实现步骤 **
 1. 父组件传递数据 - 在子组件标签上绑定属性 
@@ -1023,16 +1021,16 @@ function App(){
 ```
 ### props说明
 **props可以传递任意的合法数据**，比如数字、字符串、布尔值、数组、对象、函数、JSX
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930212.png)
+![image.png](./assets/image_1768537122386_889.png)
 **props是只读对象**
 子组件只能读取props中的数据，不能直接进行修改, 父组件的数据只能由父组件修改 
 
 ### 特殊的prop-chilren
 > 场景：当我们把内容嵌套在组件的标签内部时，组件会自动在名为children的prop属性中接收该内容
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930214.png)
+![image.png](./assets/image_1768537122678_912.png)
 ## 父子通信-子传父
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930215.png)
+![image.png](./assets/image_1768537122924_632.png)
 > 核心思路：在子组件中调用父组件中的函数并传递参数
 
 ```tsx
@@ -1059,7 +1057,7 @@ function App(){
 }
 ```
 ## 兄弟组件通信
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930216.png)
+![image.png](./assets/image_1768537123277_192.png)
 > 实现思路: 借助 `状态提升` 机制，通过共同的父组件进行兄弟之间的数据传递
 > 1. A组件先通过子传父的方式把数据传递给父组件App
 > 2. App拿到数据之后通过父传子的方式再传递给B组件
@@ -1108,7 +1106,7 @@ function App () {
 export default App
 ```
 ## 跨层组件通信
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930217.png)
+![image.png](./assets/image_1768537123644_28.png)
 **实现步骤：**
 
 1. 使用 `createContext`方法创建一个上下文对象Ctx 
@@ -1161,7 +1159,7 @@ export default App
 ## React副作用管理-useEffect
 ### 概念理解 
 useEffect是一个React Hook函数，用于在React组件中创建不是由事件引起而是由渲染本身引起的操作（副作用）, 比 如发送AJAX请求，更改DOM等等 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930218.png)
+![image.png](./assets/image_1768537124215_100.png)
 :::warning
 说明：上面的组件中没有发生任何的用户事件，组件渲染完毕之后就需要和服务器要数据，整个过程属于“只由渲染引起的操作”
 :::
@@ -1169,7 +1167,7 @@ useEffect是一个React Hook函数，用于在React组件中创建不是由事�
 ### 基础使用
 > 需求：在组件渲染完毕之后，立刻从服务端获取平道列表数据并显示到页面中
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930219.png)
+![image.png](./assets/image_1768537124721_894.png)
 说明： 
 
 1. 参数1是一个函数，可以把它叫做副作用函数，在函数内部可以放置要执行的操作 
@@ -1189,7 +1187,7 @@ useEffect副作用函数的执行时机存在多种情况，根据传入依赖�
 ### 清除副作用
 > 概念：在useEffect中编写的由渲染本身引起的对接组件外部的操作，社区也经常把它叫做副作用操作，比如在useEffect中开启了一个定时器，我们想在组件卸载时把这个定时器再清理掉，这个过程就是清理副作用
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930220.png)
+![image.png](./assets/image_1768537124975_835.png)
 :::warning
 说明：清除副作用的函数最常见的执行时机是在组件卸载时自动执行
 :::
@@ -1228,7 +1226,7 @@ export default App
 ## 自定义Hook实现
 > 概念：自定义Hook是以 `use打头的函数`，通过自定义Hook函数可以用来`实现逻辑的封装和复用`
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930221.png)
+![image.png](./assets/image_1768537125297_474.png)
 
 ```jsx
 // 封装自定义Hook
@@ -1277,10 +1275,10 @@ export default App
 1. 只能在组件中或者其他自定义Hook函数中调用
 2. 只能在组件的顶层调用，不能嵌套在if、for、其它的函数中
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930222.png)
+![image.png](./assets/image_1768537125595_835.png)
 
 ## 案例-优化B站评论案例
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930223.png)
+![image.png](./assets/image_1768537125837_844.png)
 1. 使用请求接口的方式获取评论列表并渲染 
 2. 使用自定义Hook函数封装数据请求的逻辑 
 3. 把评论中的每一项抽象成一个独立的组件实现渲染
@@ -1294,7 +1292,7 @@ export default App
 > Redux 是React最常用的集中状态管理工具，类似于Vue中的Pinia（Vuex），可以独立于框架运行
 > 作用：通过集中管理的方式管理应用的状态
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930224.png)
+![image.png](./assets/image_1768537126141_513.png)
 **为什么要使用Redux？**
 
 1. 独立于组件，无视组件之间的层级关系，简化通信问题
@@ -1304,7 +1302,7 @@ export default App
 ### 1. 实现计数器
 > 需求：不和任何框架绑定，不使用任何构建工具，使用纯Redux实现计数器
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930225.png)
+![image.png](./assets/image_1768537126443_219.png)
 使用步骤：
 
 1. 定义一个 reducer 函数 （根据当前想要做的修改返回一个新的状态）
@@ -1363,7 +1361,7 @@ export default App
 ### 2. Redux数据流架构
 > Redux的难点是理解它对于数据修改的规则, 下图动态展示了在整个数据的修改中，数据的流向
 
-![1](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930226.png)
+![1](./assets/image_1768537127186_213.png)
 为了职责清晰，Redux代码被分为三个核心的概念，我们学redux，其实就是学这三个核心概念之间的配合，三个概念分别是:
 
 1. state:  一个对象 存放着我们管理的数据
@@ -1379,7 +1377,7 @@ export default App
 
 2. react-redux - 用来 链接 Redux 和 React组件 的中间件
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930227.png)
+![image.png](./assets/image_1768537127559_833.png)
 ### 2. 配置基础环境
 
 1.  使用 CRA 快速创建 React 项目
@@ -1400,7 +1398,7 @@ npm run start
 
 ### 3. store目录结构设计
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930228.png)
+![image.png](./assets/image_1768537127762_163.png)
 
 1. 通常集中状态管理的部分都会单独创建一个单独的 `store` 目录
 
@@ -1410,7 +1408,7 @@ npm run start
 
 ## Redux与React - 实现counter
 ### 1. 整体路径熟悉
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930229.png)
+![image.png](./assets/image_1768537128406_63.png)
 
 
 ### 2. 使用React Toolkit 创建 counterStore
@@ -1480,23 +1478,23 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 ### 4. React组件使用store中的数据
 > 在React组件中使用store中的数据，需要用到一个钩子函数 - useSelector，它的作用是把store中的数据映射到组件中，使用样例如下：
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930230.png)
+![image.png](./assets/image_1768537128687_346.png)
 ### 5. React组件修改store中的数据
 > React组件中修改store中的数据需要借助另外一个hook函数 - useDispatch，它的作用是生成提交action对象的dispatch函数，使用样例如下：
 
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930231.png)
+![image.png](./assets/image_1768537128963_696.png)
 ## Redux与React - 提交action传参
 > 需求：组件中有俩个按钮 `add to 10` 和 `add to 20` 可以直接把count值修改到对应的数字，目标count值是在组件中传递过去的，需要在提交action的时候传递参数
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930232.png)
+![image.png](./assets/image_1768537129594_33.png)
 实现方式：在reducers的同步修改方法中添加action对象参数，在调用actionCreater的时候传递参数，参数会被传递到action对象payload属性上
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930233.png)
+![image.png](./assets/image_1768537130183_376.png)
 
 ## Redux与React - 异步action处理
 **需求理解**
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930234.png)
+![image.png](./assets/image_1768537130988_954.png)
 
 **实现步骤**
 
@@ -1569,10 +1567,10 @@ export default App
 ## Redux调试 - devtools
 > Redux官方提供了针对于Redux的调试工具，支持实时state信息展示，action提交信息查看等
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930235.png)
+![image.png](./assets/image_1768537131300_245.png)
 ## 美团小案例
 ### 1. 案例演示
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930236.png)
+![image.png](./assets/image_1768537131882_432.png)
 
 > 基本开发思路：使用 RTK（Redux Toolkit）来管理应用状态, 组件负责 数据渲染 和 dispatch action
 
@@ -1598,7 +1596,7 @@ npm run serve
 npm run start 
 ```
 ### 3. 分类和商品列表渲染
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930237.png)
+![image.png](./assets/image_1768537132209_42.png)
 1- 编写store逻辑
 
 ```javascript
@@ -1689,7 +1687,7 @@ const App = () => {
 export default App
 ```
 ### 4. 点击分类激活交互实现
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930238.png)
+![image.png](./assets/image_1768537132586_483.png)
 1- 编写store逻辑
 
 ```javascript
@@ -1752,7 +1750,7 @@ const Menu = () => {
 }
 ```
 ### 5. 商品列表切换显示
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930239.png)
+![image.png](./assets/image_1768537132971_631.png)
 
 ```jsx
 <div className="list-content">
@@ -1773,7 +1771,7 @@ const Menu = () => {
 </div>
 ```
 ### 6. 添加购物车实现
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930240.png)
+![image.png](./assets/image_1768537133335_274.png)
 1- 编写store逻辑
 
 ```javascript
@@ -1830,7 +1828,7 @@ export default reducer
 </div>
 ```
 ### 7. 统计区域实现
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930241.png)
+![image.png](./assets/image_1768537133692_433.png)
 
 实现思路
 
@@ -1849,7 +1847,7 @@ const totalPrice = cartList.reduce((a, c) => a + c.price * c.count, 0)
 </div>
 ```
 ### 8. 购物车列表功能实现
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930242.png)
+![image.png](./assets/image_1768537133962_797.png)
 
 1-控制列表渲染
 ```jsx
@@ -1940,7 +1938,7 @@ clearCart (state) {
 </div>
 ```
 ### 9. 控制购物车显示和隐藏
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930243.png)
+![image.png](./assets/image_1768537134289_808.png)
 
 ```jsx
 // 控制购物车打开关闭的状态
@@ -1973,7 +1971,7 @@ const onShow = () => {
 ## 路由快速上手
 ### 1. 什么是前端路由
 一个路径 path 对应一个组件 component 当我们在浏览器中访问一个 path 的时候，path 对应的组件会在页面中进行渲染
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930244.png)
+![image.png](./assets/image_1768537134535_45.png)
 
 ### 2. 创建路由开发环境
 ```bash
@@ -1988,7 +1986,7 @@ npm run start
 ```
 
 ### 3. 快速开始
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930245.png)
+![image.png](./assets/image_1768537135217_827.png)
 
 ```jsx
 import React from 'react'
@@ -2012,47 +2010,47 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 ## 抽象路由模块
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930246.png)
+![image.png](./assets/image_1768537135395_114.png)
 
 ## 路由导航
 ### 1. 什么是路由导航
 路由系统中的多个路由之间需要进行路由跳转，并且在跳转的同时有可能需要传递参数进行通信
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930247.png)
+![image.png](./assets/image_1768537135583_607.png)
 
 ### 2. 声明式导航
 > 声明式导航是指通过在模版中通过 `<Link/> ` 组件描述出要跳转到哪里去，比如后台管理系统的左侧菜单通常使用这种方式进行
 
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930248.png)
+![image.png](./assets/image_1768537135750_892.png)
 
 语法说明：通过给组件的to属性指定要跳转到路由path，组件会被渲染为浏览器支持的a链接，如果需要传参直接通过字符串拼接的方式拼接参数即可
 
 ### 3. 编程式导航
 编程式导航是指通过 `useNavigate` 钩子得到导航方法，然后通过调用方法以命令式的形式进行路由跳转，比如想在登录请求完毕之后跳转就可以选择这种方式，更加灵活
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930249.png)
+![image.png](./assets/image_1768537136203_285.png)
 
 语法说明：通过调用navigate方法传入地址path实现跳转
 
 ## 导航传参
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930250.png)
+![image.png](./assets/image_1768537136807_508.png)
 
 ## 嵌套路由配置
 ### 1. 什么是嵌套路由
 在一级路由中又内嵌了其他路由，这种关系就叫做嵌套路由，嵌套至一级路由内的路由又称作二级路由，例如：
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930251.png)
+![image.png](./assets/image_1768537137024_843.png)
 
 ### 2. 嵌套路由配置
 > 实现步骤
 >   1. 使用 `children`属性配置路由嵌套关系  
 >   2. 使用 `<Outlet/>` 组件配置二级路由渲染位置
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930253.png)
+![image.png](./assets/image_1768537137712_694.png)
 
 ### 3. 默认二级路由
 当访问的是一级路由时，默认的二级路由组件可以得到渲染，只需要在二级路由的位置去掉path，设置index属性为true
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930254.png)
+![image.png](./assets/image_1768537137939_586.png)
 ### 4. 404路由配置
 场景：当浏览器输入url的路径在整个路由配置中都找不到对应的 path，为了用户体验，可以使用 404 兜底组件进行渲染
 
@@ -2061,7 +2059,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 1. 准备一个NotFound组件
 2. 在路由表数组的末尾，以*号作为路由path配置路由
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930255.png)
+![image.png](./assets/image_1768537138185_529.png)
 
 ### 5. 俩种路由模式
 各个主流框架的路由常用的路由模式有俩种，history模式和hash模式, ReactRouter分别由 createBrowerRouter 和 createHashRouter 函数负责创建
@@ -2091,7 +2089,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 > 2. 路径联想配置（VsCode），VsCode 在输入 @/ 时，自动联想出来对应的 src/下的子级目录
 
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930256.png)
+![image.png](./assets/image_1768537138400_912.png)
 ### 2. 路径解析配置
 配置步骤：
 
@@ -2102,7 +2100,7 @@ craco.config.js
 3. 配置文件中添加路径解析配置
 4. 包文件中配置启动和打包命令
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930257.png)
+![image.png](./assets/image_1768537138618_745.png)
 ### 3. 联想路径配置
 配置步骤：
 
@@ -2125,7 +2123,7 @@ craco.config.js
 > 在前后端分类的开发模式下，前端可以在没有实际后端接口的支持下先进行接口数据的模拟，进行正常的业务功能开发
 
 ### 1. 常见的Mock方式
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930258.png)
+![image.png](./assets/image_1768537138816_643.png)
 
 ### 2. json-server实现Mock
 实现步骤：
@@ -2135,25 +2133,25 @@ craco.config.js
 2.  准备一个json文件 （素材里获取）
 3.  添加启动命令 
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930259.png)
+![image.png](./assets/image_1768537139029_808.png)
 
 4.  访问接口进行测试 
 ## 整体路由设计
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930260.png)
+![image.png](./assets/image_1768537139428_939.png)
 1. 俩个一级路由 （Layout / new）2. 俩个二级路由 （Layout - mouth/year）
 
 ## antD主题定制
 ### 1. 定制方案
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930261.png)
+![image.png](./assets/image_1768537139805_321.png)
 ### 2. 实现方式
 
 1. 全局定制
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930262.png)
+![image.png](./assets/image_1768537140017_326.png)
 
 2. 局部定制
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930263.png)
+![image.png](./assets/image_1768537140503_872.png)
 
 ### 3. 记账本主题色
 ```css
@@ -2163,7 +2161,7 @@ craco.config.js
 ```
 
 ## Redux管理账目列表
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930264.png)
+![image.png](./assets/image_1768537141079_539.png)
 
 ```javascript
 // 账单列表相关store
@@ -2232,7 +2230,7 @@ root.render(
 )
 ```
 ## TabBar功能实现
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930265.png)
+![image.png](./assets/image_1768537141280_321.png)
 
 ### 1. 静态布局实现
 配套静态模版和样式文件
@@ -2328,7 +2326,7 @@ export default Layout
 
 ## 月度账单-统计区域
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930266.png)
+![image.png](./assets/image_1768537141454_700.png)
 
 ### 1. 准备静态结构
 ```jsx
@@ -2522,7 +2520,7 @@ const Month = () => {
 export default Month
 ```
 ### 3. 切换时间显示
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930267.png)
+![image.png](./assets/image_1768537141716_954.png)
 
 > 实现思路：
 > 1. 以当前时间作为默认值
@@ -2677,7 +2675,7 @@ export default Month
 ```
 
 ## 月度账单-单日统计列表实现
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930268.png)
+![image.png](./assets/image_1768537141937_207.png)
 ### 1. 准备组件和配套样式
 ```jsx
 import classNames from 'classnames'
@@ -2849,7 +2847,7 @@ export default DailyBill
 }
 ```
 ### 2. 按日分组账单数据
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930269.png)
+![image.png](./assets/image_1768537142136_706.png)
 
 ```javascript
 // 把当前月按日分组账单数据
@@ -2911,7 +2909,7 @@ const DailyBill = ({ date, billList }) => {
 export default DailyBill
 ```
 ## 月度账单-单日账单列表展示
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930270.png)
+![image.png](./assets/image_1768537142388_485.png)
 
 ### 1. 渲染基础列表
 ```jsx
@@ -3015,9 +3013,9 @@ export const billTypeToName = Object.keys(billListData).reduce((prev, key) => {
  <div className="billType">{billTypeToName[item.useFor]}</div>
 ```
 ## 月度账单-切换打开关闭
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/274425/1680169396175-a10287d1-cc4a-4464-b295-aea0becb3805.png#averageHue=%23fcfcfc&clientId=u4bda8888-0a67-4&from=paste&height=98&id=u1d780ff6&name=image.png&originHeight=196&originWidth=736&originalType=binary&ratio=2&rotation=0&showTitle=false&size=15931&status=done&style=none&taskId=uc682e670-0453-45ac-9d64-b891c330814&title=&width=368)
+![image.png](./assets/image_1768537142664_883.jpg)
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930271.png)
+![image.png](./assets/image_1768537142819_69.png)
 
 ```jsx
 // 声明状态
@@ -3033,7 +3031,7 @@ const [visible, setVisible] = useState(false)
 ```
 
 ## 月度账单-Icon组件封装
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406131930272.png)
+![image.png](./assets/image_1768537143032_473.png)
 ### 1. 准备静态结构
 ```jsx
 const Icon = () => {

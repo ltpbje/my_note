@@ -17,7 +17,7 @@ cd react-jike
 ## 启动项目
 npm start
 ```
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118321.png)
+![image.png](./assets/image_1768537632422_343.png)
 ### 调整项目目录结构 
 ```bash
 -src
@@ -90,7 +90,7 @@ const Login = () => {
 }
 export default Login
 ```
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118322.png)
+![image.png](./assets/image_1768537632704_848.png)
 ## 配置基础路由
 > 单页应用需要对应的路由支持，我们使用 `react-router-dom` 最新版本
 
@@ -233,7 +233,7 @@ export default router
 # 登录模块
 
 ## 基本结构搭建
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118323.png)
+![image.png](./assets/image_1768537632920_806.png)
 
 **实现步骤**
 
@@ -311,7 +311,7 @@ export default Login
 ```
 
 ## 表单校验实现
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118325.png)
+![image.png](./assets/image_1768537633197_692.png)
 **实现步骤**
 
 1. 为 Form 组件添加 `validateTrigger` 属性，指定校验触发时机的集合
@@ -373,7 +373,7 @@ const onFinish = formValue => {
   onFinish={ onFinish }
 >...</Form>
 ```
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118326.png)
+![image.png](./assets/image_1768537633385_219.png)
 ## 封装request工具模块
 > 业务背景: 前端需要和后端拉取接口数据，axios是使用最广的工具插件，针对于项目中的使用，我们需要做一些简单的封装
 
@@ -553,12 +553,12 @@ const userStore = createSlice({
 })
 ```
 刷新浏览器，通过Redux调试工具查看token数据
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118327.png)
+![image.png](./assets/image_1768537633580_547.png)
 
 ## 请求拦截器注入token
 > 业务背景: Token作为用户的数据标识，在接口层面起到了接口权限控制的作用，也就是说后端有很多接口都需要通过查看当前请求头信息中是否含有token数据，来决定是否正常返回数据
 
-![token.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118328.png)
+![token.png](./assets/image_1768537633783_629.png)
 
 > 拼接方式：config.headers.Authorization = `Bearer ${token}}`
 
@@ -636,7 +636,7 @@ export default router
 
 ## 基本结构和样式reset
 ### 结构创建
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118329.png)
+![image.png](./assets/image_1768537634051_87.png)
 
 **实现步骤**
 
@@ -849,7 +849,7 @@ export default router
 </Layout>
 ```
 ## 路由菜单点击交互实现
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118330.png)
+![image.png](./assets/image_1768537634237_716.png)
 ### 点击菜单跳转路由
 ```jsx
 import { Outlet, useNavigate } from 'react-router-dom'
@@ -929,7 +929,7 @@ const GeekLayout = () => {
 }
 ```
 ## 展示个人信息
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118331.png)
+![image.png](./assets/image_1768537634391_544.png)
 **实现步骤**
 
 1. 在Redux的store中编写获取用户信息的相关逻辑
@@ -1034,7 +1034,7 @@ export default GeekLayout
 ```
 
 ## 退出登录实现
-![image.png](/Users/chaipeng/Desktop/md/assets/11.png)
+![image.png](../Typora/前端框架/image/11.png)
 **实现步骤**
 
 1. 为气泡确认框添加确认回调事件
@@ -1129,7 +1129,7 @@ const GeekLayout = () => {
   )
 }
 ```
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118332.png)
+![image.png](./assets/image_1768537634540_473.png)
 ## 处理Token失效
 > 业务背景：如果用户一段时间不做任何操作，到时之后应该清除所有过期用户信息跳回到登录
 
@@ -1153,7 +1153,7 @@ http.interceptors.response.use((response) => {
 })
 ```
 ## 首页Home图表展示
-![home.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118333.png)
+![home.png](./assets/image_1768537634701_17.png)
 ### 图表基础Demo实现
 > 图表类业务渲染，我们可以通过下面的顺序来实现
 > 1. 跑通基础DEMO
@@ -1205,7 +1205,7 @@ const Home = () => {
 export default Home
 ```
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118334.png)
+![image.png](./assets/image_1768537634848_781.png)
 
 ### 组件封装
 基础抽象
@@ -1311,7 +1311,7 @@ export default Home
 
 ## 实现基础文章发布
 ### 创建基础结构
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118335.png)
+![image.png](./assets/image_1768537635003_239.png)
 ```jsx
 import {
   Card,
@@ -1447,7 +1447,7 @@ const Publish = () => {
 }
 ```
 ### 频道数据获取
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118336.png)
+![image.png](./assets/image_1768537635140_192.png)
 **实现步骤**
 
 1. 使用useState初始化数据和修改数据的方法
@@ -1507,10 +1507,10 @@ const onFinish = async (formValue) => {
 }
 ```
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118337.png)
+![image.png](./assets/image_1768537635312_282.png)
 ## 上传封面实现
 ### 准备上传结构
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118338.png)
+![image.png](./assets/image_1768537635484_398.png)
 ```tsx
 <Form.Item label="封面">
   <Form.Item name="type">
@@ -1609,7 +1609,7 @@ const Publish = ()=>{
   )
 }
 ```
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118339.png)
+![image.png](./assets/image_1768537635636_539.png)
 ## 控制最大上传图片数量
 **实现步骤**
 
@@ -1743,7 +1743,7 @@ const onFinish = async (formValue) => {
 # 文章列表模块
 ## 静态结构创建
 ### 筛选区结构搭建
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118340.png)
+![image.png](./assets/image_1768537635802_418.png)
 
 > 1.  如何让RangePicker日期范围选择框选择中文 
 > 2.  Select组件配合Form.Item使用时，如何配置默认选中项
@@ -1810,7 +1810,7 @@ const Article = () => {
 export default Article
 ```
 ### 表格区域结构
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118341.png)
+![image.png](./assets/image_1768537635957_972.png)
 **代码实现**
 
 ```jsx
@@ -2047,7 +2047,7 @@ return (
 )
 ```
 ## 删除功能
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118342.png)
+![image.png](./assets/image_1768537636136_203.png)
 **实现步骤**
 
 1. 给删除文章按钮绑定点击事件
@@ -2121,7 +2121,7 @@ const columns = [
 # 编辑文章
 
 ## 基础数据回填
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118343.png)
+![image.png](./assets/image_1768537636290_207.png)
 ```jsx
 const Publish = ()=>{
   // 回填数据
@@ -2148,7 +2148,7 @@ const Publish = ()=>{
 ```
 
 ## 回填封面信息
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118344.png)
+![image.png](./assets/image_1768537636471_628.png)
 ```javascript
 useEffect(() => {
   async function getArticle () {
@@ -2229,7 +2229,7 @@ useEffect(() => {
 ```bash
 npm run build
 ```
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118345.png)
+![image.png](./assets/image_1768537636617_596.png)
 ### 项目本地预览
 **实现步骤**
 
@@ -2237,7 +2237,7 @@ npm run build
 2. 在项目根目录中执行命令 `serve -s ./build`  在build目录中开启服务器
 3. 在浏览器中访问：`http://localhost:3000/` 预览项目
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118346.png)
+![image.png](./assets/image_1768537636820_17.png)
 
 ### 优化-路由懒加载
 **使用步骤**
@@ -2323,7 +2323,7 @@ export default router
   "analyze": "source-map-explorer 'build/static/js/*.js'",
 }
 ```
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202406152118347.png)
+![image.png](./assets/image_1768537636988_728.png)
 ### 优化-配置CDN
 **分析说明**：通过 craco 来修改 webpack 配置，从而实现 CDN 优化
 **核心代码**

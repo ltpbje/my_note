@@ -36,9 +36,9 @@
 
 算法（Algorithm）是指解题方案的准确而完整的描述，是一系列解决问题的清晰指令，算法代表着用系统的方法描述解决问题的策略机制。也就是说，能够对一定规范的输入，在有限时间内获得所要求的输出。如果一个算法有缺陷，或不适合于某个问题，执行这个算法将不会解决这个问题。不同的算法可能用不同的时间，空间或效率来完成同样的任务。一个算法的优劣可以用空间复杂度与时间复杂度来衡量。
 
-![](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108855.gif)
+![](./笔记.assets/堆排序.gif)
 
-![快速](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108856.gif)
+![快速](./笔记.assets/快速.gif)
 
 
 
@@ -442,11 +442,11 @@
 
 
 
-![image-20221006102745956](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108858.png)
+![image-20221006102745956](./笔记.assets/image-20221006102745956.png)
 
 **函数调用栈**
 
-![image-20221006102943824](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108859.png)
+![image-20221006102943824](./笔记.assets/image-20221006102943824.png)
 
 
 
@@ -548,9 +548,9 @@ function convert(decNumber,base){
 
 
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108860.png" alt="image-20221007090409911" style="zoom:50%;float:left" />
+<img src="./笔记.assets/image-20221007090409911.png" alt="image-20221007090409911">
 
-![](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108861.webp)
+![](./笔记.assets/15586502-30ee422b0922669e.webp)
 
 
 
@@ -723,7 +723,7 @@ class DeQueue {
 
 #### 五. 链表
 
-> 链表是一种物理存储单元上非连续、非顺序的存储结构，数据元素的逻辑顺序是通过链表中的指针链接次序实现的。链表由一系列结点（链表中每一个元素称为结点）组成，结点可以在运行时动态生成。每个结点包括两个部分：一个是存储数据元素的数据域，另一个是存储下一个结点地址的指针域。
+> 链表是一种物理存储单元上非连续、非顺序的存储结构，数据元素的逻辑顺序是通过链表中的指针链接次序实现的。链表由一系列结点（链表中每一个元素称为结点）组成，结点可以在运行时动态生成。每个结点包括两个部分：**一个是存储数据元素的数据域，另一个是存储下一个结点地址的指针域。**
 >
 > 使用链表结构可以克服数组链表需要预先知道数据大小的缺点，链表结构可以充分利用计算机内存空间，实现灵活的内存动态管理。但是链表失去了数组随机读取的优点，同时链表由于增加了结点的指针域，空间开销比较大。
 
@@ -738,7 +738,7 @@ class DeQueue {
 
 > 每个节点只包含一个指针，即后继指针。
 
-![image-20221124153431191](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108862.png)
+![image-20221124153431191](./笔记.assets/image-20221124153431191.png)
 
 ```js
 class Node {
@@ -894,9 +894,9 @@ class LinkedList {
 
 > 节点除了存储数据外，还有两个指针分别指向前一个节点地址（前驱指针prev）和下一个节点地址（后继指针next）。
 
-![image-20221124153552974](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108863.png)
+![image-20221124153552974](./笔记.assets/image-20221124153552974.png)
 
-![image-20221130115202342](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108864.png)
+![image-20221130115202342](./笔记.assets/image-20221130115202342.png)
 
 ```js
 class DoublyNode extends Node { 
@@ -1001,7 +1001,7 @@ class DoublyLinkedList extends LinkedList {
 
 > 循环链表和链表之间唯一的区别在于，最后一个元素指向下一个元素的指针（tail.next）不是引用 undefined，而是指向第一个元素（head）
 
-![image-20221130143728398](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108865.png)
+![image-20221130143728398](./笔记.assets/image-20221130143728398.png)
 
 ```js
  class CircularLinkedList extends LinkedList {
@@ -1244,7 +1244,7 @@ var mymap = new Dictionary()
 
 > HashMap 类，它是 Dictionary 类的一种散列表 实现方式。.散列算法的作用是尽可能快地在数据结构中找到一个值。
 
-![image-20221205165416371](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108866.png)
+![image-20221205165416371](./笔记.assets/image-20221205165416371.png)
 
 ```js
 class ValuePair {
@@ -1340,7 +1340,7 @@ mymap.delete("name")
 
 > 树是一种分层数据的抽象模型。
 
-![image-20221206101959855](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108867.png)
+![image-20221206101959855](./笔记.assets/image-20221206101959855.png)
 
 ##### 1. 二叉树
 
@@ -1530,7 +1530,7 @@ class BinarySearchTree {
 
 ###### 2-2 移除
 
-![image-20221206115005839](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108868.png)
+![image-20221206115005839](./笔记.assets/image-20221206115005839.png)
 
 
 
@@ -1541,7 +1541,7 @@ class BinarySearchTree {
 - 它是一棵完全二叉树，表示树的每一层都有左侧和右侧子节点（除了最后一层的叶节点）， 并且最后一层的叶节点尽可能都是左侧子节点，这叫作结构特性。 
 - 二叉堆不是最小堆就是最大堆。最小堆允许你快速导出树的最小值，最大堆允许你快速 导出树的最大值。所有的节点都大于等于（最大堆）或小于等于（最小堆）每个它的子 节点。这叫作堆特性。
 
-![image-20221207093025844](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108869.png)
+![image-20221207093025844](./笔记.assets/image-20221207093025844.png)
 
 ##### 1. 最小堆
 
@@ -1766,7 +1766,7 @@ function insertionSort(array) {
 
 > 归并排序是一种分而治之算法。其思想是将原始数组切分成较小的数组，直到每个小数组只 有一个位置，接着将小数组归并成较大的数组，直到最后只有一个排序完毕的大数组。
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108870.png" alt="image-20221209111002284" style="zoom:67%;" />
+<img src="./笔记.assets/image-20221209111002284.png" alt="image-20221209111002284">
 
 
 
@@ -1866,7 +1866,7 @@ countingSort([5,7,4,9,1])
 
 > 桶排序（也被称为箱排序）也是分布式排序算法，它将元素分为不同的桶（较小的数组）， 再使用一个简单的排序算法，例如插入排序（用来排序小数组的不错的算法），来对每个桶进行 排序。然后，它将所有的桶合并为结果数组。
 
-![image-20221213091612715](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108871.png)
+![image-20221213091612715](./笔记.assets/image-20221213091612715.png)
 
 ````js
 function insertSort(arr) {
@@ -1988,7 +1988,7 @@ sequentialSearch([3,2,1],2)
 
 ##### 2.二分搜索
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108872.png" alt="image-20221214083405056" style="zoom:80%;float:left;" />
+<img src="./笔记.assets/image-20221214083405056.png" alt="image-20221214083405056">
 
 ```js
 var Arr = [5, 7, 4, 2, 9];
@@ -2024,7 +2024,7 @@ binarySearch(9, Arr, 0, Arr.length - 1)
 
 > 内插搜索是改良版的二分搜索。二分搜索总是检查 mid 位置上的值，而内插搜索可能会根 据要搜索的值检查数组中的不同地方。
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108873.png" alt="image-20221214090414035" style="zoom:80%;float:left;" />
+<img src="./笔记.assets/image-20221214090414035.png" alt="image-20221214090414035">
 
 ```js
 var arr = [5, 7, 4, 2, 9];
@@ -2108,9 +2108,9 @@ function shuffle(array) {
 
 > 背包问题是一个组合优化问题。它可以描述如下：给定一个固定大小、能够携重量 W 的背 包，以及一组有价值和重量的物品，找出一个最佳解决方案，使得装入背包的物品总重量不超过 W，且总价值最大。
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108874.png" alt="image-20221220150040895" style="zoom:67%;float:left;" />
+<img src="./笔记.assets/image-20221220150040895.png" alt="image-20221220150040895">
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108875.png" alt="image-20221220154547224" style="zoom:67%;float:left;" />
+<img src="./笔记.assets/image-20221220154547224.png" alt="image-20221220154547224">
 
 ```js
 function knapSack(weights, values, W) {
@@ -2141,9 +2141,9 @@ function knapSack(weights, values, W) {
 
 > 找出两个字符 串序列的最长子序列的长度。最长子序列是指，在两个字符串序列中以相同顺序出现，但不要求 连续（非字符串子串）的字符串序列。
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108876.png" alt="image-20221221131801017" style="zoom:67%;float:left" />
+<img src="./笔记.assets/image-20221221131801017.png" alt="image-20221221131801017">
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108877.png" alt="image-20221221131809239" style="zoom:67%;float:left" />
+<img src="./笔记.assets/image-20221221131809239.png" alt="image-20221221131809239">
 
 ```js
 function LCS(str1, str2) {
@@ -2176,9 +2176,9 @@ console.log(LCS("abcadf", "acbaed"))
 
 
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108879.png" alt="image-20221226122030597" style="zoom:50%;float:left" />
+<img src="./笔记.assets/image-20221226122030597.png" alt="image-20221226122030597">
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108880.png" alt="image-20221226122115470" style="zoom: 50%;float:left;" />
+<img src="./笔记.assets/image-20221226122115470.png" alt="image-20221226122115470">
 
 ```js
 function tanx(capacity, weights, values) {
@@ -2249,7 +2249,7 @@ function tanx(capacity, weights, values) {
 >  **二维数组：** board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]],
 >  **目标：** word = "ABCCED"
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108881.png" alt="image-20221227114058124" style="zoom:50%;float:left;" />
+<img src="./笔记.assets/image-20221227114058124.png" alt="image-20221227114058124">
 
 ```js
 function exist(board, word) {
@@ -2295,7 +2295,7 @@ function exist(board, word) {
 
 > O 表示法用于描述算法的性能和复杂程 度。O 表示法将算法按照消耗的时间进行分类，依据随输入增大所需要的空间/内存。
 
-![image-20221227120714635](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108882.png)
+![image-20221227120714635](./笔记.assets/image-20221227120714635.png)
 
 1. **O(1)**
 
@@ -2339,6 +2339,6 @@ function bubbleSort(array) {
 
 
 
-![image-20221227122353023](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108883.png)
+![image-20221227122353023](./笔记.assets/image-20221227122353023.png)
 
-![image-20221227122417170](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202411101108884.png)
+![image-20221227122417170](./笔记.assets/image-20221227122417170.png)

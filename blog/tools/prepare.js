@@ -7,21 +7,8 @@ const POSTS = path.join(ROOT, 'blog/source/_posts');
 const IMAGES = path.join(ROOT, 'blog/source/images');
 const IMG_EXT = new Set(['.png', '.jpg', '.jpeg', '.gif', '.webp', '.svg']);
 
-// 主笔记 -> 本地图片版兄弟文件；OSS 链接已 404，优先用正文一致但图片可用的版本
-const LOCAL_VARIANTS = {
-  'Typora/前端框架/Vue学习.md': 'Typora/前端框架/Vue学习 - 副本.md',
-  'Typora/1-JS.md': 'Typora/1-JS (copy).md',
-  'Typora/2-JS进阶.md': 'Typora/2-JS进阶 (copy).md',
-  'Typora/4-AJAX.md': 'Typora/4-AJAX (copy).md',
-  'Typora/5-Node.js和Webpack.md': 'Typora/5-Node.js和Webpack (copy).md',
-  'Typora/6-git.md': 'Typora/6-git (copy).md',
-  'html+css黑马程序员笔记整合/html+css黑马程序员笔记整合.md': 'html+css黑马程序员笔记整合/html+css黑马程序员笔记整合-副本-本地图片.md',
-  'JS数据结构与算法笔记/笔记.md': 'JS数据结构与算法笔记/笔记-副本-本地图片路径.md',
-  'js高频面试题笔记/js高频面试.md': 'js高频面试题笔记/js高频面试_local.md',
-  'react-极客园pc项目笔记/react-极客园pc项目.md': 'react-极客园pc项目笔记/react-极客园pc项目_local.md',
-  'react黑马程序员笔记/React基础.md': 'react黑马程序员笔记/React基础_local.md',
-  '移动web/移动web.md': '移动web/移动web-副本本地图片.md'
-};
+// 图片已在 fix-notes.js 中写回原笔记为本地相对路径，这里直接以原笔记为源
+const LOCAL_VARIANTS = {};
 
 const EXCLUDE = /(^README\.md$|_local|\(copy\)|副本|^test|Untitled|result-(local|remote)|[\\/]mcp-audit[\\/])/i;
 const missing = [];
@@ -35,7 +22,7 @@ const yaml = (s) => JSON.stringify(String(s).replace(/[\r\n]+/g, ' '));
 
 function walk(dir, out = []) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
-    if (e.name === 'blog' || e.name === '.git' || e.name === 'node_modules') continue;
+    if (['blog', '.git', '.codebuddy', 'node_modules'].includes(e.name)) continue;
     const p = path.join(dir, e.name);
     if (e.isDirectory()) walk(p, out);
     else out.push(p);
@@ -147,8 +134,7 @@ async function rewriteImages(content, srcFile) {
 }
 
 function frontmatter(srcFile, mainRel, body) {
-  const heading = body.match(/^#\s+(.+?)\s*#*\s*$/m);
-  const title = heading ? heading[1] : path.basename(mainRel, '.md');
+  const title = path.basename(mainRel, '.md');
   const parts = mainRel.split('/').slice(0, -1);
   const d = fs.statSync(srcFile).mtime;
   const date = `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;

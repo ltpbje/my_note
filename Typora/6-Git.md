@@ -12,7 +12,7 @@
 
 多人共享使用：团队开发同一个项目的代码版本管理
 
-![image-20230808215112341](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291023361.png)
+![image-20230808215112341](./6-git.assets/202308291023361.png)
 
 # Git 安装
 
@@ -25,7 +25,7 @@ Mac系统：dmg 程序，默认下一步即可
 1. 打开 bash 终端（git 专用）
 2. 命令：==git -v==（查看版本号）
 
-![image-20230809094134201](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291023363.png)
+![image-20230809094134201](./6-git.assets/202308291023363.png)
 
 # Git 配置用户信息
 
@@ -86,7 +86,7 @@ Git 使用时：
 
 需求：把登录页面新增后，暂存并提交
 
-![image-20230809095005500](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291023364.png)
+![image-20230809095005500](./6-git.assets/202308291023364.png)
 
 1. Git 使用时有哪些区域 ？
 
@@ -114,7 +114,7 @@ Git 文件 2 种状态：
 
 第二列是工作区状态 
 
-![image-20230809095344844](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291023365.png)
+![image-20230809095344844](./6-git.assets/202308291023365.png)
 
 1. Git 文件状态分为哪 2 种 ？
 
@@ -132,7 +132,7 @@ Git 文件 2 种状态：
 
 从暂存区移除文件，命令：`git rm --cached `目标文件
 
-![image-20230809105903689](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291023366.png)
+![image-20230809105903689](./6-git.assets/202308291023366.png)
 
 1. 如何移除暂存区已暂存的文件？
 
@@ -148,7 +148,7 @@ Git 文件 2 种状态：
 2. 临时存放在暂存区
 3. 提交保存到版本库
 
-![image-20230810093310892](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291023367.png)
+![image-20230810093310892](./6-git.assets/202308291023367.png)
 
 # Git 回退版本
 
@@ -168,7 +168,7 @@ git reset --mixed 版本号 （与 git reset 等价）
 
 注意2：回退后，继续修改->暂存->提交操作即可（产生新的提交记录过程）
 
-![image-20230810093449471](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291023368.png)
+![image-20230810093449471](./6-git.assets/202308291023368.png)
 
 1. 什么是 Git 回退版本？
 
@@ -200,7 +200,7 @@ git reset --mixed 版本号 （与 git reset 等价）
 
 工作区只要改变，都可以暂存提交产生新记录
 
-![image-20230810195729250](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291023369.png)
+![image-20230810195729250](./6-git.assets/202308291023369.png)
 
 # 忽略文件
 
@@ -245,7 +245,7 @@ password.txt
 
 注意：==HEAD 指针==影响工作区/暂存区的代码状态
 
-![image-20230815103757842](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291023370.png)
+![image-20230815103757842](./6-git.assets/202308291023370.png)
 
 场景：==开发新需求 / 修复 Bug==，保证主线代码随时可用，多人协同开发提高效率
 
@@ -255,7 +255,7 @@ password.txt
 
 突然需要紧急修复 Bug - 单独创建分支解决 Bug
 
-![image-20230815103935663](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291023371.png)
+![image-20230815103935663](./6-git.assets/202308291023371.png)
 
 需求：创建内容列表 content 分支，并产生 3 次提交记录
 
@@ -263,15 +263,15 @@ password.txt
 
 1. 创建分支命令：`git branch 分支名`
 
-![image-20230815104130235](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291023372.png)
+![image-20230815104130235](./6-git.assets/202308291023372.png)
 
 2. 切换分支命令：`git checkout 分支名`
 
-![image-20230815104314355](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291023373.png)
+![image-20230815104314355](./6-git.assets/202308291023373.png)
 
 3. 工作区准备代码并暂存提交，重复 3 次
 
-![image-20230815104423443](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291023374.png)
+![image-20230815104423443](./6-git.assets/202308291023374.png)
 
 1. 什么是 Git 分支？
 
@@ -298,7 +298,7 @@ password.txt
 3. 切换新分支：git checkout login-bug
 4. 修改代码，暂存，提交产生版本记录
 
-![image-20230815104750651](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291023375.png)
+![image-20230815104750651](./6-git.assets/202308291023375.png)
 
 ### 分支-合并与删除
 
@@ -310,7 +310,7 @@ password.txt
 2. 合并其他分支过来：==git merge login-bug==
 3. 删除合并后的分支指针：git branch -d login-bug
 
-![image-20230815112749531](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291023376.png)
+![image-20230815112749531](./6-git.assets/202308291023376.png)
 
 ### 分支-合并与提交
 
@@ -320,13 +320,13 @@ password.txt
 
 1. 切回到要合入的分支上：git checkout master
 2. 合并其他分支过来：git merge ==content==
-3. 删除合并后的分支：git branch -d content![image-20230815112846939](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291023377.png)
+3. 删除合并后的分支：git branch -d content![image-20230815112846939](./6-git.assets/202308291023377.png)
 
 最后合并回到主分支上时，提交记录流程图：
 
 注意：提交记录的顺序按照产生的先后顺序排列，而非合并的先后顺序
 
-![image-20230815112926442](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291023378.png)
+![image-20230815112926442](./6-git.assets/202308291023378.png)
 
 ## 分支-合并冲突
 
@@ -349,30 +349,30 @@ password.txt
 2. 公共代码在统一文件夹维护
 3. Node等软件版本统一，`npm` 包统一下载
 
-![image-20230815113039128](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291023379.png)
+![image-20230815113039128](./6-git.assets/202308291023379.png)
 
-| **命令**                     | **作用**                | **注意**                               |
-| ---------------------------- | ----------------------- | -------------------------------------- |
-| git -v                         | 查看 git 版本           |                                          |
-| `git init`                   | 初始化 git 仓库         |                                        |
-| git add 文件标识             | 暂存某个文件            | 文件标识以终端为起始的相对路径         |
-| `git add .`                  | 暂存所有文件            |                                        |
-| ==git commit -m '说明注释'== | 提交产生版本记录        | 每次提交，把暂存区内容快照一份         |
-| git status                   | 查看文件状态 - 详细信息 |                                        |
-| git status -s                | 查看文件状态 - 简略信息 | 第一列是暂存区状态，第二列是工作区状态 |
-| git ls-files                 | 查看暂存区文件列表      |                                        |
-| git restore 文件标识         | 从暂存区恢复到工作区    | 如果文件标识为 . 则恢复所有文件        |
-| `git rm --cached 文件标识`   | 从暂存区移除文件        | 不让 git 跟踪文件变化                  |
-| git log                      | 查看提交记录 - 详细信息 |                                        |
-| `git log --oneline`          | 查看提交记录 - 简略信息 | 版本号 分支指针 提交时说明注释         |
-| `git reflog --oneline` | 查看完整历史 - 简略消息              |                包括提交，切换，回退等所有记录                |
-| git reset 版本号       | 切换版本代码到暂存区和工作区         | --soft 模式保留暂存区和工作区原本内容--hard 模式不保留暂存区和工作区原本内容--mixed 模式不保留暂存区，工作区保留（默认）先覆盖到暂存区，再用暂存区对比覆盖工作区 |
-| `git branch 分支名`    | 创建分支                             |                                                              |
-| git branch             | 查看本地分支                         |                                                              |
-| git branch -d 分支名   | 删除分支                             |          请确保记录已经合并到别的分支下，再删除分支          |
+| **命令**                                                     | **作用**                             | **注意**                                                     |
+| ------------------------------------------------------------ | ------------------------------------ | ------------------------------------------------------------ |
+| git -v                                                       | 查看 git 版本                        |                                                              |
+| `git init`                                                   | 初始化 git 仓库                      |                                                              |
+| git add 文件标识                                             | 暂存某个文件                         | 文件标识以终端为起始的相对路径                               |
+| `git add .`                                                  | 暂存所有文件                         |                                                              |
+| ==git commit -m '说明注释'==                                 | 提交产生版本记录                     | 每次提交，把暂存区内容快照一份                               |
+| git status                                                   | 查看文件状态 - 详细信息              |                                                              |
+| git status -s                                                | 查看文件状态 - 简略信息              | 第一列是暂存区状态，第二列是工作区状态                       |
+| git ls-files                                                 | 查看暂存区文件列表                   |                                                              |
+| git restore 文件标识                                         | 从暂存区恢复到工作区                 | 如果文件标识为 . 则恢复所有文件                              |
+| `git rm --cached 文件标识`                                   | 从暂存区移除文件                     | 不让 git 跟踪文件变化                                        |
+| git log                                                      | 查看提交记录 - 详细信息              |                                                              |
+| `git log --oneline`                                          | 查看提交记录 - 简略信息              | 版本号 分支指针 提交时说明注释                               |
+| `git reflog --oneline`                                       | 查看完整历史 - 简略消息              | 包括提交，切换，回退等所有记录                               |
+| git reset 版本号                                             | 切换版本代码到暂存区和工作区         | --soft 模式保留暂存区和工作区原本内容--hard 模式不保留暂存区和工作区原本内容--mixed 模式不保留暂存区，工作区保留（默认）先覆盖到暂存区，再用暂存区对比覆盖工作区 |
+| `git branch 分支名`                                          | 创建分支                             |                                                              |
+| git branch                                                   | 查看本地分支                         |                                                              |
+| git branch -d 分支名                                         | 删除分支                             | 请确保记录已经合并到别的分支下，再删除分支                   |
 | `git checkout  分支名                                             ` | 切换分支                             |                                                              |
-| git checkout -b 分支名       | 创建并立刻切换分支                   |                                                              |
-| `git merge 分支名`           | 把分支提交历史记录合并到当前所在分支 |                                                              |
+| git checkout -b 分支名                                       | 创建并立刻切换分支                   |                                                              |
+| `git merge 分支名`                                           | 把分支提交历史记录合并到当前所在分支 |                                                              |
 
 # Git 远程仓库
 
@@ -402,7 +402,7 @@ password.txt
 
 完整写法：`git push --set-upstream origin master:master`
 
-![image-20230815114730420](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291023380.png)
+![image-20230815114730420](./6-git.assets/202308291023380.png)
 
 1. 远程版本库的作用？
 
@@ -432,7 +432,7 @@ password.txt
 
 注意2：仓库公开随意克隆，推送需要身为仓库团队成员
 
-![image-20230815114936884](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291023381.png)
+![image-20230815114936884](./6-git.assets/202308291023381.png)
 
 ## 多人协同开发
 
@@ -448,13 +448,13 @@ password.txt
 
 git merge origin/master (把远程分支记录合并到所在分支下）
 
-![image-20230815115418928](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291023382.png)
+![image-20230815115418928](./6-git.assets/202308291023382.png)
 
 # `VSCode中使用 Git`
 
 使用：源代码管理，进行暂存，撤销，对比差异，提交等操作
 
-![image-20230815115628408](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291023383.png)
+![image-20230815115628408](./6-git.assets/202308291023383.png)
 
 ## 案例-发布黑马头条数据管理平台
 

@@ -84,9 +84,9 @@ var birthday = new Date(1995, 11, 17, 3, 24, 0)
         console.log(b)
 ```
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909979.png" alt="image-20230425201045707" />
+<img src="./1-JS.assets/202305091909979.png" alt="image-20230425201045707">
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909981.png">**
+<img src="./1-JS.assets/202305091909981.png">**
 
 ### 数据类型
 
@@ -94,15 +94,15 @@ var birthday = new Date(1995, 11, 17, 3, 24, 0)
 
 **==引用类型== 存储的仅是地址**
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909982.png">
+<img src="./1-JS.assets/202305091909982.png">
 
 #### 堆和栈
 
 **引用数据类型的值实际存储在堆中**
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909983.png" alt="image-20230427192643306" style="zoom:50%;" />
+<img src="./1-JS.assets/202305091909983.png" alt="image-20230427192643306">
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909984.png" alt="image-20230427192357053" style="zoom: 67%;" />
+<img src="./1-JS.assets/202305091909984.png" alt="image-20230427192357053">
 
 # Web-APIs
 
@@ -110,32 +110,32 @@ var birthday = new Date(1995, 11, 17, 3, 24, 0)
 
 **const优先**
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909985.png">
+<img src="./1-JS.assets/202305091909985.png">
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909987.png">
+<img src="./1-JS.assets/202305091909987.png">
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909988.png">
+<img src="./1-JS.assets/202305091909988.png">
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909989.png">
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909990.png">
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909991.png">
+<img src="./1-JS.assets/202305091909989.png">
+<img src="./1-JS.assets/202305091909990.png">
+<img src="./1-JS.assets/202305091909991.png">
 
 ## 总结 
 
 **数组和对象建议用const来声明**
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909992.png">
+<img src="./1-JS.assets/202305091909992.png">
 
 ## 1.DOM
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909993.png"><img src ="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909994.png">
+<img src="./1-JS.assets/202305091909993.png"><img src="./1-JS.assets/202305091909994.png">
 
 **DOM树**
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909995.png">
+<img src="./1-JS.assets/202305091909995.png">
 
 ### DOM对象
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909996.png">
+<img src="./1-JS.assets/202305091909996.png">
 
 ```
  //浏览器根据HTML标签自动生成了DOM对象
@@ -145,7 +145,7 @@ var birthday = new Date(1995, 11, 17, 3, 24, 0)
         console.dir(div)
 ```
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909997.png">
+<img src="./1-JS.assets/202305091909997.png">
 
 ### ==获取DOM元素==
 
@@ -155,13 +155,13 @@ var birthday = new Date(1995, 11, 17, 3, 24, 0)
 
 **根据CSS选择器来获取DOM元素**
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909998.png">
+<img src="./1-JS.assets/202305091909998.png">
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909999.png">
+<img src="./1-JS.assets/202305091909999.png">
 
 **修改元素内容·**
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909000.png">
+<img src="./1-JS.assets/202305091909000.png">
 
 ```js
 // 获取元素
@@ -180,16 +180,18 @@ const img = document.querySelector('img')
         img.src = './images/2.webp';
         img.title = 'pink老师的艺术照'
 ```
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909001.png">
+
+<img src="./1-JS.assets/202305091909001.png">
 
 ### 操作元素样式属性
 
 **小驼峰命名法**
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909002.png">
+<img src="./1-JS.assets/202305091909002.png">
 
 ### 操作类名来操作css
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909003.png">
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909005.png">
+
+<img src="./1-JS.assets/202305091909003.png">
+<img src="./1-JS.assets/202305091909005.png">
 
 ```
 // 获取元素
@@ -198,7 +200,7 @@ const img = document.querySelector('img')
         div.className = 'box nav';
 ```
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909006.png">
+<img src="./1-JS.assets/202305091909006.png">
 
 ### ==通过classlist修改样式==
 
@@ -208,9 +210,9 @@ const img = document.querySelector('img')
 
 您需要将要检查的类名作为其参数传递。`true`如果类名存在或`false`不存在，该方法将返回。
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909007.png">
+<img src="./1-JS.assets/202305091909007.png">
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909008.png">
+<img src="./1-JS.assets/202305091909008.png">
 
 ```
  const div = document.querySelector('div')
@@ -222,7 +224,8 @@ const img = document.querySelector('img')
         // div.classList.toggle('box')
         div.classList.toggle('nav')
 ```
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909009.png">
+
+<img src="./1-JS.assets/202305091909009.png">
 
 ### 随机轮播图
 
@@ -247,11 +250,12 @@ const img = document.querySelector('img')
 
 ### 操作表单元素的属性
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909010.png">
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909011.png">
+<img src="./1-JS.assets/202305091909010.png">
+<img src="./1-JS.assets/202305091909011.png">
 
 ### 自定义属性
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909012.png">
+
+<img src="./1-JS.assets/202305091909012.png">
 
 ### 定时器函数
 
@@ -271,27 +275,31 @@ const img = document.querySelector('img')
         // 停止定时器
         clearInterval(m)
 ```
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909013.png">
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909014.png">
+
+<img src="./1-JS.assets/202305091909013.png">
+<img src="./1-JS.assets/202305091909014.png">
 
 ### 轮播图定时器版
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909015.png">
+
+<img src="./1-JS.assets/202305091909015.png">
 
 ## 2.DOM 
 
 ### 事件监听
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909016.png">
+
+<img src="./1-JS.assets/202305091909016.png">
 
 **事件监听的实质: 就是让程序检测是否有事件产生，一旦有事件触发就立即调用一个函数做出响应，也称为注册事件**
 
 **三要素:事件源 事件类型 事件调用的函数**
 
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909017.png">
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909018.png">
+<img src="./1-JS.assets/202305091909017.png">
+<img src="./1-JS.assets/202305091909018.png">
 
 ### 随机点名案例
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909019.png">
+
+<img src="./1-JS.assets/202305091909019.png">
 
 ### 事件监听关于const的小问题
 
@@ -306,13 +314,13 @@ const img = document.querySelector('img')
 
 ### 事件监听版本(了解即可)
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909020.png" alt="image-20230508084245786" />
+<img src="./1-JS.assets/202305091909020.png" alt="image-20230508084245786">
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909021.png" alt="image-20230508084641429" />
+<img src="./1-JS.assets/202305091909021.png" alt="image-20230508084641429">
 
 ### 事件类型
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909022.png">
+<img src="./1-JS.assets/202305091909022.png">
 
 ```
   const div = document.querySelector('div')
@@ -328,13 +336,15 @@ const img = document.querySelector('img')
 ```
 
 ### 事件对象
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909023.png">
+
+<img src="./1-JS.assets/202305091909023.png">
 
 #### 获取事件对象
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909024.png">
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909026.png">
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305091909027.png" alt="image-20230509100302577" />
+<img src="./1-JS.assets/202305091909024.png">
+<img src="./1-JS.assets/202305091909026.png">
+
+<img src="./1-JS.assets/202305091909027.png" alt="image-20230509100302577">
 
 **trim()方法清除字符串两侧的空格**
 
@@ -356,17 +366,17 @@ const img = document.querySelector('img')
 
 函数的调用方式不同，this指代的对象也不同
 
-> **==【谁调用, this就是谁】==是判断this指向的粗略规则   代表当前函数运行时所处的环境** ![image-20230509210158832](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109101.png)
+> **==【谁调用, this就是谁】==是判断this指向的粗略规则   代表当前函数运行时所处的环境** ![image-20230509210158832](./1-JS.assets/202305122109101.png)
 
 
 
 ### 回调函数
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109102.png" alt="image-20230509205835098" />
+<img src="./1-JS.assets/202305122109102.png" alt="image-20230509205835098">
 
 >
 >
-><img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109103.png" alt="image-20230509210340947" />
+><img src="./1-JS.assets/202305122109103.png" alt="image-20230509210340947">
 >
 >
 
@@ -432,26 +442,26 @@ const img = document.querySelector('img')
 
 
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109104.png" alt="image-20230511082635761" />
+<img src="./1-JS.assets/202305122109104.png" alt="image-20230511082635761">
 
 #### 捕获阶段(了解即可)
 
 **从根节点到触发事件的节点依次执行同名事件**
 
-> ![image-20230511083906737](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109105.png)
+> ![image-20230511083906737](./1-JS.assets/202305122109105.png)
 >
 > ```
 > · const fa = document.querySelector(".father");
->         const son = document.querySelector('.son');
->         document.addEventListener('click', function () {
->             alert("我是爷爷");
->         }, true)
->         fa.addEventListener('click', function () {
->             alert("我是爸爸");
->         }, true)
->         son.addEventListener('click', function () {
->             alert("我是儿子");
->         }, true)
+>      const son = document.querySelector('.son');
+>      document.addEventListener('click', function () {
+>          alert("我是爷爷");
+>      }, true)
+>      fa.addEventListener('click', function () {
+>          alert("我是爸爸");
+>      }, true)
+>      son.addEventListener('click', function () {
+>          alert("我是儿子");
+>      }, true)
 > ```
 >
 > 
@@ -460,24 +470,24 @@ const img = document.querySelector('img')
 
 #### 冒泡阶段
 
-> ![image-20230511084826482](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109107.png)
+> ![image-20230511084826482](./1-JS.assets/202305122109107.png)
 >
 > ```
->   // 冒泡阶段
->         const fa = document.querySelector(".father");
->         const son = document.querySelector('.son');
->         document.addEventListener('click', function () {
->             alert("我是爷爷");
->         })
->         fa.addEventListener('click', function () {
->             alert("我是爸爸");
->         })
+> // 冒泡阶段
+>      const fa = document.querySelector(".father");
+>      const son = document.querySelector('.son');
+>      document.addEventListener('click', function () {
+>          alert("我是爷爷");
+>      })
+>      fa.addEventListener('click', function () {
+>          alert("我是爸爸");
+>      })
 > 
->         son.addEventListener('click', function (e) {
->             alert("我是儿子");
->             // 阻止事件流动
->             e.stopPropagation();
->         })
+>      son.addEventListener('click', function (e) {
+>          alert("我是儿子");
+>          // 阻止事件流动
+>          e.stopPropagation();
+>      })
 > 
 > ```
 >
@@ -508,7 +518,7 @@ const btn = document.querySelector('button');
         })
 ```
 
-![image-20230511094003946](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109108.png)
+![image-20230511094003946](./1-JS.assets/202305122109108.png)
 
 ```
  const fa = document.querySelector('.father');
@@ -534,18 +544,18 @@ const btn = document.querySelector('button');
 > **实现:事件对象.target.tagName可以获得真正触发事件的元素**
 >
 > ```
->   const ul = document.querySelector('ul');
->         ul.addEventListener('click', function (e) {
->             // console.log(e.target)
->             // console.dir(e.target.tagName);
->             if (e.target.tagName === 'LI') {
->                 // Event 接口的 target 只读属性是对事件分派到的对象的引用
->                 e.target.style.color = 'red';
->             }
->         })
+> const ul = document.querySelector('ul');
+>      ul.addEventListener('click', function (e) {
+>          // console.log(e.target)
+>          // console.dir(e.target.tagName);
+>          if (e.target.tagName === 'LI') {
+>              // Event 接口的 target 只读属性是对事件分派到的对象的引用
+>              e.target.style.color = 'red';
+>          }
+>      })
 > ```
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109109.png" alt="image-20230511101613576" />
+<img src="./1-JS.assets/202305122109109.png" alt="image-20230511101613576">
 
 #### 事件委托版tab栏切换
 
@@ -569,13 +579,13 @@ const btn = document.querySelector('button');
 
 ### 阻止默认行为
 
-![image-20230511192517041](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109110.png)
+![image-20230511192517041](./1-JS.assets/202305122109110.png)
 
-![image-20230511192735421](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109111.png)
+![image-20230511192735421](./1-JS.assets/202305122109111.png)
 
 ### 页面加载事件
 
-1![image-20230511200304907](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109112.png)
+1![image-20230511200304907](./1-JS.assets/202305122109112.png)
 
 ```
  // 等待页面元素加载完毕后再执行回调函数
@@ -590,7 +600,7 @@ const btn = document.querySelector('button');
         })
 ```
 
-![image-20230511201033392](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109113.png)
+![image-20230511201033392](./1-JS.assets/202305122109113.png)
 
 ```
 // HTML文档加载完后便执行加载速度更快
@@ -613,13 +623,13 @@ const btn = document.querySelector('button');
 > **给document加**
 > **无需等待样式表、图像等完全加载**
 
-![image-20230511201655133](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109114.png)
+![image-20230511201655133](./1-JS.assets/202305122109114.png)
 
 ### 页面滚动事件
 
-![image-20230511202737396](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109115.png)
+![image-20230511202737396](./1-JS.assets/202305122109115.png)
 
-![image-20230511204604708](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109116.png)
+![image-20230511204604708](./1-JS.assets/202305122109116.png)
 
 ```
  const div = document.querySelector('div');
@@ -629,9 +639,9 @@ const btn = document.querySelector('button');
         })
 ```
 
-![image-20230511205837812](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109117.png)
+![image-20230511205837812](./1-JS.assets/202305122109117.png)
 
-![image-20230511205811279](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109118.png)
+![image-20230511205811279](./1-JS.assets/202305122109118.png)
 
 ```
 // scrollTop可读写
@@ -643,7 +653,7 @@ const btn = document.querySelector('button');
       window.scrollTo(0, 0);
 ```
 
-![image-20230512084755925](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109119.png)
+![image-20230512084755925](./1-JS.assets/202305122109119.png)
 
 
 
@@ -651,13 +661,13 @@ const btn = document.querySelector('button');
 
 ### 页面尺寸事件 -resize
 
-![image-20230512100939002](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109120.png)
+![image-20230512100939002](./1-JS.assets/202305122109120.png)
 
 #### clientWidth获取元素宽高
 
 **(不包含边框 margin 滚动条)**
 
-![image-20230512101605744](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109121.png)
+![image-20230512101605744](./1-JS.assets/202305122109121.png)
 
 #### offset家族
 
@@ -667,13 +677,13 @@ const btn = document.querySelector('button');
 
 **(它们都是只读属性)**
 
-![image-20230512103600930](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109122.png)
+![image-20230512103600930](./1-JS.assets/202305122109122.png)
 
-![image-20230512100904413](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109123.png)
+![image-20230512100904413](./1-JS.assets/202305122109123.png)
 
 #### element.getBoundingClientRect()方法返回元素的大小及其相对于视口的位置
 
-![image-20230512160017025](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109124.png)
+![image-20230512160017025](./1-JS.assets/202305122109124.png)
 
 |              属性              |                     作用                     |                            说明                            |
 | :----------------------------: | :------------------------------------------: | :--------------------------------------------------------: |
@@ -684,25 +694,25 @@ const btn = document.querySelector('button');
 
 ### 电梯导航案例
 
-![image-20230512162421781](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109125.png)
+![image-20230512162421781](./1-JS.assets/202305122109125.png)
 
-![image-20230512205211831](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305122109126.png)
+![image-20230512205211831](./1-JS.assets/202305122109126.png)
 
 ### 日期对象
 
-![image-20230513163443304](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614279.png)
+![image-20230513163443304](./1-JS.assets/202305211614279.png)
 
 #### 日期对象方法
 
-![image-20230513163808684](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614281.png)
+![image-20230513163808684](./1-JS.assets/202305211614281.png)
 
 ### 时间戳
 
-![image-20230513184442595](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614282.png)
+![image-20230513184442595](./1-JS.assets/202305211614282.png)
 
 #### 获取时间戳
 
-![image-20230513185615849](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614283.png)
+![image-20230513185615849](./1-JS.assets/202305211614283.png)
 
 ```
  const date = new Date()
@@ -716,23 +726,23 @@ const btn = document.querySelector('button');
 
 ### DOM节点
 
-![image-20230514093252430](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614284.png)
+![image-20230514093252430](./1-JS.assets/202305211614284.png)
 
 #### 查找节点
 
-![image-20230514093704017](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614285.png)
+![image-20230514093704017](./1-JS.assets/202305211614285.png)
 
 ##### 父节点查找
 
-![image-20230514100031710](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614286.png)
+![image-20230514100031710](./1-JS.assets/202305211614286.png)
 
 ##### 子节点查找
 
-![image-20230514104615153](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614287.png)
+![image-20230514104615153](./1-JS.assets/202305211614287.png)
 
 **兄弟关系查找**
 
-![image-20230514104749644](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614288.png)
+![image-20230514104749644](./1-JS.assets/202305211614288.png)
 
 ```
      <li>1</li>
@@ -755,15 +765,15 @@ const btn = document.querySelector('button');
 
 #### 增加节点
 
-![image-20230514152117558](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614289.png)
+![image-20230514152117558](./1-JS.assets/202305211614289.png)
 
 ##### 创建节点
 
-![image-20230514152143800](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614290.png)
+![image-20230514152143800](./1-JS.assets/202305211614290.png)
 
 ##### 追加节点
 
-![image-20230514153439710](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614291.png)
+![image-20230514153439710](./1-JS.assets/202305211614291.png)
 
 ```
 const ul = document.querySelector('ul')
@@ -784,11 +794,11 @@ const ul = document.querySelector('ul')
 
 ### 学成在线渲染案例
 
-![image-20230514160651152](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614292.png)
+![image-20230514160651152](./1-JS.assets/202305211614292.png)
 
 ### 克隆节点
 
-![image-20230514160935442](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614293.png)
+![image-20230514160935442](./1-JS.assets/202305211614293.png)
 
 ```
 const ul = document.querySelector('ul')
@@ -802,7 +812,7 @@ const ul = document.querySelector('ul')
 
 ### 删除节点
 
-![image-20230514162923812](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614294.png)
+![image-20230514162923812](./1-JS.assets/202305211614294.png)
 
 ```
  const ul = document.querySelector('ul')
@@ -812,27 +822,27 @@ const ul = document.querySelector('ul')
 
 ### M端事件
 
-![image-20230514163805381](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614295.png)
+![image-20230514163805381](./1-JS.assets/202305211614295.png)
 
 ### 学生信息表案例
 
-![image-20230516101430872](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614296.png)
+![image-20230516101430872](./1-JS.assets/202305211614296.png)
 
-![image-20230516101454851](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614297.png)
+![image-20230516101454851](./1-JS.assets/202305211614297.png)
 
-![image-20230516101513412](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614298.png)
+![image-20230516101513412](./1-JS.assets/202305211614298.png)
 
-![image-20230516101533407](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614299.png)
+![image-20230516101533407](./1-JS.assets/202305211614299.png)
 
-![image-20230514204507089](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614300.png)
+![image-20230514204507089](./1-JS.assets/202305211614300.png)
 
-![image-20230516100111275](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614301.png)
+![image-20230516100111275](./1-JS.assets/202305211614301.png)
 
 ## 1.BOM
 
 **BOM(Browser Object Model）是浏览器对象模型**
 
-![image-20230516103803074](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614302.png)
+![image-20230516103803074](./1-JS.assets/202305211614302.png)
 
 <ul><li>
     window对象是一个全局对象，也可以说是JavaScript中的顶级对象</li>
@@ -843,11 +853,12 @@ const ul = document.querySelector('ul')
 
 
 
+
 ### 延时函数
 
-![image-20230517194452252](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614303.png)
+![image-20230517194452252](./1-JS.assets/202305211614303.png)
 
-![image-20230517200806316](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614304.png)
+![image-20230517200806316](./1-JS.assets/202305211614304.png)
 
 ### JS执行机制
 
@@ -861,17 +872,17 @@ const ul = document.querySelector('ul')
 
 你在做一件事情时，因为这件事情会花费很长时间，在做这件事的同时，你还可以去处理其他事情。比如做饭的异步做法，我们在烧水的同时，利用这10分钟，去切菜，炒菜。
 
-![image-20230517203102216](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614305.png)
+![image-20230517203102216](./1-JS.assets/202305211614305.png)
 
 #### 事件循环
 
-![image-20230517204638573](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614307.png)
+![image-20230517204638573](./1-JS.assets/202305211614307.png)
 
 ### location对象
 
 location的数据类型是对象，它拆分并保存了URL地址的各个组成部分
 
-![image-20230518092052279](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614308.png)
+![image-20230518092052279](./1-JS.assets/202305211614308.png)
 
 跳转页面 href属性
 
@@ -882,7 +893,7 @@ location的数据类型是对象，它拆分并保存了URL地址的各个组成
 
 search属性获取地址中携带的参数,符号?后面部分
 
-![image-20230518092419176](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614309.png)
+![image-20230518092419176](./1-JS.assets/202305211614309.png)
 
 ```
 <!-- search属性 -->
@@ -898,11 +909,11 @@ hash属性获取地址中的哈希值，符号#后面部分
 
 后期vue路由的铺垫，经常用于不刷新页面，显示不同页面，比如网易云音乐
 
-![image-20230518093620047](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614310.png)
+![image-20230518093620047](./1-JS.assets/202305211614310.png)
 
 reload方法用来刷新当前页面，传入参数true时表示强制刷新
 
-![image-20230518093951125](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614311.png)
+![image-20230518093951125](./1-JS.assets/202305211614311.png)
 
 ```
   const btn = document.querySelector('button')
@@ -914,11 +925,11 @@ reload方法用来刷新当前页面，传入参数true时表示强制刷新
         })
 ```
 
-![image-20230518100115433](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614312.png)
+![image-20230518100115433](./1-JS.assets/202305211614312.png)
 
 ### navigator对象
 
-![image-20230518103925539](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614313.png)
+![image-20230518103925539](./1-JS.assets/202305211614313.png)
 
 ```
 // 检测 userAgent（浏览器信息）
@@ -938,53 +949,53 @@ reload方法用来刷新当前页面，传入参数true时表示强制刷新
 
 history的数据类型是对象，主要管理历史记录，该对象与浏览器地址栏的操作相对应，如前进、后退、历史记录等
 
-![image-20230518104924608](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614314.png)
+![image-20230518104924608](./1-JS.assets/202305211614314.png)
 
 ### 本地存储分类-localStorage
 
-![image-20230518200856469](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614315.png)
+![image-20230518200856469](./1-JS.assets/202305211614315.png)
 
 LocalStorage的使用
 
 可以将数据永久存储在本地（用户的电脑），除非手动删除，否则关闭页面也会存在
 
-![image-20230518203207571](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614316.png)
+![image-20230518203207571](./1-JS.assets/202305211614316.png)
 
-![image-20230518203919054](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614317.png)
+![image-20230518203919054](./1-JS.assets/202305211614317.png)
 
 本地存储分类-sessionStorage
 
 生命周期为关闭浏览器窗口
 
-![image-20230518205740079](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614318.png)
+![image-20230518205740079](./1-JS.assets/202305211614318.png)
 
 ### 本地存储复杂数据类型
 
 需要将复杂数据类型转换成JS0N字符串，在存储到本地
 
-![image-20230519092617357](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614319.png)
+![image-20230519092617357](./1-JS.assets/202305211614319.png)
 
 因为本地存储里面取出来的是字符串，不是对象，无法直接使用
 
-![image-20230519092755748](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614320.png)
+![image-20230519092755748](./1-JS.assets/202305211614320.png)
 
 把取出来的字符串转换为对象来使用
 
-![image-20230519092830984](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614321.png)
+![image-20230519092830984](./1-JS.assets/202305211614321.png)
 
 ### 学生就业统计表案例
 
-![image-20230519160516126](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614322.png)
+![image-20230519160516126](./1-JS.assets/202305211614322.png)
 
 #### 渲染业务
 
-![image-20230519160810063](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614323.png)
+![image-20230519160810063](./1-JS.assets/202305211614323.png)
 
-![image-20230519202025282](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614324.png)
+![image-20230519202025282](./1-JS.assets/202305211614324.png)
 
 数组map方法 数组join方法
 
-![image-20230519203105910](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614325.png)
+![image-20230519203105910](./1-JS.assets/202305211614325.png)
 
 ```
  		// 1.map()方法
@@ -1005,43 +1016,44 @@ LocalStorage的使用
 
 #### 新增业务
 
-![image-20230520084222306](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614326.png)
+![image-20230520084222306](./1-JS.assets/202305211614326.png)
 
-![image-20230520160314623](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614327.png)
+![image-20230520160314623](./1-JS.assets/202305211614327.png)
 
 #### 删除业务
 
-![image-20230520162832257](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614328.png)
+![image-20230520162832257](./1-JS.assets/202305211614328.png)
 
 关于stuld的处理
 
-![image-20230520164921784](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614329.png)
+![image-20230520164921784](./1-JS.assets/202305211614329.png)
 
 ### 正则表达式
 
-![image-20230520171252172](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614330.png)
+![image-20230520171252172](./1-JS.assets/202305211614330.png)
 
 ●正则表达式在JavaScript中的使用场景：
+
 >例如验证表单：用户名表单只能输入英文字母、数字或者下划线，昵称输入框中可以输入中文（匹配）
 >比如用户名：/[a-z0-9-]{3,16}$/
 >过滤掉页面内容中的一些敏感词（替换），或从字符串中获取我们想要的特定部分（提取）等。
 
-![image-20230520171513012](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614331.png)
+![image-20230520171513012](./1-JS.assets/202305211614331.png)
 
 #### 语法
 
 正则同样道理，我们分为两步：先定义规则
 再查找
 
-![image-20230520172306152](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614332.png)
+![image-20230520172306152](./1-JS.assets/202305211614332.png)
 
 
 
-![image-20230520192134980](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614333.png)
+![image-20230520192134980](./1-JS.assets/202305211614333.png)
 
 test()方法用来查看正则表达式与指定的字符串是否匹配
 
-![image-20230520193710094](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614334.png)
+![image-20230520193710094](./1-JS.assets/202305211614334.png)
 
 #### 元字符
 
@@ -1051,7 +1063,7 @@ test()方法用来查看正则表达式与指定的字符串是否匹配
 >比如，规定用户只能输入英文26个英文字母，普通字符的话abcdefghijklm.…
 >但是换成元字符写法：[a-z]
 
-![image-20230520194945379](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614335.png)
+![image-20230520194945379](./1-JS.assets/202305211614335.png)
 
 <ul>
     <li>元字符进行了分类：</li>
@@ -1059,15 +1071,16 @@ test()方法用来查看正则表达式与指定的字符串是否匹配
     <li>量词（表示重复次数）</li>
     <li>字符类（比如\d表示0~9）</li>
 
-![image-20230520195358859](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614336.png)
+
+![image-20230520195358859](./1-JS.assets/202305211614336.png)
 
 ##### 边界符
 
-![image-20230520201117415](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614337.png)
+![image-20230520201117415](./1-JS.assets/202305211614337.png)
 
 ##### 量词
 
-![image-20230520205216644](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614338.png)
+![image-20230520205216644](./1-JS.assets/202305211614338.png)
 
 ```
  // const arr = 'web前端开发';
@@ -1115,41 +1128,41 @@ test()方法用来查看正则表达式与指定的字符串是否匹配
 
 ##### 字符类
 
-![image-20230521093531677](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614339.png)
+![image-20230521093531677](./1-JS.assets/202305211614339.png)
 
-![image-20230521093151645](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614340.png)
+![image-20230521093151645](./1-JS.assets/202305211614340.png)
 
-![image-20230521093238352](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614341.png)
+![image-20230521093238352](./1-JS.assets/202305211614341.png)
 
-![image-20230521093324588](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614342.png)
+![image-20230521093324588](./1-JS.assets/202305211614342.png)
 
 (2) . 匹配除换行符之外的任何单个字符
 
-![image-20230521102049058](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614343.png)
+![image-20230521102049058](./1-JS.assets/202305211614343.png)
 
 #### 修饰符
 
-![image-20230521143549076](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614344.png)
+![image-20230521143549076](./1-JS.assets/202305211614344.png)
 
 替换replace替换
 
-![image-20230521144113712](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614345.png)
+![image-20230521144113712](./1-JS.assets/202305211614345.png)
 
 ## 2.BOM
 
 ### 小兔鲜儿页面注册
 
-![image-20230521161259471](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202305211614346.png) 
+![image-20230521161259471](./1-JS.assets/202305211614346.png) 
 
-![image-20230522084748698](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291014807.png)
+![image-20230522084748698](./1-JS.assets/202308291014807.png)
 
-![image-20230522084332670](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291014808.png)
+![image-20230522084332670](./1-JS.assets/202308291014808.png)
 
 ### 小兔鲜登录页面
 
-![image-20230522102645925](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291014809.png)
+![image-20230522102645925](./1-JS.assets/202308291014809.png)
 
-![image-20230522102720054](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291014810.png)
+![image-20230522102720054](./1-JS.assets/202308291014810.png)
 
 # 个人实战文档
 
@@ -1163,7 +1176,7 @@ http://erabbit.itheima.net/#/product/3995139
 
 ## 顶部导航模块
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291014811.gif">
+<img src="./1-JS.assets/202308291014811.gif">
 
 需求：
 
@@ -1173,13 +1186,13 @@ http://erabbit.itheima.net/#/product/3995139
 
 ## 图片切换模块
 
- <img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291014812.gif">
+ <img src="./1-JS.assets/202308291014812.gif">
 
 
 
 ## 放大镜效果
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291014813.gif">
+<img src="./1-JS.assets/202308291014813.gif">
 
 
 
@@ -1226,9 +1239,9 @@ http://erabbit.itheima.net/#/product/3995139
 
 ③： 黑色遮罩盒子跟着鼠标来移动
 
-1.  先做鼠标经过 中等盒子，显示隐藏 黑色遮罩 的盒子
+1. 先做鼠标经过 中等盒子，显示隐藏 黑色遮罩 的盒子
 
-2.  让黑色遮罩跟着鼠标来走, 需要用到鼠标移动事件  mousemove  
+2. 让黑色遮罩跟着鼠标来走, 需要用到鼠标移动事件  mousemove  
 
 3. 让黑色盒子的移动的核心思想：不断把鼠标在中等盒子内的坐标给黑色遮罩层 let  top 值，这样遮罩层就可以跟着移动了
 
@@ -1298,11 +1311,11 @@ http://erabbit.itheima.net/#/product/3995139
 
 ### 点击模块
 
- <img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291014814.gif">
+ <img src="./1-JS.assets/202308291014814.gif">
 
 ### tab栏切换模块
 
-<img src="https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291014815.gif">
+<img src="./1-JS.assets/202308291014815.gif">
 
 
 

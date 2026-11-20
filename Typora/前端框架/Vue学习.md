@@ -16,7 +16,7 @@ v-html / v-show / v-if / v-else / v-on / v-bind / v-for / v-model
 
 列表渲染 / 删除功能 / 添加功能 / 底部统计 / 清空
 
-![image-20230801152120432](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201052.png)
+![image-20230801152120432](./assets/202402222201052.png)
 
 ## Vue快速上手
 
@@ -26,7 +26,7 @@ v-html / v-show / v-if / v-else / v-on / v-bind / v-for / v-model
 
                             基于数据渲染出用户看到的页面
 
-![image-20230801153622808](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201054.png)
+![image-20230801153622808](./assets/202402222201054.png)
 
 Vue 的两种使用方式： 
 
@@ -38,9 +38,9 @@ Vue 的两种使用方式：
 
 场景：整站 开发
 
-![image-20230801153739417](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201055.png)
+![image-20230801153739417](./assets/202402222201055.png)
 
-![image-20230801153814975](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201056.png)
+![image-20230801153814975](./assets/202402222201056.png)
 
 Vue是什么？
 
@@ -52,11 +52,11 @@ Vue是什么？
 
 3. 框架：一套完整的项目解决方案，`提升开发效率↑ (理解记忆规则)` 
 
-                                                                              规则→ 官网
+       规则→ 官网
 
 ### 创建 Vue 实例，初始化
 
-![image-20230801154255730](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201057.png)
+![image-20230801154255730](./assets/202402222201057.png)
 
 创建 Vue 实例，初始化渲染的核心步骤：
 
@@ -138,9 +138,9 @@ Vue是什么？
 
 ② 修改数据： "实例.属性名" = "值"
 
-![image-20230802094928123](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201058.png)
+![image-20230802094928123](./assets/202402222201058.png)
 
-![image-20230802095012032](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201060.png)
+![image-20230802095012032](./assets/202402222201060.png)
 
 数据改变，视图会自动更新
 
@@ -170,13 +170,13 @@ data中的数据, 最终会被添加到实例上
 
 https://chrome.zzzmh.cn/index
 
-![image-20230802095318891](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201061.png)
+![image-20230802095318891](./assets/202402222201061.png)
 
 
 
 打开 Vue 运行的页面，调试工具中 Vue 栏，即可查看修改数据，进行调试。
 
-![image-20230802095340194](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201062.png)
+![image-20230802095340194](./assets/202402222201062.png)
 
 ## Vue 指令
 
@@ -234,18 +234,18 @@ v-html = "表达式 " → 动态设置元素 innerHTML
 
 **3. 简写：**@事件名
 
-![image-20230803100504246](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201063.png)
+![image-20230803100504246](./assets/202402222201063.png)
 
 1. 作用： 注册事件 = 添加监听 + 提供处理逻辑
 2. 语法：
-① v-on:事件名 = "内联语句"
-② v-on:事件名 = "methods中的函数名"
+   ① v-on:事件名 = "内联语句"
+   ② v-on:事件名 = "methods中的函数名"
 3. 简写：@事件名
 4. 注意：methods函数内的 ==**this** 指向 Vue 实例==  
 
 ### v-on 调用传参 @
 
-![image-20230804101334871](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201064.png)
+![image-20230804101334871](./assets/202402222201064.png)
 
 ### Vue 指令 v-bind :
 
@@ -257,7 +257,7 @@ v-html = "表达式 " → 动态设置元素 innerHTML
 
 ### 图片切换案例-波仔学习之旅
 
-![image-20230804221158469](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201065.png)
+![image-20230804221158469](./assets/202402222201065.png)
 
 核心思路分析：
 
@@ -287,7 +287,7 @@ v-for = "(item, index) in 数组"
 
 ② 删除功能 → 用 ==filter== 根据 id 从数组中删除对应项
 
-![image-20230805102140625](./image/image-20230805102140625.png)
+![image-20230805102140625](./assets/image-20230805102140625.png)
 
 ### v-for 中的 key
 
@@ -317,7 +317,7 @@ key作用：给元素添加的==唯一标识==。
 
 **2. 语法:** v-model = '变量'
 
-![image-20230815222013297](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201066.png)
+![image-20230815222013297](./assets/202402222201066.png)
 
 ### 综合案例 - 小黑记事本
 
@@ -379,17 +379,17 @@ key作用：给元素添加的==唯一标识==。
 
 ### v-bind 对于样式控制的增强
 
-为了方便开发者进行==样式控制==， Vue 扩展了 ==v-bind== 的语法，可以针对 ==class 类名== 和 ==style 行内样式== 进行控制 。![image-20230816120822686](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201067.png)
+为了方便开发者进行==样式控制==， Vue 扩展了 ==v-bind== 的语法，可以针对 ==class 类名== 和 ==style 行内样式== 进行控制 。![image-20230816120822686](./assets/202402222201067.png)
 
 ### v-bind 对于样式控制的增强 - 操作class
 
 语法` :class = "对象/数组"`
 
-① `对象` → 键就是类名，值是布尔值。如果值为` true`，有这个类，否则没有这个类![image-20230816121130522](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201068.png)
+① `对象` → 键就是类名，值是布尔值。如果值为` true`，有这个类，否则没有这个类![image-20230816121130522](./assets/202402222201068.png)
 
 适用场景：一个类名，来回切换
 
-② `数组 `→ 数组中所有的类，都会添加到盒子上，本质就是一个 `class 列表`![image-20230816121158955](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201069.png)
+② `数组 `→ 数组中所有的类，都会添加到盒子上，本质就是一个 `class 列表`![image-20230816121158955](./assets/202402222201069.png)
 
 适用场景：批量添加或删除类
 
@@ -403,7 +403,7 @@ key作用：给元素添加的==唯一标识==。
 
 ==所谓切换高亮，其实就是改下标==
 
-![image-20230816212116064](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201070.png)
+![image-20230816212116064](./assets/202402222201070.png)
 
 ### v-bind 对于样式控制的增强 - 操作style
 
@@ -411,7 +411,7 @@ key作用：给元素添加的==唯一标识==。
 
 `<div class="box" :style="{ CSS属性名1: CSS属性值, CSS属性名2: CSS属性值 }"></div>`
 
-适用场景：某个具体属性的动态设置![image-20230816212244456](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201071.png)
+适用场景：某个具体属性的动态设置![image-20230816212244456](./assets/202402222201071.png)
 
 ## computed 计算属性
 
@@ -442,6 +442,7 @@ computed: {
     }
 },
 ````
+
 ### computed 计算属性 vs methods 方法
 
 **computed 计算属性：**
@@ -498,7 +499,7 @@ computed: {
 }
 ```
 
-![image-20230816220941045](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201072.png)
+![image-20230816220941045](./assets/202402222201072.png)
 
 ### 综合案例 - 成绩案例
 
@@ -510,7 +511,7 @@ computed: {
 
 4. 统计总分，求平均分
 
-![image-20230819095615304](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201073.png)
+![image-20230819095615304](./assets/202402222201073.png)
 
 **业务技术点总结：**
 
@@ -560,7 +561,7 @@ watch: {
 }
 ```
 
-![image-20230819220559323](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201074.png)
+![image-20230819220559323](./assets/202402222201074.png)
 
 ② 完整写法 → 添加额外==配置项==
 
@@ -604,7 +605,7 @@ watch: {// watch 完整写法
 
 
 
-![image-20230819220612492](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201075.png)
+![image-20230819220612492](./assets/202402222201075.png)
 
 需求：默认文本，==一进入页面，立刻翻译==一次
 
@@ -648,7 +649,7 @@ watch: {// watch 完整写法
 5. 统计 ==选中的== 总价 和 总数量
 6. 持久化到本地
 
-![image-20230821220225721](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201076.png)
+![image-20230821220225721](./assets/202402222201076.png)
 
 **业务技术点总结：**
 
@@ -671,7 +672,7 @@ Vue生命周期：一个Vue实例从 ==创建== 到 ==销毁== 的整个过程�
 
 生命周期四个阶段：① 创建 ② 挂载 ③ 更新 ④ 销毁
 
-![image-20230823193349053](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201077.png)
+![image-20230823193349053](./assets/202402222201077.png)
 
 ### Vue 生命周期函数（钩子函数）
 
@@ -681,15 +682,15 @@ Vue生命周期过程中，会==自动运行一些函数==，被称为==【生�
 
 ==created== 数据准备好了，可以开始发送==初始化渲染请求==。
 
-![image-20230828142545290](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201078.png)
+![image-20230828142545290](./assets/202402222201078.png)
 
 ==mounted== 模板渲染完成，可以开始==操作DOM==了
 
-![image-20230828142557876](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201079.png)
+![image-20230828142557876](./assets/202402222201079.png)
 
 ## 小黑记账清单
 
-![image-20230828144959744](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201080.png)
+![image-20230828144959744](./assets/202402222201080.png)
 
 功能需求：
 
@@ -698,7 +699,7 @@ Vue生命周期过程中，会==自动运行一些函数==，被称为==【生�
 3. 删除功能
 4. 饼图渲染
 
-![image-20230828145019547](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201081.png)
+![image-20230828145019547](./assets/202402222201081.png)
 
 ## 工程化开发入门
 
@@ -723,7 +724,7 @@ Vue CLI 是 Vue 官方提供的一个==全局命令==工具。
 3. 创建项目架子：`vue create project-name`（项目名-不能用中文）
 4. 启动项目：` yarn serve` 或 `npm run serve`（找package.json）
 
-![image-20230828152933355](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201082.png)
+![image-20230828152933355](./assets/202402222201082.png)
 
 ### 脚手架目录文件介绍 & 项目运行流程
 
@@ -747,7 +748,7 @@ VUE-DEMO
 └─yarn.lock yarn锁文件，由yarn自动生成的，锁定安装版本
 ```
 
-![image-20230829123750624](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201084.png)
+![image-20230829123750624](./assets/202402222201084.png)
 
 ```js
 main.js核心代码
@@ -771,9 +772,9 @@ new Vue({
 
 **② 根组件：**整个应用最上层的组件，包裹所有普通小组件。
 
-![image-20230903174056243](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201085.png)
+![image-20230903174056243](./assets/202402222201085.png)
 
-![image-20230903174307088](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201086.png)
+![image-20230903174307088](./assets/202402222201086.png)
 
 #### App.vue 文件（单文件组件）的三个组成部分
 
@@ -793,7 +794,7 @@ new Vue({
 
 （2） 装包:` yarn add less less-loader`
 
-![image-20230903174512737](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201087.png)
+![image-20230903174512737](./assets/202402222201087.png)
 
 **(1) 组件化：**
 
@@ -829,7 +830,7 @@ new Vue({
 
 2. 全局注册：所有组件内都能使用
 
-![image-20230903175519085](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201088.png)
+![image-20230903175519085](./assets/202402222201088.png)
 
 **使用：**
 
@@ -850,7 +851,7 @@ export default {
 }
 ```
 
-![image-20230903175842395](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201089.png)
+![image-20230903175842395](./assets/202402222201089.png)
 
 #### ==全局注册：所有组件内都能使用==
 
@@ -900,7 +901,7 @@ Vue.component('HmButton', HmButton)
 
 ## 综合案例 - 小兔鲜首页 - 组件拆分
 
-![image-20230903180702557](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201090.png)
+![image-20230903180702557](./assets/202402222201090.png)
 
 页面开发思路：
 
@@ -962,7 +963,7 @@ el 根实例独有, ==data 是一个函数,==
 
 最终效果: ==必须是当前组件的元素==, 才会有这个自定义属性, 才会被这个样式作用到
 
-![image-20230903181656779](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201091.png)
+![image-20230903181656779](./assets/202402222201091.png)
 
 ### data 是一个函数
 
@@ -970,7 +971,7 @@ el 根实例独有, ==data 是一个函数,==
 
 每次创建新的组件实例，都会新执行一次 data 函数，得到一个新对象。
 
-![image-20230910104918895](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201092.png)
+![image-20230910104918895](./assets/202402222201092.png)
 
 组件三大组成部分的注意点：
 
@@ -988,7 +989,7 @@ el 根实例独有, ==data 是一个函数,==
 
 ⚫ 想用其他组件的数据 → 组件通信
 
-![image-20230910105456224](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201093.png)
+![image-20230910105456224](./assets/202402222201093.png)
 
 **思考：**
 
@@ -1002,7 +1003,7 @@ el 根实例独有, ==data 是一个函数,==
 1. 父子关系
 2. 非父子关系
 
-![image-20230910105635352](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201094.png)
+![image-20230910105635352](./assets/202402222201094.png)
 
 #### 组件通信解决方案：
 
@@ -1020,19 +1021,19 @@ el 根实例独有, ==data 是一个函数,==
 1. 父组件通过 props 将数据传递给子组件
 2. 子组件利用 $emit 通知父组件修改更新
 
-![image-20230910105935255](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201095.png)
+![image-20230910105935255](./assets/202402222201095.png)
 
 ### 父 → 子
 
 父组件通过 ==props== 将数据传递给子组件
 
-![image-20230910110123343](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201096.png)
+![image-20230910110123343](./assets/202402222201096.png)
 
 ### 子 → 父
 
 子组件利用 ==$emit== 通知父组件，进行修改更新
 
-![image-20230910110251358](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201097.png)
+![image-20230910110251358](./assets/202402222201097.png)
 
 1. 两种组件关系分类 和 对应的组件通信方案
 
@@ -1064,7 +1065,7 @@ Prop 作用：向子组件传递数据
 
 ⚫ 可以 传递 ==任意类型== 的prop
 
-![image-20230910110526594](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201098.png)
+![image-20230910110526594](./assets/202402222201098.png)
 
 ### props 校验
 
@@ -1132,7 +1133,7 @@ props: {
 
 ⑥ 持久化存储
 
-![image-20230910111248238](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201099.png)
+![image-20230910111248238](./assets/202402222201099.png)
 
 核心步骤：
 
@@ -1188,7 +1189,7 @@ this.msg = msg
 Bus.$emit('sendMsg', '这是一个消息')
 ```
 
-![image-20230914203829826](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201100.png)
+![image-20230914203829826](./assets/202402222201100.png)
 
 ### 非父子通信 (拓展) - provide & inject
 
@@ -1220,7 +1221,7 @@ export default {
 }
 ```
 
-![image-20230914204112490](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201101.png)
+![image-20230914204112490](./assets/202402222201101.png)
 
 
 
@@ -1288,6 +1289,7 @@ methods: {
 ```vue
 <BaseSelect v-model="selectId"></BaseSelect>
 ```
+
 子组件（封装）
 
 ```vue
@@ -1304,7 +1306,7 @@ methods: {
 </script>
 ```
 
-![image-20230914205600185](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201102.png)
+![image-20230914205600185](./assets/202402222201102.png)
 
 1. 表单类基础组件封装思路
 
@@ -1359,17 +1361,17 @@ methods: {
    1. 目标组件 – 添加 ref 属性
 
     ```vue
-     <BaseForm ref="baseForm"></BaseForm> 
+    <BaseForm ref="baseForm"></BaseForm> 
     ```
 
       
-   
+
    2. 恰当时机, 通过 this.$refs.xxx, 获取目标组件，就可以==调用组件对象里面的方法==
-   
+
    ```vue
    this.$refs.baseForm.组件方法()
    ```
-   
+
    ### Vue异步更新、$nextTick
 
 #### Vue的异步更新机制是什么
@@ -1388,7 +1390,7 @@ this.$refs.inp.focus() // 获取焦点
 
 问题："显示之后"，立刻获取焦点是不能成功的！
 
-==**原因：**Vue 是 异步更新 DOM (提升性能)==![image-20230923163303219](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201103.png)
+==**原因：**Vue 是 异步更新 DOM (提升性能)==![image-20230923163303219](./assets/202402222201103.png)
 
 $nextTick：==等 DOM 更新后,== 才会触发执行此方法里的函数体
 
@@ -1476,6 +1478,7 @@ mounted (){
 ```js
 <input v-指令名type="text">
 ```
+
    简洁
 
 自定义指令的作用?
@@ -1580,7 +1583,7 @@ color: {
 
 问题：组件的内容部分，==不希望写死==，希望能使用的时候==自定义==。怎么办？
 
-![image-20231001110921021](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201104.png)
+![image-20231001110921021](./assets/202402222201104.png)
 
 插槽基本语法：
 
@@ -1737,7 +1740,7 @@ v-slot:插槽名 可以简化成什么?
 </MyTable>
 ```
 
-![image-20231002111952545](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201105.png)
+![image-20231002111952545](./assets/202402222201105.png)
 
 基本使用步骤：
 
@@ -1797,7 +1800,7 @@ v-slot:插槽名 可以简化成什么?
 
 (3) 主体支持用户自定义
 
-![image-20231002195410696](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201106.png)
+![image-20231002195410696](./assets/202402222201106.png)
 
 ### 小结
 
@@ -1821,7 +1824,7 @@ v-slot:插槽名 可以简化成什么?
 
 ● 具体示例: 网易云音乐 https://music.163.com/
 
-![image-20231002195540513](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201107.png)
+![image-20231002195540513](./assets/202402222201107.png)
 
 | 开发分类 | 实现方式     | 页面性能       | 开发效率 | 用户体验 | 学习成本 | 首屏加载 | SEO  |
 | -------- | ------------ | -------------- | -------- | -------- | -------- | -------- | ---- |
@@ -1840,17 +1843,17 @@ VS
 
 1. 什么是单页面应用程序?
 
-		所有功能在==一个html页面==上实现
+   	所有功能在==一个html页面==上实现
 
 2. 单页面应用优缺点?
 
-		优点：按需更新性能高，开发效率高，用户体验好
-		
-		缺点：学习成本，首屏加载慢，不利于SEO
+   	优点：按需更新性能高，开发效率高，用户体验好
+   	
+   	缺点：学习成本，首屏加载慢，不利于SEO
 
 3. 应用场景？
 
-		系统类网站 / 内部网站 / 文档类网站 /移动端站点	
+   	系统类网站 / 内部网站 / 文档类网站 /移动端站点	
 
 单页面应用程序，之所以开发效率高，性能高，用户体验好
 
@@ -1864,21 +1867,21 @@ VS
 
 生活中的路由：设备和ip的==映射==关系
 
-![1696248360666](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201108.png)
+![1696248360666](./assets/202402222201108.png)
 
 Vue中路由：==路径== 和 ==组件== 的 ==映射== 关系
 
-![image-20231002200753152](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201109.png)
+![image-20231002200753152](./assets/202402222201109.png)
 
 1. 什么是路由？
 
-		路由是一种映射关系
+   	路由是一种映射关系
 
 2. Vue中的路由是什么?
 
-		==路径 和 组件 的映射关系==
-		
-		根据路由就能知道不同路径的，应该匹配渲染哪个组件
+   	==路径 和 组件 的映射关系==
+   	
+   	根据路由就能知道不同路径的，应该匹配渲染哪个组件
 
 ### VueRouter 的 介绍
 
@@ -1997,7 +2000,7 @@ import Friend from './views/Friend.vue'
 
 组件分类：Vue文件分2类；页面组件&复用组件  	注意：都是==.vue文件（本质无区别）==
 
-![image-20231002205451379](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201110.png)
+![image-20231002205451379](./assets/202402222201110.png)
 
 分类开来 ==更易维护==
 
@@ -2011,17 +2014,17 @@ import Friend from './views/Friend.vue'
 
 小练习：以下 .vue 文件，属于什么分类组件？应该放在哪个目录？
 
-![image-20231002205904204](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201111.png)
+![image-20231002205904204](./assets/202402222201111.png)
 
 1. 组件分类有哪两类？分类的目的？
 
-		页面组件 和 复用组件，便于维护
+   	页面组件 和 复用组件，便于维护
 
 2. 放在什么文件夹？作用分别是什么？
 
-		页面组件 - views文件夹 => 配合路由，页面展示
-		
-		复用组件 - components文件夹 => 封装复用
+   	页面组件 - views文件夹 => 配合路由，页面展示
+   	
+   	复用组件 - components文件夹 => 封装复用
 
 # Vue 核心技术与实战day06
 
@@ -2051,7 +2054,7 @@ import Friend from './views/Friend.vue'
 
 目标：将路由模块抽离出来。 好处：==拆分模块，利于维护==
 
-![image-20231013093738850](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201112.png)
+![image-20231013093738850](./assets/202402222201112.png)
 
 ==绝对路径：@指代src目录，可以用于快速引入组件==
 
@@ -2073,7 +2076,7 @@ vue-router 提供了一个全局组件 router-link (取代 a 标签)
 
 ② ==能高亮==，默认就会提供==高亮类名==，可以直接设置高亮样式
 
-![image-20231013094042698](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201113.png)
+![image-20231013094042698](./assets/202402222201113.png)
 
 1. router-link是什么?
 
@@ -2101,7 +2104,7 @@ to="/my" 可以匹配 /my /my/a /my/b ....
 
 to="/my" 仅可以匹配 /my
 
-![image-20231014211407091](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201114.png)
+![image-20231014211407091](./assets/202402222201114.png)
 
 小结
 
@@ -2123,7 +2126,7 @@ const router = new VueRouter({
 })
 ```
 
-![image-20231014212120449](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201115.png)
+![image-20231014212120449](./assets/202402222201115.png)
 
 小结
 
@@ -2144,15 +2147,15 @@ linkExactActiveClass 精确匹配 类名自定义
 
 1. ==查询参数传参==
 
-	① 语法格式如下
+   ① 语法格式如下
 
-	● to="/path?参数名=值"
+   ● to="/path?参数名=值"
 
 ② 对应页面组件接收传递过来的值
 
 	● $route.query.参数名
 
-![image-20231014212627427](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201116.png)
+![image-20231014212627427](./assets/202402222201116.png)
 
 2. 动态路由传参
 
@@ -2212,7 +2215,7 @@ const router = new VueRouter({
 })
 ```
 
-![image-20231015105455573](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201117.png)
+![image-20231015105455573](./assets/202402222201117.png)
 
 ### Vue路由 - 重定向
 
@@ -2232,7 +2235,7 @@ const router = new VueRouter({
 })
 ```
 
-![image-20231015110827975](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201118.png)
+![image-20231015110827975](./assets/202402222201118.png)
 
 ### Vue路由 - 404
 
@@ -2294,7 +2297,7 @@ this.$router.push({
 })
 ```
 
-![image-20231015153834777](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201119.png)
+![image-20231015153834777](./assets/202402222201119.png)
 
 ② name 命名路由跳转 (适合 path 路径长的场景)
 
@@ -2332,7 +2335,7 @@ this.$router.push({
 })
 ```
 
-![image-20231015155205536](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201120.png)
+![image-20231015155205536](./assets/202402222201120.png)
 
 ==② name 命名路由跳转传参 (query传参)==
 
@@ -2347,7 +2350,7 @@ this.$router.push({
 //$route.query.参数名 接收
 ```
 
-![image-20231015161330878](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201122.png)
+![image-20231015161330878](./assets/202402222201122.png)
 
 ==① path 路径跳转传参 (动态路由传参)==
 
@@ -2358,7 +2361,7 @@ this.$router.push('/路径/参数值')
 })
 ```
 
-![image-20231015161522736](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201123.png)
+![image-20231015161522736](./assets/202402222201123.png)
 
 ==② name 命名路由跳转传参 (动态路由传参)==
 
@@ -2371,7 +2374,7 @@ this.$router.push({
 })
 ```
 
-![image-20231015161617841](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201124.png)
+![image-20231015161617841](./assets/202402222201124.png)
 
 ### 小结
 
@@ -2400,6 +2403,7 @@ name: '路由名'
 2. name 命名路由跳转
 
 ① query传参
+
 ```js
 this.$router.push({
         name: '路由名字',
@@ -2409,6 +2413,7 @@ this.$router.push({
 	}
 })
 ```
+
 ② 动态路由传参 (需要配动态路由)
 
 ```js
@@ -2438,7 +2443,7 @@ this.$router.push({
 
 ③ ==组件缓存==，优化性能
 
-![image-20231015165253128](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202310152054215.png)
+![image-20231015165253128](./assets/202310152054215.png)
 
 #### 组件缓存 keep-alive
 
@@ -2498,6 +2503,7 @@ deactivated() {
 	console.log('deactived 失活 → 离开页面');
 }
 ```
+
 #### 总结
 
 1. keep-alive是什么
@@ -2548,7 +2554,7 @@ deactivated 当组件==不被使用==的时候触发 → 离开页面触发
 
 目标：基于 VueCli 自定义创建项目架子
 
-![image-20231022100453322](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202311042137580.png)
+![image-20231022100453322](./assets/202311042137580.png)
 
 ### ESlint 代码规范
 
@@ -2580,7 +2586,7 @@ l 坚持使用全等 === 摒弃 ==
 
 比如：在main.js中随意做一些改动，添加一些分号，空行。
 
-![image-20231022104714787](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202311042137581.png)
+![image-20231022104714787](./assets/202311042137581.png)
 
 **目标：学会解决代码规范错误**
 
@@ -2631,7 +2637,7 @@ vuex 是一个 vue 的 ==状态管理工具==，状态就是数据。
 
 ③ 操作简洁 (vuex提供了一些辅助函数)
 
-![image-20231022160529959](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202311042137582.png)
+![image-20231022160529959](./assets/202311042137582.png)
 
 ## 构建 vuex [多组件数据共享] 环境
 
@@ -2647,7 +2653,7 @@ vuex 是一个 vue 的 ==状态管理工具==，状态就是数据。
 
 目标：安装 vuex 插件，初始化一个空仓库
 
-![image-20231022171548729](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202311042137583.png)
+![image-20231022171548729](./assets/202311042137583.png)
 
 ## 核心概念 - state 状态
 
@@ -2655,7 +2661,7 @@ vuex 是一个 vue 的 ==状态管理工具==，状态就是数据。
 
 1. 提供数据：
 
-	State 提供唯一的公共数据源，所有共享的数据都要统一放到 Store 中的 State 中存储。
+   State 提供唯一的公共数据源，所有共享的数据都要统一放到 Store 中的 State 中存储。
 
 在 state 对象中可以添加我们要共享的数据。
 
@@ -2706,7 +2712,7 @@ count () {
 },
 ```
 
-![image-20231105195113604](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201125.png)
+![image-20231105195113604](./assets/202402222201125.png)
 
 ## 核心概念 - mutations
 
@@ -2714,7 +2720,7 @@ count () {
 
 通过 strict: true 可以开启严格模式
 
-![image-20231105195424246](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201126.png)
+![image-20231105195424246](./assets/202402222201126.png)
 
 this.$store.state.count++ (==错误写法==)
 
@@ -2759,7 +2765,7 @@ addCount (state, n) {
 2. 页面中提交调用 mutation
 
   ```js
-  this.$store.commit('addCount', 10)
+this.$store.commit('addCount', 10)
   ```
 
   
@@ -2779,11 +2785,11 @@ mutations - 练习
 
 目标：减法功能，巩固 mutations 传参语法
 
-![image-20231105195911588](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201127.png)
+![image-20231105195911588](./assets/202402222201127.png)
 
 mutations - 练习
 
-目标：实时输入，实时更新，巩固 mutations 传参语法![image-20231105211558856](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201128.png)
+目标：实时输入，实时更新，巩固 mutations 传参语法![image-20231105211558856](./assets/202402222201128.png)
 
 ### 辅助函数 - mapMutations
 
@@ -2799,7 +2805,7 @@ subCount (state, n) {
 }
 ```
 
-![image-20231105211840034](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201129.png)
+![image-20231105211840034](./assets/202402222201129.png)
 
 ## 核心概念 - actions
 
@@ -2809,7 +2815,7 @@ subCount (state, n) {
 
 说明：==mutations 必须是同步的 (便于监测数据变化，记录调试)==
 
-![image-20231123213535535](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201130.png)
+![image-20231123213535535](./assets/202402222201130.png)
 
 ```js
 mutations: {
@@ -2924,7 +2930,7 @@ computed: {
 
 store 对象就有可能变得相当臃肿。(当项目变得越来越大的时候，Vuex会变得越来越难以维护)
 
-![image-20231204213217220](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201131.png)
+![image-20231204213217220](./assets/202402222201131.png)
 
 目标：掌握核心概念 module 模块的创建
 
@@ -2957,7 +2963,7 @@ modules: {
 })
 ```
 
-![image-20231204213520311](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201132.png)
+![image-20231204213520311](./assets/202402222201132.png)
 
 目标：掌握模块中 ==state== 的访问语法
 
@@ -2983,7 +2989,7 @@ export default {
 }
 ```
 
-![image-20231204213639696](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201133.png)
+![image-20231204213639696](./assets/202402222201133.png)
 
 目标：掌握模块中 ==getters== 的访问语法
 
@@ -3071,7 +3077,7 @@ vue create vue-cart-demo
 
 3. 将原本src内容清空，替换成素材的《vuex-cart-准备代码》并分析
 
-![image-20231223105654680](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201134.png)
+![image-20231223105654680](./assets/202402222201134.png)
 
 **目标：**构建 cart 购物车模块
 
@@ -3105,7 +3111,7 @@ modules: {
 export default store
 ```
 
-![image-20231223105946230](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201135.png)
+![image-20231223105946230](./assets/202402222201135.png)
 
 **目标：**基于 json-server 工具，准备后端接口服务环境
 
@@ -3123,7 +3129,7 @@ export default store
 
    推荐：` json-server --watch index.json (可以实时监听 json 文件的修改)`
 
-![image-20231223110409649](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201136.png)
+![image-20231223110409649](./assets/202402222201136.png)
 
 **目标：**请求获取数据存入 vuex, 映射渲染
 
@@ -3142,7 +3148,7 @@ actions: {
 }
 ```
 
-![image-20231223110854879](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201137.png)
+![image-20231223110854879](./assets/202402222201137.png)
 
 **目标：**修改数量功能完成
 
@@ -3163,7 +3169,7 @@ actions: {
 },
 ```
 
-![image-20231223111938726](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201138.png)
+![image-20231223111938726](./assets/202402222201138.png)
 
 **目标：**底部 getters 统计
 
@@ -3199,25 +3205,25 @@ computed: {
 
 目标：查看项目效果，明确功能模块 → 完整的电商购物流程
 
-![image-20240101214256107](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201139.png)
+![image-20240101214256107](./assets/202402222201139.png)
 
 项目收获
 
 目标：明确做完本项目，能够收获哪些内容
 
-![image-20240101214321089](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201140.png)
+![image-20240101214321089](./assets/202402222201140.png)
 
 ### 创建项目
 
 目标：基于 VueCli 自定义创建项目架子
 
-![image-20240101214444195](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201141.png)
+![image-20240101214444195](./assets/202402222201141.png)
 
 ### 调整初始化目录
 
 **目标：将目录调整成符合企业规范的目录**
 
-![image-20240101214550098](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201142.png)
+![image-20240101214550098](./assets/202402222201142.png)
 
 1. 删除 多余的文件
 2. 修改 路由配置 和 App.vue
@@ -3251,7 +3257,7 @@ Vue的组件库并不是唯一的，vant-ui 也仅仅只是组件库的一种。
 
 **目标：明确 全部导入 和 按需导入 的区别**
 
-![image-20240106193521148](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201143.png)
+![image-20240106193521148](./assets/202402222201143.png)
 
 **目标：阅读文档，掌握** **全部导入** **的基本使用**
 
@@ -3366,7 +3372,7 @@ module.exports = {
 
 **目标：分析项目页面，设计路由，配置一级路由**
 
-但凡是单个页面，独立展示的，都是一级路由![image-20240106194457272](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201144.png)
+但凡是单个页面，独立展示的，都是一级路由![image-20240106194457272](./assets/202402222201144.png)
 
 目标：阅读vant组件库文档，实现 **底部导航 tabbar**
 
@@ -3402,7 +3408,7 @@ Vue.use(TabbarItem)
 </van-tabbar>
 ```
 
-目标：基于底部导航，完成**二级路由配置**![image-20240110102621623](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201145.png)
+目标：基于底部导航，完成**二级路由配置**![image-20240110102621623](./assets/202402222201145.png)
 
 ### 登录页
 
@@ -3434,7 +3440,7 @@ Vue.use(TabbarItem)
 
 所以项目开发中, 都会对 axios 进行基本的二次封装, 单独封装到一个 request 模块中, 便于维护使用
 
-![image-20240110181523559](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201146.png)
+![image-20240110181523559](./assets/202402222201146.png)
 
 接口文档地址：
 
@@ -3458,17 +3464,17 @@ http://cba.itlike.com/public/index.php?s=/api/
 1. 动态将请求回来的 base64 图片，解析渲染出来
 2. 点击验证码图片盒子，要刷新验证码
 
-![image-20240110181745117](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201147.png)
+![image-20240110181745117](./assets/202402222201147.png)
 
 #### api 接口模块 -封装图片验证码接口
 
-目标：将请求封装成方法，==统一存放到 api 模块==，与页面分离![image-20240110181906385](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201148.png)
+目标：将请求封装成方法，==统一存放到 api 模块==，与页面分离![image-20240110181906385](./assets/202402222201148.png)
 
 以前的模式：
 
 1. 页面中充斥着请求代码，可阅读性不高
 2. 相同的请求没有复用
-3. 请求没有统一管理![image-20240110182007256](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201149.png)
+3. 请求没有统一管理![image-20240110182007256](./assets/202402222201149.png)
 
 #### Toast 轻提示
 
@@ -3498,7 +3504,7 @@ Toast('提示内容')
 this.$toast('提示内容')
 ```
 
-![image-20240110182240050](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201150.png)
+![image-20240110182240050](./assets/202402222201150.png)
 
 #### 短信验证倒计时
 
@@ -3508,7 +3514,7 @@ this.$toast('提示内容')
 
 1. 点击按钮，实现 ==倒计时== 效果
 2. 倒计时之前的 ==校验处理== (手机号、验证码)
-3. ==封装短信验证请求接口==，发送请求添加提示![image-20240110182356135](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201151.png)
+3. ==封装短信验证请求接口==，发送请求添加提示![image-20240110182356135](./assets/202402222201151.png)
 
 #### 登录功能
 
@@ -3520,7 +3526,7 @@ this.$toast('提示内容')
 2. 登录前的校验 (手机号，图形验证码，短信验证码)
 3. 调用方法，发送请求，成功添加提示并跳转
 
-![image-20240110182714901](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201152.png)
+![image-20240110182714901](./assets/202402222201152.png)
 
 #### 响应拦截器统一处理错误提示
 
@@ -3534,7 +3540,7 @@ this.$toast('提示内容')
 
 只要不是 200, 就给默认提示，抛出错误
 
-![image-20240110182823516](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201153.png)
+![image-20240110182823516](./assets/202402222201153.png)
 
 #### 登录权证信息存储
 
@@ -3545,7 +3551,7 @@ this.$toast('提示内容')
 1. token 存入 vuex 的好处，易获取，响应式
 2. vuex 需要分模块 => user 模块
 
-![image-20240110183104942](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201154.png)
+![image-20240110183104942](./assets/202402222201154.png)
 
 #### storage存储模块 - vuex 持久化处理
 
@@ -3577,7 +3583,7 @@ export const removeInfo = () => {
 }
 ```
 
-![image-20240110183432873](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201155.png)
+![image-20240110183432873](./assets/202402222201155.png)
 
 #### 添加请求 loading 效果
 
@@ -3597,7 +3603,7 @@ export const removeInfo = () => {
 1. ==请求拦截器==中，每次请求，==打开 loading==
 2. ==响应拦截器==中，每次响应，==关闭 loading==
 
-![image-20240110183719378](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201156.png)
+![image-20240110183719378](./assets/202402222201156.png)
 
 页面访问拦截
 
@@ -3622,13 +3628,13 @@ router.beforeEach((to, from, next) => {
 })
 ```
 
-![image-20240110183856568](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201157.png)
+![image-20240110183856568](./assets/202402222201157.png)
 
 ### 首页 
 
 - 静态结构准备 & 动态渲染
 
-**目标：实现首页静态结构，封装接口，完成首页动态渲染**![image-20240110183947251](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201158.png)
+**目标：实现首页静态结构，封装接口，完成首页动态渲染**![image-20240110183947251](./assets/202402222201158.png)
 
 ### 搜索 
 
@@ -3650,7 +3656,7 @@ router.beforeEach((to, from, next) => {
 3. 清空历史：添加清空图标，可以清空历史记录
 4. 持久化：搜索历史需要持久化，刷新历史不丢失
 
-![image-20240110202135658](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201159.png)
+![image-20240110202135658](./assets/202402222201159.png)
 
 #### 搜索列表
 
@@ -3658,15 +3664,15 @@ router.beforeEach((to, from, next) => {
 
 **目标：实现搜索列表页静态结构，封装接口，完成搜索列表页的渲染**
 
-![image-20240110202223940](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201160.png)
+![image-20240110202223940](./assets/202402222201160.png)
 
-**目标：实现商品详情静态结构，封装接口，完成商品详情页渲染**![image-20240110202353224](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201161.png)
+**目标：实现商品详情静态结构，封装接口，完成商品详情页渲染**![image-20240110202353224](./assets/202402222201161.png)
 
 ### 加入购物车
 
 ####  唤起弹层
 
-**目标：点击加入购物车，唤起弹层效果**![image-20240110202553362](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201162.png)
+**目标：点击加入购物车，唤起弹层效果**![image-20240110202553362](./assets/202402222201162.png)
 
 #### 封装数字框组件
 
@@ -3681,7 +3687,7 @@ router.beforeEach((to, from, next) => {
 5. 数字不能减到小于 1
 6. 可以直接输入内容，输入完成判断是否合法
 
-![image-20240110202754746](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201163.png)
+![image-20240110202754746](./assets/202402222201163.png)
 
 #### 判断 token 添加登录提示
 
@@ -3694,7 +3700,7 @@ router.beforeEach((to, from, next) => {
 1. 若存在：继续加入购物车操作
 2. 不存在：==提示== 用户未登录，引导到登录页，==登录完回跳==
 
-![image-20240110203010782](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201164.png)
+![image-20240110203010782](./assets/202402222201164.png)
 
 #### 封装接口进行请求
 
@@ -3706,7 +3712,7 @@ router.beforeEach((to, from, next) => {
 4. 解决问题：请求拦截器统一携带 token
 5. 小图标定制
 
-![image-20240110203131213](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201165.png)
+![image-20240110203131213](./assets/202402222201165.png)
 
 ### 购物车模块
 
@@ -3725,7 +3731,7 @@ router.beforeEach((to, from, next) => {
 7. 编辑切换状态，删除功能
 8. 空购物车处理
 
-![image-20240110203319890](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201167.png)
+![image-20240110203319890](./assets/202402222201167.png)
 
 ### 订单结算台
 
@@ -3733,7 +3739,7 @@ router.beforeEach((to, from, next) => {
 
 具体需要哪些参数，基于 "订单结算台" 的需求来定。
 
-![image-20240110204101725](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201168.png)
+![image-20240110204101725](./assets/202402222201168.png)
 
 #### 确认订单信息
 
@@ -3744,7 +3750,7 @@ router.beforeEach((to, from, next) => {
 1. 购物车结算
 2. 立即购买结算
 
-订单信息确认，可以共用同一个接口(参数不同)![image-20240112174554904](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201169.png)
+订单信息确认，可以共用同一个接口(参数不同)![image-20240112174554904](./assets/202402222201169.png)
 
 **目标：购物车结算跳转，****传递参数****，调用接口渲染订单结算台**
 
@@ -3757,7 +3763,7 @@ router.beforeEach((to, from, next) => {
 
 5. 未登录时，确认框的复用 (mixins混入)
 
-![image-20240112175141031](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201170.png)
+![image-20240112175141031](./assets/202402222201170.png)
 
 #### 提交订单并支付
 
@@ -3768,15 +3774,15 @@ router.beforeEach((to, from, next) => {
 1. 封装通用请求方法
 2. 买家留言绑定
 3. 注册事件，调用方法提交订单并支付
-![image-20240112175425747](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201171.png)
+   ![image-20240112175425747](./assets/202402222201171.png)
 
 #### 订单管理 & 个人中心 (快速实现)
 
 **目标：基于笔记，快速实现 订单管理 和 个人中心 跑通流程**
 
-![image-20240112175456891](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201172.png)
+![image-20240112175456891](./assets/202402222201172.png)
 
-![image-20240112175552514](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201173.png)
+![image-20240112175552514](./assets/202402222201173.png)
 
 ### 打包发布
 
@@ -3794,7 +3800,7 @@ router.beforeEach((to, from, next) => {
 
 ④ ....
 
-打包后，可以生成，浏览器能够直接运行的网页 => 就是需要上线的源码！![image-20240112175907311](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201174.png)
+打包后，可以生成，浏览器能够直接运行的网页 => 就是需要上线的源码！![image-20240112175907311](./assets/202402222201174.png)
 
 **目标：打包的命令 和 配置**
 
@@ -3806,7 +3812,7 @@ router.beforeEach((to, from, next) => {
 
 **配置：**默认情况下，需要放到服务器根目录打开，如果希望双击运行，需要配置publicPath 配成相对路径
 
-![image-20240112180311639](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201175.png)
+![image-20240112180311639](./assets/202402222201175.png)
 
 **目标：配置路由懒加载，实现打包优化**
 
@@ -3873,7 +3879,7 @@ const addCount = ()=> count.value++
 
 ### 2. Vue3的优势
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201176.png)
+![image.png](./assets/202402222201176.png)
 
 
 ## 使用create-vue搭建Vue3项目
@@ -3883,7 +3889,7 @@ const addCount = ()=> count.value++
 > create-vue是Vue官方新的脚手架工具，底层切换到了 vite （下一代前端工具链），为开发提供极速响应
 
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201177.png)
+![image.png](./assets/202402222201177.png)
 
 ### 2. 使用create-vue创建项目
 
@@ -3895,11 +3901,11 @@ const addCount = ()=> count.value++
 npm init vue@latest
 ```
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201178.png)
+![image.png](./assets/202402222201178.png)
 
 ## 熟悉项目和关键文件
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201179.png)
+![image.png](./assets/202402222201179.png)
 
 ## 组合式API - setup选项
 
@@ -3924,7 +3930,7 @@ npm init vue@latest
 
 > 在beforeCreate钩子之前执行
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201180.png)
+![image.png](./assets/202402222201180.png)
 
 ### 2. setup中写代码的特点
 
@@ -4132,7 +4138,7 @@ const filterList = computed(item=>item > 2)
 
 ### 1. 选项式对比组合式
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201181.png)
+![image.png](./assets/202402222201181.png)
 
 ### 2. 生命周期函数基本使用
 
@@ -4175,7 +4181,7 @@ onMounted(()=>{
 > 2. 子组件内部通过props选项接收数据
 
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201182.png)
+![image.png](./assets/202402222201182.png)
 
 ### 2. 子传父
 
@@ -4185,7 +4191,7 @@ onMounted(()=>{
 > 2. 子组件内部通过 emit 方法触发事件
 
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201183.png)
+![image.png](./assets/202402222201183.png)
 
 ## 组合式API - 模版引用
 
@@ -4198,14 +4204,14 @@ onMounted(()=>{
 > 1. 调用ref函数生成一个ref对象
 > 2. 通过ref标识绑定ref对象到标签
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201184.png)
+![image.png](./assets/202402222201184.png)
 
 ### 2. defineExpose
 
 > 默认情况下在 <script setup>语法糖下组件内部的属性和方法是不开放给父组件访问的，可以通过defineExpose编译宏指定哪些属性和方法容许访问
 > 说明：指定testMessage属性可以被访问到
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201185.png)
+![image.png](./assets/202402222201185.png)
 
 ## 组合式API - provide和inject
 
@@ -4213,7 +4219,7 @@ onMounted(()=>{
 
 > 顶层组件向任意的底层组件传递数据和方法，实现跨层组件通信
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201186.png)
+![image.png](./assets/202402222201186.png)
 
 ### 2. 跨层传递普通数据
 
@@ -4223,19 +4229,19 @@ onMounted(()=>{
 > 2. 底层组件通过 `inject` 函数提供数据
 
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201187.png)
+![image.png](./assets/202402222201187.png)
 
 ### 3. 跨层传递响应式数据
 
 > 在调用provide函数时，第二个参数设置为ref对象
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201188.png)
+![image.png](./assets/202402222201188.png)
 
 ### 4. 跨层传递方法
 
 > 顶层组件可以向底层组件传递方法，底层组件调用方法修改顶层组件的数据
 
-![image.png](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201189.png)
+![image.png](./assets/202402222201189.png)
 
 
 
@@ -4259,7 +4265,7 @@ onMounted(()=>{
 
 所以在 Vue 3.3 中新引入了 defineOptions 宏。顾名思义，主要是用来定义 Options API 的选项。可以用 defineOptions 定义任意的选项， props, emits, expose, slots 除外（因为这些可以使用 defineXXX 来做到）
 
-![image-20230704082955748](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201190.png)
+![image-20230704082955748](./assets/202402222201190.png)
 
 
 
@@ -4269,13 +4275,13 @@ onMounted(()=>{
 
 在Vue3中，自定义组件上使用v-model, 相当于传递一个modelValue属性，同时触发 update:modelValue 事件
 
-![image-20230704083027349](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201191.png)
+![image-20230704083027349](./assets/202402222201191.png)
 
 我们需要先定义 props，再定义 emits 。其中有许多重复的代码。如果需要修改此值，还需要手动调用 emit 函数。
 
 于是乎 defineModel 诞生了。
 
-![image-20230704083056549](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201192.png)
+![image-20230704083056549](./assets/202402222201192.png)
 
 
 
@@ -4388,7 +4394,7 @@ export default defineConfig({
 
 
 
-![image-20230711003405635](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201193.png)
+![image-20230711003405635](./assets/202402222201193.png)
 
 
 
@@ -4396,13 +4402,13 @@ export default defineConfig({
 
 ### 项目页面介绍
 
-![image-20230706205300370](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201194.png)
+![image-20230706205300370](./assets/202402222201194.png)
 
-![image-20230706210947086](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201195.png)
+![image-20230706210947086](./assets/202402222201195.png)
 
-![image-20230706211055251](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201196.png)
+![image-20230706211055251](./assets/202402222201196.png)
 
-![image-20230706211033589](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201197.png)
+![image-20230706211033589](./assets/202402222201197.png)
 
 
 
@@ -4422,7 +4428,7 @@ npm install -g pnpm
 pnpm create vue
 ```
 
-![image-20230710172832242](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201198.png)
+![image-20230710172832242](./assets/202402222201198.png)
 
 
 
@@ -4607,7 +4613,7 @@ app.mount('#app')
 
 3. 新增需要目录 api  utils
 
-![image-20230710215822678](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201199.png)
+![image-20230710215822678](./assets/202402222201199.png)
 
 4. 将项目需要的全局样式 和 图片文件，复制到 assets 文件夹中,  并将全局样式在main.js中引入
 
@@ -4714,7 +4720,7 @@ export default defineConfig({
 </template>
 ```
 
-![image-20230710225018162](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201200.png)
+![image-20230710225018162](./assets/202402222201200.png)
 
 **彩蛋：**默认 components 下的文件也会被自动注册~
 
@@ -4788,7 +4794,7 @@ pinia 独立维护
 
 ### 数据交互 - 请求工具设计
 
-![image-20230711071913061](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201201.png)
+![image-20230711071913061](./assets/202402222201201.png)
 
 #### 1. 创建 axios 实例
 
@@ -6066,7 +6072,7 @@ const onDelChannel = async (row) => {
 
 #### 基本架子搭建
 
-![image-20230724224754131](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202402222201202.png)
+![image-20230724224754131](./assets/202402222201202.png)
 
 1. 搜索表单
 

@@ -114,9 +114,9 @@ AJAX 的所有操作都是通过该对象进行的。
 
 定义
 
-![image-20230624204825863](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002803.png)
+![image-20230624204825863](./4-AJAX.assets/202308291002803.png)
 
-概念：AJAX 是浏览器与服务器进行数据通信的技术![image-20230624204910043](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002804.png)
+概念：AJAX 是浏览器与服务器进行数据通信的技术![image-20230624204910043](./4-AJAX.assets/202308291002804.png)
 
 怎么用 AJAX ？
 
@@ -138,7 +138,7 @@ axios 使用 语法：
 
    ✓ 再用 .then 回调函数接收结果，并做后续处理
 
-![image-20230624205100623](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002806.png)
+![image-20230624205100623](./4-AJAX.assets/202308291002806.png)
 
 1. AJAX 有什么用？ 
 
@@ -156,7 +156,7 @@ axios 使用 语法：
 
 原因：知道作用和组成，方便与后端人员沟通
 
-![image-20230624205347564](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002807.png)
+![image-20230624205347564](./4-AJAX.assets/202308291002807.png)
 
 
 
@@ -164,7 +164,7 @@ axios 使用 语法：
 
 组成
 
-![image-20230624205454719](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002808.png)
+![image-20230624205454719](./4-AJAX.assets/202308291002808.png)
 
 
 
@@ -198,7 +198,7 @@ axios 使用 语法：
 
  语法：http://xxxx.com/xxx/xxx`?`参数名1=值1&参数名2=值2
 
-![f](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002809.png)
+![f](./4-AJAX.assets/202308291002809.png)
 
 语法：使用 axios 提供的 params 选项 
 
@@ -224,13 +224,13 @@ axios 使用 语法：
 
 ### 常用请求方法
 
-请求方法：对服务器资源，要执行的操作![image-20230629202435310](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002810.png)
+请求方法：对服务器资源，要执行的操作![image-20230629202435310](./4-AJAX.assets/202308291002810.png)
 
 ### 数据提交 
 
 场景：当数据需要在服务器上保存
 
-![image-20230629202602490](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002811.png)
+![image-20230629202602490](./4-AJAX.assets/202308291002811.png)
 
 ### axios 请求配置
 
@@ -238,7 +238,7 @@ url：请求的 URL 网址
 
 method：请求的方法，GET可以省略（不区分大小写） 
 
-data：提交数据![image-20230629203008213](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002812.png)
+data：提交数据![image-20230629203008213](./4-AJAX.assets/202308291002812.png)
 
 ### 数据提交－注册账号
 
@@ -272,7 +272,7 @@ data：提交数据![image-20230629203008213](https://ltpbje.oss-cn-zhangjiakou.
 
 ## 01.XMLHttpRequest - 基础使用
 
-![image-20230622095100853](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002813.png)
+![image-20230622095100853](./4-AJAX.assets/202308291002813.png)
 
 AJAX原理 - XMLHttpRequest
 
@@ -289,7 +289,7 @@ AJAX原理 - XMLHttpRequest
 3. 监听 loadend 事件，接收响应结果 
 4. 发起请求
 
-![image-20230622095226493](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002814.png)
+![image-20230622095226493](./4-AJAX.assets/202308291002814.png)
 
 1. AJAX 原理是什么？
 
@@ -323,7 +323,7 @@ AJAX原理 - XMLHttpRequest
 
 ### 定义
 
-![image-20230622095631236](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002815.png)
+![image-20230622095631236](./4-AJAX.assets/202308291002815.png)
 
 好处： 1. 逻辑更清晰 2. 了解 axios 函数内部运作机制 3. 能解决回调函数地狱问题
 
@@ -350,7 +350,7 @@ AJAX原理 - XMLHttpRequest
 
 注意：Promise对象一旦被兑现/拒绝 .catch(回调函数) 就是已敲定了，状态无法再被改变
 
-![image-20230622095918219](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002816.png)
+![image-20230622095918219](./4-AJAX.assets/202308291002816.png)
 
 ### 总结
 
@@ -465,7 +465,7 @@ AJAX原理 - XMLHttpRequest
 
 好处：通过链式调用，**解决回调函数嵌套问题**
 
-![image-20230622161104678](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002817.png)
+![image-20230622161104678](./4-AJAX.assets/202308291002817.png)
 
 1. 什么是 Promise 的链式调用？ 
    ➢ 使用 then 方法返回新 Promise 对象特性，一直串联下去 
@@ -550,7 +550,7 @@ AJAX原理 - XMLHttpRequest
 
 • utils：实用程序文件夹（工具插件）
 
-![image-20230629105508063](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002818.png)
+![image-20230629105508063](./4-AJAX.assets/202308291002818.png)
 
 1. 为什么要按照一定的结构，管理代码文件？ ✓ 方便以后的查找和扩展
 
@@ -572,7 +572,7 @@ AJAX原理 - XMLHttpRequest
 
 手机号+验证码，登录流程：
 
-![image-20230629105703753](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002819.png)
+![image-20230629105703753](./4-AJAX.assets/202308291002819.png)
 
 #### token 的介绍
 
@@ -580,7 +580,7 @@ AJAX原理 - XMLHttpRequest
 
 创建：正确登录后，由后端签发并返回
 
-![image-20230629195338871](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002820.png)
+![image-20230629195338871](./4-AJAX.assets/202308291002820.png)
 
 注意：前端只能判断 `token 有无`，而后端才能判断 `token 的有效性`
 
@@ -632,11 +632,11 @@ axios.interceptors.request.use(function (config) {
 });
 ```
 
-![image-20230629200331007](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002821.png)
+![image-20230629200331007](./4-AJAX.assets/202308291002821.png)
 
 axios 请求拦截器：发起请求之前，触发的配置函数，对**请求参数**进行额外配置
 
-![image-20230629200506679](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002822.png)
+![image-20230629200506679](./4-AJAX.assets/202308291002822.png)
 
 1. 什么是 axios 请求拦截器？ 
 
@@ -652,7 +652,7 @@ axios 响应拦截器和身份验证失败 axios 响应拦截器：响应回到 
 
 axios 响应拦截器：响应回到 then/catch 之前，触发的拦截函数，对响应结果统一处理 例如：身份验证失败，统一判断并做处理
 
-![image-20230629200759455](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002823.png)
+![image-20230629200759455](./4-AJAX.assets/202308291002823.png)
 
 1. 什么是 axios 响应拦截器？
 
@@ -664,7 +664,7 @@ axios 响应拦截器：响应回到 then/catch 之前，触发的拦截函数�
 
 ### 优化-axios 响应结果
 
-目标：axios 直接接收服务器返回的响应结果![image-20230629200955698](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002824.png)
+目标：axios 直接接收服务器返回的响应结果![image-20230629200955698](./4-AJAX.assets/202308291002824.png)
 
 发布文章-富文本编辑器 
 
@@ -672,7 +672,7 @@ axios 响应拦截器：响应回到 then/catch 之前，触发的拦截函数�
 
 富文本编辑器：用于编写富文本内容的容器
 
-![image-20230629201056853](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002825.png)
+![image-20230629201056853](./4-AJAX.assets/202308291002825.png)
 
 发布文章-富文本编辑器 目标：发布文章页，富文本编辑器的集成 使用：**wangEditor 插件** 
 
@@ -769,7 +769,7 @@ axios 响应拦截器：响应回到 then/catch 之前，触发的拦截函数�
 3. 调用删除接口，传递文章 id 到服务器 
 4. 重新获取文章列表，并覆盖展示
 
-![image-20230703181403330](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002826.png)
+![image-20230703181403330](./4-AJAX.assets/202308291002826.png)
 
 #### 内容管理-删除最后一条
 
@@ -790,7 +790,7 @@ axios 响应拦截器：响应回到 then/catch 之前，触发的拦截函数�
 3. 修改标题和按钮文字 
 4. 获取文章详情数据并回显表单
 
-![image-20230703184620727](https://ltpbje.oss-cn-zhangjiakou.aliyuncs.com/img/202308291002827.png)
+![image-20230703184620727](./4-AJAX.assets/202308291002827.png)
 
 #### 内容管理-编辑文章-保存 
 
