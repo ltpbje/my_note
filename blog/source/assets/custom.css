@@ -43,46 +43,24 @@ html, body { background: var(--nb-page) !important; }
 [data-theme='dark'] #content-inner,
 [data-theme='dark'] .layout { background: var(--nb-page) !important; }
 
-/* ---------- Hero 头图：深蓝渐变 + 光晕（设计稿 260px 横幅） ---------- */
+/* ---------- Hero 头图：星空风景 + 深蓝遮罩（仅首页全屏展示） ---------- */
 #page-header.full_page {
-  height: 260px !important;
-  min-height: 260px !important;
-  background: linear-gradient(115deg, #0a1a29 0%, #143856 55%, #0d263e 100%) !important;
-  background-image: linear-gradient(115deg, #0a1a29 0%, #143856 55%, #0d263e 100%) !important;
+  height: 100vh !important;
+  min-height: 100vh !important;
+  background-image: url('/assets/hero.jpg') !important;
+  background-size: cover !important;
+  background-position: center 40% !important;
   position: relative;
   overflow: hidden;
-}
-#page-header.full_page::before {
-  content: '';
-  position: absolute;
-  right: -80px;
-  top: -160px;
-  width: 420px;
-  height: 420px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(34, 211, 238, .35) 0%, rgba(34, 211, 238, 0) 70%);
-  pointer-events: none;
-}
-#page-header.full_page::after {
-  content: '';
-  position: absolute;
-  left: -100px;
-  bottom: -180px;
-  width: 360px;
-  height: 360px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(59, 130, 246, .3) 0%, rgba(59, 130, 246, 0) 70%);
-  pointer-events: none;
 }
 #page-header.full_page #site-info { z-index: 2; position: relative; }
 #page-header .site-title {
   font-weight: 700;
   letter-spacing: 1px;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .25);
+  text-shadow: 0 2px 18px rgba(0, 0, 0, .35);
   color: #fff !important;
 }
-#subtitle { color: #a9c2d4 !important; }
-#subtitle::after { display: none !important; }
+#subtitle { color: #cfe1ee !important; }
 #scroll-down { bottom: 14px !important; }
 
 /* ---------- 文章详情页头图：深蓝遮罩 ---------- */
@@ -90,20 +68,21 @@ html, body { background: var(--nb-page) !important; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(115deg, #0a1a29 0%, #143856 55%, #0d263e 100%);
+  background: linear-gradient(115deg, rgba(10, 26, 41, .55), rgba(13, 38, 62, .75));
   z-index: 0;
   pointer-events: none;
 }
 #page-header.post-bg > * { position: relative; z-index: 2; }
 
-/* ---------- 导航栏 ---------- */
+/* ---------- 导航栏：透明融合头图，滚动后加毛玻璃 ---------- */
 #nav {
-  background: rgba(14, 31, 48, .85) !important;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, .08) !important;
+  background: rgba(10, 26, 41, .38) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
-[data-theme='dark'] #nav { background: rgba(9, 18, 30, .92) !important; }
+[data-theme='dark'] #nav { background: rgba(9, 18, 30, .55) !important; }
 #nav a,
 #nav a:visited { color: #e8f0f7 !important; }
 #nav a:hover { color: #7dd3fc !important; }
@@ -265,4 +244,19 @@ a[href*="/tags/面试"] { background: #f5f3ff !important; color: #7c3aed !import
   #recent-posts .recent-post-item { display: block !important; height: auto !important; }
   #recent-posts .recent-post-item .post_cover { width: 100% !important; height: 200px !important; }
   #recent-posts .recent-post-item .recent-post-info { padding: 16px !important; }
+}
+
+/* ---------- 导航栏右上角常驻深浅模式按钮 ---------- */
+#nav-darkmode {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: #e8f0f7;
+  padding: 0 10px;
+  opacity: 0.85;
+  font-size: 1.05em;
+}
+#nav-darkmode:hover {
+  opacity: 1;
+  color: #7dd3fc;
 }

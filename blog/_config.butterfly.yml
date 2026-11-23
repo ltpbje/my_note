@@ -15,23 +15,35 @@ social:
   fab fa-github: https://github.com/ltpbje || GitHub || '#2C5282'
   fas fa-envelope: mailto:ltpbje@example.com || Email || '#2C5282'
 
-# 头图：简洁深蓝，降低高度
-index_img: /assets/banner.svg
-index_top_img_height: 260px
-default_top_img: /assets/banner.svg
+# 头图：Unsplash 深蓝调代码图（已下载到本地，不依赖外链）
+index_img: /assets/hero.jpg
+index_top_img_height: 300px
+default_top_img: /assets/hero.jpg
 disable_top_img: false
+mask:
+  header: false
+  footer: false
 
-# 副标题：静态展示，不用打字机动效
+# 副标题：打字机循环文案
 subtitle:
   enable: true
-  effect: false
+  effect: true
+  typed_option:
+    loop: true
+    typeSpeed: 120
+    backSpeed: 45
   sub:
-    - 记录、整理与分享
+    - 仰望星空，脚踏实地写代码
+    - HTML / CSS / JavaScript / Vue / React
+    - 把学到的东西，变成自己的理解
 
 # 头像（需用 img 子项，扁平写法不生效）
 avatar:
   img: /assets/avatar.svg
   effect: false
+
+# 网站图标：与头像统一（深蓝底字母 L），现代浏览器均支持 SVG favicon
+favicon: /assets/avatar.svg
 
 # 首页文章列表：卡片封面 + 摘要
 index_layout: 4
@@ -117,6 +129,8 @@ footer_img: false
 inject:
   head:
     - <link rel="stylesheet" href="/assets/custom.css">
+  bottom:
+    - <script src="/assets/nav-darkmode.js"></script>
 
 # ponytail: 全部第三方库走本地文件（依赖 hexo-butterfly-extjs），
 # 避免 jsdelivr/unpkg 在国内访问不稳定；本地化由插件在 hexo generate 时完成。
