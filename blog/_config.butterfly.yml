@@ -1,5 +1,7 @@
 nav:
+  logo:
   display_title: true
+  display_post_title: true
   fixed: true
 
 menu:
@@ -10,13 +12,60 @@ menu:
   关于: /about/ || fas fa-user
 
 social:
-  fab fa-github: https://github.com/ltpbje || GitHub || '#4F46E5'
+  fab fa-github: https://github.com/ltpbje || GitHub || '#2C5282'
+  fas fa-envelope: mailto:ltpbje@example.com || Email || '#2C5282'
 
+# 头图：简洁深蓝，降低高度
 index_img: /assets/banner.svg
-avatar: /img/butterfly-icon.png
+index_top_img_height: 260px
+default_top_img: /assets/banner.svg
+disable_top_img: false
+
+# 副标题：静态展示，不用打字机动效
 subtitle:
   enable: true
-  effect: true
+  effect: false
+  sub:
+    - 记录、整理与分享
+
+# 头像（需用 img 子项，扁平写法不生效）
+avatar:
+  img: /assets/avatar.svg
+  effect: false
+
+# 首页文章列表：卡片封面 + 摘要
+index_layout: 4
+cover:
+  index_enable: true
+index_post_content:
+  method: 3
+  length: 110
+rounded_corners_ui: true
+
+# 主题配色（经典蓝，克制稳重，色值必须带引号）
+theme_color:
+  enable: true
+  main: "#2C5282"
+  paginator: "#3182CE"
+  button_hover: "#2B6CB0"
+  text_selection: "#BEE3F8"
+  link_color: "#2C5282"
+  meta_color: "#718096"
+  hr_color: "#CBD5E0"
+  code_foreground: "#C53030"
+  code_background: "rgba(45,55,72,.05)"
+  toc_color: "#2C5282"
+  blockquote_padding_color: "#CBD5E0"
+  blockquote_background_color: "#F7FAFC"
+  scrollbar_color: "#A0AEC0"
+
+# 字体：系统字体栈，不依赖海外字体源
+font:
+  global_font_size: 16px
+  font_family: '"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif'
+  code_font_size: 14px
+blog_title_font:
+  font_family: '"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif'
 
 code_blocks:
   theme: darker
@@ -27,6 +76,7 @@ code_blocks:
 darkmode:
   enable: true
   button: true
+  autoChangeMode: 1
 
 search:
   use: local_search
@@ -41,8 +91,32 @@ copy:
 related_post:
   enable: true
   limit: 5
+
 aside:
   enable: true
+  position: right
+  card_author:
+    enable: true
+  card_announcement:
+    enable: true
+    content: 欢迎来到我的前端学习笔记博客，这里收录了 HTML、CSS、JavaScript、Vue、React、Node.js 以及面试相关的整理与总结。持续更新中，欢迎交流。
+  card_recent_post:
+    enable: true
+    limit: 6
+  card_categories:
+    enable: true
+    limit: 8
+  card_tags:
+    enable: true
+    limit: 30
+    color: true
+    orderby: length
+
+footer_img: false
+
+inject:
+  head:
+    - <link rel="stylesheet" href="/assets/custom.css">
 
 # ponytail: 全部第三方库走本地文件（依赖 hexo-butterfly-extjs），
 # 避免 jsdelivr/unpkg 在国内访问不稳定；本地化由插件在 hexo generate 时完成。

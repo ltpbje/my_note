@@ -22,7 +22,7 @@ const yaml = (s) => JSON.stringify(String(s).replace(/[\r\n]+/g, ' '));
 
 function walk(dir, out = []) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
-    if (['blog', '.git', '.codebuddy', 'node_modules'].includes(e.name)) continue;
+    if (['blog', '.git', '.codebuddy', 'node_modules', '.workbuddy', '.obsidian'].includes(e.name)) continue;
     const p = path.join(dir, e.name);
     if (e.isDirectory()) walk(p, out);
     else out.push(p);
@@ -140,12 +140,16 @@ function frontmatter(srcFile, mainRel, body) {
   const date = `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
   const categories = parts.slice(0, 1);
   const tags = parts.length > 1 ? parts.slice(1, 3) : categories;
+  // 按文件名稳定分配一张渐变封面，避免用正文里的代码截图当缩略图
+  const covers = ['cover-1', 'cover-2', 'cover-3', 'cover-4', 'cover-5', 'cover-6'];
+  const idx = parseInt(crypto.createHash('md5').update(mainRel).digest('hex').slice(0, 8), 16) % covers.length;
   return [
     '---',
     `title: ${yaml(title)}`,
     `date: ${date}`,
     `categories: [${categories.map(yaml).join(', ')}]`,
     `tags: [${tags.map(yaml).join(', ')}]`,
+    `cover: /assets/${covers[idx]}.svg`,
     '---',
     ''
   ].join('\n');

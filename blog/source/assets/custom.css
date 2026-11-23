@@ -1,0 +1,268 @@
+/* ============================================================
+   前端学习笔记 · 视觉优化
+   浅色：深蓝杂志式 Hero / 左图右文卡片 / 彩色标签 / 深色页脚
+   深色：深蓝黑背景 + 深色卡片 + 亮色文字 + 霓虹标签
+   ============================================================ */
+:root {
+  --nb-blue: #3b82f6;
+  --nb-indigo: #4f46e5;
+  --nb-ink: #0f172a;
+  --nb-muted: #64748b;
+  --nb-line: #e5eaf0;
+  --nb-page: #f6f7f9;
+  --nb-card: #ffffff;
+  --nb-tag-bg: #eef2f7;
+  --nb-tag-fg: #475569;
+  --nb-radius: 14px;
+  --nb-shadow: 0 4px 16px -4px rgba(15, 23, 42, .08);
+  --nb-shadow-hover: 0 12px 28px -8px rgba(15, 23, 42, .16);
+  --nb-quote-bg: #eff6ff;
+  --nb-quote-fg: #1e40af;
+}
+
+/* ---------- 深色模式配色 ---------- */
+[data-theme='dark'] {
+  --nb-blue: #60a5fa;
+  --nb-indigo: #818cf8;
+  --nb-ink: #e8eef5;
+  --nb-muted: #93a7bc;
+  --nb-line: #2a3a4d;
+  --nb-page: #0b1420;
+  --nb-card: #131f2e;
+  --nb-tag-bg: #1c2b3d;
+  --nb-tag-fg: #b6c9dc;
+  --nb-shadow: 0 4px 20px -6px rgba(0, 0, 0, .5);
+  --nb-shadow-hover: 0 14px 34px -10px rgba(0, 0, 0, .65);
+  --nb-quote-bg: #152a42;
+  --nb-quote-fg: #93c5fd;
+}
+
+/* ---------- 全局背景 ---------- */
+html, body { background: var(--nb-page) !important; }
+[data-theme='dark'] body,
+[data-theme='dark'] #content-inner,
+[data-theme='dark'] .layout { background: var(--nb-page) !important; }
+
+/* ---------- Hero 头图：深蓝渐变 + 光晕（设计稿 260px 横幅） ---------- */
+#page-header.full_page {
+  height: 260px !important;
+  min-height: 260px !important;
+  background: linear-gradient(115deg, #0a1a29 0%, #143856 55%, #0d263e 100%) !important;
+  background-image: linear-gradient(115deg, #0a1a29 0%, #143856 55%, #0d263e 100%) !important;
+  position: relative;
+  overflow: hidden;
+}
+#page-header.full_page::before {
+  content: '';
+  position: absolute;
+  right: -80px;
+  top: -160px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(34, 211, 238, .35) 0%, rgba(34, 211, 238, 0) 70%);
+  pointer-events: none;
+}
+#page-header.full_page::after {
+  content: '';
+  position: absolute;
+  left: -100px;
+  bottom: -180px;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(59, 130, 246, .3) 0%, rgba(59, 130, 246, 0) 70%);
+  pointer-events: none;
+}
+#page-header.full_page #site-info { z-index: 2; position: relative; }
+#page-header .site-title {
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, .25);
+  color: #fff !important;
+}
+#subtitle { color: #a9c2d4 !important; }
+#subtitle::after { display: none !important; }
+#scroll-down { bottom: 14px !important; }
+
+/* ---------- 文章详情页头图：深蓝遮罩 ---------- */
+#page-header.post-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, #0a1a29 0%, #143856 55%, #0d263e 100%);
+  z-index: 0;
+  pointer-events: none;
+}
+#page-header.post-bg > * { position: relative; z-index: 2; }
+
+/* ---------- 导航栏 ---------- */
+#nav {
+  background: rgba(14, 31, 48, .85) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, .08) !important;
+}
+[data-theme='dark'] #nav { background: rgba(9, 18, 30, .92) !important; }
+#nav a,
+#nav a:visited { color: #e8f0f7 !important; }
+#nav a:hover { color: #7dd3fc !important; }
+#nav a.active { color: #fff !important; }
+
+/* ---------- 文章卡片：左封面 230x160 + 右内容 ---------- */
+#recent-posts .recent-post-item {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: stretch;
+  height: 160px !important;
+  background: var(--nb-card) !important;
+  border: 1px solid var(--nb-line) !important;
+  border-radius: var(--nb-radius) !important;
+  box-shadow: var(--nb-shadow);
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .2s ease;
+  margin-bottom: 20px;
+}
+#recent-posts .recent-post-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--nb-shadow-hover);
+}
+#recent-posts .recent-post-item .post_cover {
+  width: 230px !important;
+  height: 160px !important;
+  flex: 0 0 230px;
+  border-radius: 0 !important;
+}
+#recent-posts .recent-post-item .post_cover .post-bg {
+  object-fit: cover;
+  border-radius: 0 !important;
+}
+#recent-posts .recent-post-item .recent-post-info {
+  width: auto !important;
+  flex: 1;
+  padding: 20px 24px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#recent-posts .recent-post-item .recent-post-info .article-title {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: var(--nb-ink) !important;
+  line-height: 1.4;
+}
+#recent-posts .recent-post-item .article-meta-wrap {
+  color: var(--nb-muted) !important;
+  font-size: 13px !important;
+}
+#recent-posts .recent-post-item .content {
+  color: var(--nb-muted) !important;
+  font-size: 13px !important;
+  line-height: 1.6;
+  margin-top: 4px !important;
+}
+
+/* ---------- 彩色技术标签 ---------- */
+.article-meta__categories,
+.card-tag-cloud a,
+.tags-page a,
+.article-meta .article-meta-tag a {
+  border-radius: 6px !important;
+  padding: 3px 10px !important;
+  font-size: 12px !important;
+  border: none !important;
+  background: var(--nb-tag-bg) !important;
+  color: var(--nb-tag-fg) !important;
+}
+/* 浅色模式标签 */
+a[href*="/tags/Vue"] { background: #eff6ff !important; color: #2563eb !important; }
+a[href*="/tags/JavaScript"] { background: #fffbeb !important; color: #b45309 !important; }
+a[href*="/tags/CSS"] { background: #f0fdf4 !important; color: #15803d !important; }
+a[href*="/tags/React"] { background: #ecfeff !important; color: #0891b2 !important; }
+a[href*="/tags/Node"] { background: #fef2f2 !important; color: #dc2626 !important; }
+a[href*="/tags/面试"] { background: #f5f3ff !important; color: #7c3aed !important; }
+/* 深色模式标签：暗底亮字 */
+[data-theme='dark'] a[href*="/tags/Vue"] { background: #12294a !important; color: #7dd3fc !important; }
+[data-theme='dark'] a[href*="/tags/JavaScript"] { background: #3a2e08 !important; color: #fcd34d !important; }
+[data-theme='dark'] a[href*="/tags/CSS"] { background: #0f2e1c !important; color: #86efac !important; }
+[data-theme='dark'] a[href*="/tags/React"] { background: #08303a !important; color: #67e8f9 !important; }
+[data-theme='dark'] a[href*="/tags/Node"] { background: #3a1414 !important; color: #fca5a5 !important; }
+[data-theme='dark'] a[href*="/tags/面试"] { background: #2a1a4a !important; color: #c4b5fd !important; }
+[data-theme='dark'] .article-meta__categories,
+[data-theme='dark'] .card-tag-cloud a,
+[data-theme='dark'] .tags-page a { background: var(--nb-tag-bg) !important; color: var(--nb-tag-fg) !important; }
+
+/* ---------- 侧栏卡片 ---------- */
+#aside-content .card-widget {
+  background: var(--nb-card) !important;
+  border: 1px solid var(--nb-line) !important;
+  border-radius: 16px !important;
+  box-shadow: var(--nb-shadow) !important;
+}
+[data-theme='dark'] #aside-content .card-widget { box-shadow: none !important; }
+#card-info-btn,
+.card-info-btn {
+  background: var(--nb-indigo) !important;
+  border-radius: 9px !important;
+  border: none !important;
+  box-shadow: 0 6px 16px -6px rgba(79, 70, 229, .5) !important;
+  color: #fff !important;
+}
+#card-info-btn:hover { filter: brightness(1.1); }
+[data-theme='dark'] #aside-content .card-info .card-info-data .card-info-data-item a,
+[data-theme='dark'] #aside-content .card-info .card-info-data .card-info-data-item .headline { color: var(--nb-ink) !important; }
+[data-theme='dark'] #aside-content .card-announcement .announcement-banner,
+[data-theme='dark'] #aside-content .item-headline span { color: var(--nb-ink) !important; }
+[data-theme='dark'] #aside-content .card-recent-post .aside-list-item .content .name,
+[data-theme='dark'] #aside-content .card-categories .category-list-item a,
+[data-theme='dark'] #aside-content .card-tag-cloud a { color: var(--nb-tag-fg) !important; }
+[data-theme='dark'] #aside-content .card-announcement .announcement-banner,
+[data-theme='dark'] #aside-content .card-announcement .item-headline i { color: var(--nb-blue) !important; }
+[data-theme='dark'] #recent-posts .recent-post-item .article-meta-wrap,
+[data-theme='dark'] #recent-posts .recent-post-item .content { color: #a9bdd2 !important; }
+
+/* ---------- 主色：分页 / 按钮 ---------- */
+.pagination .page-number.current {
+  background: var(--nb-blue) !important;
+  border-radius: 8px !important;
+  border: none !important;
+  color: #fff !important;
+}
+[data-theme='dark'] .pagination .page-number,
+[data-theme='dark'] .pagination .extend { color: var(--nb-ink) !important; }
+
+/* ---------- 文章正文 ---------- */
+#article-container { color: var(--nb-muted); line-height: 1.8; }
+#article-container h1, #article-container h2, #article-container h3, #article-container h4 {
+  color: var(--nb-ink) !important;
+  font-weight: 700;
+  border: none !important;
+  border-left: 4px solid var(--nb-blue) !important;
+  padding-left: 14px !important;
+}
+#article-container img { border-radius: 10px !important; }
+#article-container blockquote {
+  background: var(--nb-quote-bg) !important;
+  border-left: 4px solid var(--nb-blue) !important;
+  border-radius: 0 8px 8px 0 !important;
+  color: var(--nb-quote-fg) !important;
+}
+[data-theme='dark'] #article-container p,
+[data-theme='dark'] #article-container li { color: var(--nb-ink); }
+[data-theme='dark'] #article-container code { background: #1e2c3d !important; color: #a5d6ff !important; }
+
+/* ---------- 页脚 ---------- */
+#footer {
+  background: #0e1f30 !important;
+  color: #8aa3b8 !important;
+  border-top: none !important;
+}
+#footer a { color: #a9c2d4 !important; }
+#footer .footer-blog-title { color: #e2eef7 !important; }
+
+/* ---------- 移动端 ---------- */
+@media screen and (max-width: 768px) {
+  #recent-posts .recent-post-item { display: block !important; height: auto !important; }
+  #recent-posts .recent-post-item .post_cover { width: 100% !important; height: 200px !important; }
+  #recent-posts .recent-post-item .recent-post-info { padding: 16px !important; }
+}

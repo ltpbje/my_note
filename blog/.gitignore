@@ -6,4 +6,5 @@ source/images/
 missing-images.txt
 db.json
 *.log
+.playwright-cli/
 .DS_Store

@@ -11,3 +11,6 @@ dist
 *.log
 #忽略密码文件
 password.txt
+# 忽略工具生成的记忆与调试文件
+.workbuddy
+.playwright-cli
