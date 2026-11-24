@@ -230,6 +230,46 @@ a[href*="/tags/面试"] { background: #f5f3ff !important; color: #7c3aed !import
 [data-theme='dark'] #article-container li { color: var(--nb-ink); }
 [data-theme='dark'] #article-container code { background: #1e2c3d !important; color: #a5d6ff !important; }
 
+/* ---------- 文章目录：折叠按钮 + 滚动条 ---------- */
+#card-toc .item-headline {
+  position: relative;
+  user-select: none;
+}
+#card-toc .item-headline::after {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid var(--nb-muted);
+  border-bottom: 1.5px solid var(--nb-muted);
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform .25s ease;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+#card-toc .item-headline.toc-collapsed::after {
+  transform: rotate(-45deg) translateY(-2px);
+}
+#card-toc .toc-content::-webkit-scrollbar { width: 5px; }
+#card-toc .toc-content::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 3px;
+}
+[data-theme='dark'] #card-toc .toc-content::-webkit-scrollbar-thumb { background: #4a5568; }
+#card-toc .toc-content { padding-right: 6px; }
+#card-toc .toc-content.toc-force-collapse .toc-child { display: none !important; }
+#card-toc .toc-expand-btn {
+  background: none;
+  border: 0;
+  color: var(--nb-muted);
+  font-size: 11px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 6px;
+}
+#card-toc .toc-expand-btn:hover { color: var(--nb-blue); background: rgba(59,130,246,.08); }
+
 /* ---------- 页脚 ---------- */
 #footer {
   background: #0e1f30 !important;
